@@ -28,3 +28,32 @@ Other Map Editors:
 DTA Scenario Editor (WIP - No Heights) : <https://github.com/Rampastring/TSMapEditor> <br />
 Relert ++ (Heavy WIP)                                 : <https://github.com/secsome/relert-plus-plus> <br />
 Relert Sharp Private Thread                              : <https://github.com/FrozenFog/relert-sharp> <br />
+
+---
+**Additional Tools:**
+
+**Name: Trigger Analyser (html/java)** <br />
+Author: Whensons <br />
+Description: A tool in javascript to analyse and map out triggers in a graph.  <br />
+This shows the connections, links and issues within your triggers. <br />
+Although it is hosted on GitHub you can download the html and use offline. <br />
+Github: <https://whensonzws.github.io/Trigger-Analyzer/>
+
+**Name:  Trigger Analyser (Python)** <br />
+Author: FrozenFrog <br />
+Description: A script to generate a trigger map of maps on the TS/RA Engine <br />
+Github: <https://github.com/FrozenFog/Ra2-Map-TriggerNetwork> <br />
+
+**Name: Map Conversion Tool** <br />
+Author:  Starkku <br />
+Description: A tool which can convert the theatre, tiles, rules and overlay of maps.  <br />
+Github: <https://github.com/Starkku/MapTool> <br />
+PPM: <https://ppmforums.com/topic-43411/maptool/> <br />
+
+**Name: Tunnel Drawer** <br />
+Author: Q45 <br />
+Description: A tool to generate tunnels in TS/YR Maps.  <br />
+This allows customisation of coordinates, direction, path, ect <br />
+However, it is .SWF so requires a flash player. <br />
+PPM: <https://ppmforums.com/topic-37881/ts-ra2-tunnel-drawer/> <br />
+Flash Player (so you can run it): <https://www.adobe.com/support/flashplayer/debug_downloads.html> <br />
