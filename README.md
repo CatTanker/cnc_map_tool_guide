@@ -1,3 +1,5 @@
+A comprehensive list of tools and resources for producing maps for Tiberian Sun and Yuris Revenge, including source locations as well as a brief description
+
 **Required Map Editors**
 ---
 **Name: Final Alert 2**
