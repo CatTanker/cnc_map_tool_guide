@@ -92,3 +92,27 @@ PPM: <https://ppmforums.com/topic-48112/a-finalsun-standalone-with-cncmods-and-t
 Author: Snark <br />
 Description: This program will convert your .map file names to the map name (all credit to @Snark ). It's useful for organizing the maps that you download in cncnet client that are given a random file name: <br />
 Google Drive:  <https://drive.google.com/file/d/1IVkd7O1uWMVXdEi2BFbU-LCHilAHTGXU/view?usp=sharing> <br />
+
+---
+**Map Tutorials:**
+-
+Burg  - <https://www.youtube.com/playlist?list=PLPTX4WpN_n2Pd1duBlBT8Ht5OFiuKy_JS> <br />
+YosefAnan - <https://www.youtube.com/playlist?list=PLa9Udz4hdmEOVfsjXD36XUgvSigAPMpST> <br />
+Holland <https://www.youtube.com/channel/UCmO2G8WEni2JH70QPjqQBTQ> <br />
+RaVaGe - <https://forums.cncnet.org/topic/8245-how-to-make-ra2-yr-maps-final-alert-2-tutorial/> <br />
+McPwny - <https://ppmforums.com/topic-47332/the-complete-and-definitive-mapping-index/> <br />
+PPM       -  <https://ppmforums.com/topic-36348/how-to-attach-triggers-to-triggers/> <br />
+[FC]      -  <https://www.youtube.com/watch?v=KywxRxdLzus&list=PLwlPpv3OXxX__Cex3sZEYsEnf3hUtay-Q> <br />
+
+---
+**Community Mapping Archives:**
+-
+PPM Forums                 -<https://ppmforums.com/index.php?f=140> <br />
+MadHQ's Graveyard  -<http://zombapro.ppmsite.com/index.php?page=Yuri%27s+Revenge> <br />
+CnCNet Forums      -<https://forums.cncnet.org/forum/63-ra2yr-maps/> <br />
+Cncnet Map Search  - <https://mapdb.cncnet.org/search/?game=td&search=> <br />
+CnC Headquarters   - <https://cnchq.de/cnc-tiberian-sun/downloads/maps/> <br />
+Cnc Creatives      - <https://discord.gg/6gBHSBMYh7> <br />
+YR Discord         - <https://discord.gg/NX2PnauTVh> <br />
+Mod Haven Discord  - <https://discord.gg/P7R7ZhUhmJ> <br />
+CnCnet LucasSK    - <https://forums.cncnet.org/topic/9934-finalsun-complete-tutorial/> <br />
