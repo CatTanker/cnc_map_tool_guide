@@ -9,7 +9,7 @@ Github:  <https://github.com/secsome/FA2sp>
 
 **Name: Final Sun**
 -
-Description: The Neccisary Map Editor for Tiberian Sun + Firestorm <br />
+Description: The necessary Map Editor for Tiberian Sun + Firestorm <br />
 CnCNet: <https://forums.cncnet.org/topic/6720-final-sun-complete-fixed/> <br />
 PPM:    <https://ppmforums.com/download.php?id=71505> <br />
 PPM:    <https://ppmforums.com/topic-48112/a-finalsun-standalone-with-cncmods-and-toolkit/> <br />
@@ -18,7 +18,7 @@ PPM (SP Merged): <https://ppmforums.com/topic-47355/finalsun-101-patches/>
 **Additions to the Editor:**
 -
 Using DDraw Renderer:
-This will fix certain errors , especially on win10, as well as speeding up your application significantly. Steps: <br />
+This will fix certain errors on modern operating systems, as well as speeding up your application significantly. Steps: <br />
 1- Extract this .zip into your Map editor folder <br />
 2- Open the file aqrit.cfg in any text editor (even notepad works) and change ForceDirectDrawEmulation = 0 from 0 to =1 <br />
 Discord: <https://cdn.discordapp.com/attachments/446580509481369600/839781062468698122/ddwrapper.zip> <br />
@@ -40,7 +40,7 @@ Relert Sharp Private Thread                              : <https://github.com/F
 Author: Whensons <br />
 Description: A tool in javascript to analyse and map out triggers in a graph.  <br />
 This shows the connections, links and issues within your triggers. <br />
-Although it is hosted on GitHub you can download the html and use offline. <br />
+Although it is hosted on GitHub you can download the page and use it offline. <br />
 Github: <https://whensonzws.github.io/Trigger-Analyzer/>
 
 **Name:  Trigger Analyser (Python)** <br />
@@ -64,8 +64,8 @@ Flash Player (so you can run it): <https://www.adobe.com/support/flashplayer/deb
 
 **Name: Wavemaker** <br />
 Author: PTapioK <br />
-Description: A brilliant tool which streamlines the production of mission maps <br />
-It allows manipulation of Triggers, Scripts, Taskforces, Teams and Variables <br />
+Description: A brilliant tool which streamlines the production of mission and survival maps <br />
+It allows manipulation of Triggers, Scripts, Taskforces, Teams and Variables on both a single and batch scale <br />
 Github:  <br />
 PPM:  <https://ppmforums.com/viewtopic.php?t=40202&start=0&postdays=0&postorder=asc&highlight=&sid=4e24b30fb8ab401c146e831491db9400> <br />
 Github: <https://github.com/PTapioK/TSWaveMaker> <br />
@@ -73,7 +73,7 @@ Github: <https://github.com/PTapioK/TSWaveMaker> <br />
 **Name: Map Renderer** <br />
 Author: zzattack <br />
 Description: A Full Map Preview Renderer for maps <br />
-Also allows other features such as height maps, position markers and more! <br />
+Also contains other features such as height maps, position markers as well as debug features! <br />
 Github: (old) <https://github.com/zzattack/ccmaps-net> <br />
 PPM: <https://ppmforums.com/topic-29554-page-5/cnc-maps-renderer-rewritten-works-for-tiberian-sun-and-ra2/postorder=asc&sid=09aab50120dd9e100427f9c83fa5be3d> <br />
 
@@ -90,12 +90,13 @@ PPM: <https://ppmforums.com/topic-48112/a-finalsun-standalone-with-cncmods-and-t
 
 **Name: Map Rename Tool** <br />
 Author: Snark <br />
-Description: This program will convert your .map file names to the map name (all credit to @Snark ). It's useful for organizing the maps that you download in cncnet client that are given a random file name: <br />
+Description: This program will convert your .map file names to the map name (all credits to @Snark ). It's useful for organizing the maps that you download inside the cncnet client that are given a random file name, and means you can tell which map is which: <br />
 Google Drive:  <https://drive.google.com/file/d/1IVkd7O1uWMVXdEi2BFbU-LCHilAHTGXU/view?usp=sharing> <br />
 
 ---
 **Map Tutorials:**
 -
+I have outlined several useful mapping tutorials and mapping archives, so note this is not every available source.
 Burg  - <https://www.youtube.com/playlist?list=PLPTX4WpN_n2Pd1duBlBT8Ht5OFiuKy_JS> <br />
 YosefAnan - <https://www.youtube.com/playlist?list=PLa9Udz4hdmEOVfsjXD36XUgvSigAPMpST> <br />
 Holland <https://www.youtube.com/channel/UCmO2G8WEni2JH70QPjqQBTQ> <br />
@@ -103,7 +104,7 @@ RaVaGe - <https://forums.cncnet.org/topic/8245-how-to-make-ra2-yr-maps-final-ale
 McPwny - <https://ppmforums.com/topic-47332/the-complete-and-definitive-mapping-index/> <br />
 PPM       -  <https://ppmforums.com/topic-36348/how-to-attach-triggers-to-triggers/> <br />
 [FC]      -  <https://www.youtube.com/watch?v=KywxRxdLzus&list=PLwlPpv3OXxX__Cex3sZEYsEnf3hUtay-Q> <br />
-
+CnCnet LucasSK    - <https://forums.cncnet.org/topic/9934-finalsun-complete-tutorial/> <br />
 ---
 **Community Mapping Archives:**
 -
@@ -115,4 +116,4 @@ CnC Headquarters   - <https://cnchq.de/cnc-tiberian-sun/downloads/maps/> <br />
 Cnc Creatives      - <https://discord.gg/6gBHSBMYh7> <br />
 YR Discord         - <https://discord.gg/NX2PnauTVh> <br />
 Mod Haven Discord  - <https://discord.gg/P7R7ZhUhmJ> <br />
-CnCnet LucasSK    - <https://forums.cncnet.org/topic/9934-finalsun-complete-tutorial/> <br />
+YR-TS Map Factory  - <https://discord.gg/wBEhaWNRRW> <br />
