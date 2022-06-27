@@ -107,6 +107,7 @@ McPwny - <https://ppmforums.com/topic-47332/the-complete-and-definitive-mapping-
 PPM       -  <https://ppmforums.com/topic-36348/how-to-attach-triggers-to-triggers/> <br />
 [FC]      -  <https://www.youtube.com/watch?v=KywxRxdLzus&list=PLwlPpv3OXxX__Cex3sZEYsEnf3hUtay-Q> <br />
 CnCnet LucasSK    - <https://forums.cncnet.org/topic/9934-finalsun-complete-tutorial/> <br />
+
 ---
 **Community Mapping Archives:**
 -
