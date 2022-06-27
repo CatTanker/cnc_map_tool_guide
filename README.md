@@ -61,3 +61,34 @@ This allows customisation of coordinates, direction, path, ect <br />
 However, it is .SWF so requires a flash player. <br />
 PPM: <https://ppmforums.com/topic-37881/ts-ra2-tunnel-drawer/> <br />
 Flash Player (so you can run it): <https://www.adobe.com/support/flashplayer/debug_downloads.html> <br />
+
+**Name: Wavemaker** <br />
+Author: PTapioK <br />
+Description: A brilliant tool which streamlines the production of mission maps <br />
+It allows manipulation of Triggers, Scripts, Taskforces, Teams and Variables <br />
+Github:  <br />
+PPM:  <https://ppmforums.com/viewtopic.php?t=40202&start=0&postdays=0&postorder=asc&highlight=&sid=4e24b30fb8ab401c146e831491db9400> <br />
+Github: <https://github.com/PTapioK/TSWaveMaker> <br />
+
+**Name: Map Renderer** <br />
+Author: zzattack <br />
+Description: A Full Map Preview Renderer for maps <br />
+Also allows other features such as height maps, position markers and more! <br />
+Github: (old) <https://github.com/zzattack/ccmaps-net> <br />
+PPM: <https://ppmforums.com/topic-29554-page-5/cnc-maps-renderer-rewritten-works-for-tiberian-sun-and-ra2/postorder=asc&sid=09aab50120dd9e100427f9c83fa5be3d> <br />
+
+**Name: Map Resize Tool** <br />
+Author: E1 Elite <br />
+Description: A tool to resize maps, unlike the map editor this also moves smudges, tunnels ect <br />
+Github: <https://github.com/E1Elite/MapResize> <br />
+PPM: <https://ppmforums.com/topic-55391/mapresize/> <br />
+
+Name: FInal Sun Toolkit <br />
+Author: Holland (and various other authors for the tools) <br />
+Description: Software which contains multiple tools with it, as well as other optimisations <br />
+PPM: <https://ppmforums.com/topic-48112/a-finalsun-standalone-with-cncmods-and-toolkit/> <br />
+
+**Name: Map Rename Tool** <br />
+Author: Snark <br />
+Description: This program will convert your .map file names to the map name (all credit to @Snark ). It's useful for organizing the maps that you download in cncnet client that are given a random file name: <br />
+Google Drive:  <https://drive.google.com/file/d/1IVkd7O1uWMVXdEi2BFbU-LCHilAHTGXU/view?usp=sharing> <br />
