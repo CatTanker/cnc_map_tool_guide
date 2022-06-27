@@ -25,13 +25,17 @@ Discord: <https://cdn.discordapp.com/attachments/446580509481369600/839781062468
 PPM       <https://ppmforums.com/download.php?id=72031&sid=5b50cb3c1696d792adb195e4360b46fd> 
 
 Other Map Editors:
-DTA Scenario Editor (WIP - No Heights) : <https://github.com/Rampastring/TSMapEditor> <br />
+-
+DTA Scenario Editor (Open Source) :
+- <https://github.com/Rampastring/TSMapEditor> <br />
+- https://www.moddb.com/mods/the-dawn-of-the-tiberium-age/news/introducing-the-dta-scenario-editor <br />
+
 Relert ++ (Heavy WIP)                                 : <https://github.com/secsome/relert-plus-plus> <br />
 Relert Sharp Private Thread                              : <https://github.com/FrozenFog/relert-sharp> <br />
 
 ---
 **Additional Tools:**
-
+-
 **Name: Trigger Analyser (html/java)** <br />
 Author: Whensons <br />
 Description: A tool in javascript to analyse and map out triggers in a graph.  <br />
