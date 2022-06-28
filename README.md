@@ -98,7 +98,7 @@ Google Drive:  <https://drive.google.com/file/d/1IVkd7O1uWMVXdEi2BFbU-LCHilAHTGX
 ---
 **Map Tutorials:**
 -
-I have outlined several useful mapping tutorials and mapping archives, so note this is not every available source.
+I have outlined several useful mapping tutorials and mapping archives, so note this is not every available source. <br />
 Burg  - <https://www.youtube.com/playlist?list=PLPTX4WpN_n2Pd1duBlBT8Ht5OFiuKy_JS> <br />
 YosefAnan - <https://www.youtube.com/playlist?list=PLa9Udz4hdmEOVfsjXD36XUgvSigAPMpST> <br />
 Holland <https://www.youtube.com/channel/UCmO2G8WEni2JH70QPjqQBTQ> <br />
