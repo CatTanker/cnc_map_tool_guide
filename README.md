@@ -92,8 +92,14 @@ PPM: <https://ppmforums.com/topic-48112/a-finalsun-standalone-with-cncmods-and-t
 
 **Name: Map Rename Tool** <br />
 Author: Snark <br />
-Description: This program will convert your .map file names to the map name (all credits to @Snark ). It's useful for organizing the maps that you download inside the cncnet client that are given a random file name, and means you can tell which map is which: <br />
+Description: This program will convert your .map file names to the map name (all credits to @Snark ). It's useful for organizing the maps that you download inside the cncnet client that are given a random file name, and means you can tell which map is which <br />
 Google Drive:  <https://drive.google.com/file/d/1IVkd7O1uWMVXdEi2BFbU-LCHilAHTGXU/view?usp=sharing> <br />
+
+
+**Name: Trigger Index Parameter Tool** <br />
+Author: Starkku <br />
+Description: A simple GUI program for adjusting numerical index values used as parameters for map trigger events & actions aswell as AI team scripts in Command & Conquer: Tiberian Sun & Red Alert 2. Useful for Mod / Mission developers to fix any issues that occur after a house index change <br />
+Github:: <https://github.com/Starkku/TriggerIndexParamTool> <br />
 
 ---
 **Map Tutorials:**
