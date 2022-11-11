@@ -113,6 +113,7 @@ McPwny - <https://ppmforums.com/topic-47332/the-complete-and-definitive-mapping-
 PPM       -  <https://ppmforums.com/topic-36348/how-to-attach-triggers-to-triggers/> <br />
 [FC]      -  <https://www.youtube.com/watch?v=KywxRxdLzus&list=PLwlPpv3OXxX__Cex3sZEYsEnf3hUtay-Q> <br />
 CnCnet LucasSK    - <https://forums.cncnet.org/topic/9934-finalsun-complete-tutorial/> <br />
+CatTanker  - <https://youtu.be/HAH43FvXvxc>
 
 ---
 **Community Mapping Archives:**
@@ -126,3 +127,7 @@ Cnc Creatives      - <https://discord.gg/6gBHSBMYh7> <br />
 YR Discord         - <https://discord.gg/NX2PnauTVh> <br />
 Mod Haven Discord  - <https://discord.gg/P7R7ZhUhmJ> <br />
 YR-TS Map Factory  - <https://discord.gg/wBEhaWNRRW> <br />
+
+I feel one project i should give a special note to is APRA2, a fan project for a Red Alert 2 campaign in Mental Omega
+The team has made a quantity high quality work, as well as has quite a few skilled mappers who can likely offer experience if you have any questions
+Discord Link - <https://discord.gg/Z7HsWA5pTv>
