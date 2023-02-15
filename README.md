@@ -35,7 +35,7 @@ Author: Rampastring  <br />
 Description: "The World-Altering Editor (WAE)* is an open-source FinalSun and FinalAlert replacement. Originally developed for DTA and in use in the mod for a while, I've started adding features required for full support of TS and RA2 (primarily height support)".  <br />
 Github: <https://github.com/Rampastring/TSMapEditor> <br />
 Introduction video: <https://www.youtube.com/watch?v=jIcr3nCqx7M> <br />
-Discord: <https://discord.gg/k4SVuMm> (Mod Haven Discord --> A channel under Dedicated Projects) 
+Discord: <https://discord.gg/k4SVuMm> (Mod Haven Discord --> A channel under Dedicated Projects)  <br />
 Discord: <https://discord.gg/qdu4Nt879z> (DTA Discord --> Mapping Channel)
 
 
