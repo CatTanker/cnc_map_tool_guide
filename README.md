@@ -159,6 +159,6 @@ Dawn of the Tiberium Age has been working on re-creating the original TD Campaig
 ModDB Post: <https://www.moddb.com/mods/the-dawn-of-the-tiberium-age/news/annoucing-our-td-gdi-campaign-co-op-remake>
 Discord: <https://discord.gg/YczsdZC>
 
-Flipped Missions is a mod for YR which reverses the roles of original YR missions so you play as the other side, another project woth a look at!
+Flipped Missions is a mod for YR which reverses the roles of original YR missions so you play as the other side, another project woth a look at!  <br />
 ModDB: <https://www.moddb.com/mods/ra2fm>  <br />
 Discord: <https://discord.gg/tYuP82S>
