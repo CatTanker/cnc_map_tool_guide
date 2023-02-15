@@ -155,8 +155,8 @@ Almost Perfect Red Alert 2 (APRA2) is a fan project to produce a Red Alert 2 cam
 The team has made a quantity of high quality work that is publicly available, and consists of quite a few skilled and experienced mappers who can likely offer experience and advice. An excellent benchmark for any modern campaign developers who intend to use a mod's features to a high standard  <br />
 Discord Link - <https://discord.gg/Z7HsWA5pTv>
 
-Dawn of the Tiberium Age has been working on re-creating the original TD Campaigns as Co-Ops
-ModDB Post: <https://www.moddb.com/mods/the-dawn-of-the-tiberium-age/news/annoucing-our-td-gdi-campaign-co-op-remake>
+Dawn of the Tiberium Age has been working on re-creating the original TD Campaigns as Co-Ops  <br />
+ModDB Post: <https://www.moddb.com/mods/the-dawn-of-the-tiberium-age/news/annoucing-our-td-gdi-campaign-co-op-remake>  <br />
 Discord: <https://discord.gg/YczsdZC>
 
 Flipped Missions is a mod for YR which reverses the roles of original YR missions so you play as the other side, another project woth a look at!  <br />
