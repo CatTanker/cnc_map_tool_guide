@@ -2,14 +2,14 @@ A comprehensive list of tools and resources for producing maps for Tiberian Sun 
 
 **Required Map Editors**
 ---
-**Name: Final Alert 2**
+**Name: Final Alert 2:**
 -
 Description: The Map Editor for Yuris Revenge. An essential tool for any mapper.
 Contains patches which have been developed by multiple members of the community <br />
 PPM:     <https://ppmforums.com/topic-47342/final-alert-2-yr-v102-patches/> <br />
 Github:  <https://github.com/secsome/FA2sp> 
 
-**Name: Final Sun**
+**Name: Final Sun:**
 -
 Description: The necessary Map Editor for Tiberian Sun + Firestorm <br />
 CnCNet: <https://forums.cncnet.org/topic/6720-final-sun-complete-fixed/> <br />
@@ -26,14 +26,23 @@ This will fix certain errors on modern operating systems, as well as speeding up
 Discord: <https://cdn.discordapp.com/attachments/446580509481369600/839781062468698122/ddwrapper.zip> <br />
 PPM       <https://ppmforums.com/download.php?id=72031&sid=5b50cb3c1696d792adb195e4360b46fd> 
 
-Other Map Editors:
+---
+Alternatives:
 -
-DTA Scenario Editor (Open Source) :
-- <https://github.com/Rampastring/TSMapEditor> <br />
-- https://www.moddb.com/mods/the-dawn-of-the-tiberium-age/news/introducing-the-dta-scenario-editor <br />
 
-Relert ++ (Heavy WIP)                                 : <https://github.com/secsome/relert-plus-plus> <br />
-Relert Sharp Private Thread                              : <https://github.com/FrozenFog/relert-sharp> <br />
+World Altering Editor (Formerly DTA Scenario Editor + Open Source) : <br />
+Author: Rampastring  <br />
+Description: "The World-Altering Editor (WAE)* is an open-source FinalSun and FinalAlert replacement. Originally developed for DTA and in use in the mod for a while, I've started adding features required for full support of TS and RA2 (primarily height support)".  <br />
+Github: <https://github.com/Rampastring/TSMapEditor> <br />
+Introduction video: <https://www.youtube.com/watch?v=jIcr3nCqx7M> <br />
+Discord: <https://discord.gg/k4SVuMm> (Mod Haven Discord --> A channel under Dedicated Projects) 
+Discord: <https://discord.gg/qdu4Nt879z> (DTA Discord --> Mapping Channel)
+
+
+Others:
+-
+Relert ++                                             : <https://github.com/secsome/relert-plus-plus> <br />
+Relert Sharp Private Thread                           : <https://github.com/FrozenFog/relert-sharp> <br />
 
 ---
 **Additional Tools:**
@@ -95,11 +104,16 @@ Author: Snark <br />
 Description: This program will convert your .map file names to the map name (all credits to @Snark ). It's useful for organizing the maps that you download inside the cncnet client that are given a random file name, and means you can tell which map is which <br />
 Google Drive:  <https://drive.google.com/file/d/1IVkd7O1uWMVXdEi2BFbU-LCHilAHTGXU/view?usp=sharing> <br />
 
-
 **Name: Trigger Index Parameter Tool** <br />
 Author: Starkku <br />
 Description: A simple GUI program for adjusting numerical index values used as parameters for map trigger events & actions aswell as AI team scripts in Command & Conquer: Tiberian Sun & Red Alert 2. Useful for Mod / Mission developers to fix any issues that occur after a house index change <br />
 Github:: <https://github.com/Starkku/TriggerIndexParamTool> <br />
+
+**Name: Map Tool** <br />
+Author: vananasun <br />
+Description: A command line tool to manipulate Red Alert 2 Yuri's Revenge maps <br />
+Github:: <https://github.com/vananasun/yr-maptool> <br />
+
 
 ---
 **Map Tutorials:**
@@ -127,7 +141,24 @@ Cnc Creatives      - <https://discord.gg/6gBHSBMYh7> <br />
 YR Discord         - <https://discord.gg/NX2PnauTVh> <br />
 Mod Haven Discord  - <https://discord.gg/P7R7ZhUhmJ> <br />
 YR-TS Map Factory  - <https://discord.gg/wBEhaWNRRW> <br />
+Chrono Storm       - <https://www.csra2.com> <br />
 
-I feel one project i should give a special note to is APRA2, a fan project for a Red Alert 2 campaign in Mental Omega
-The team has made a quantity high quality work, as well as has quite a few skilled mappers who can likely offer experience if you have any questions
+---
+
+Noteworthy Projects:
+-
+
+MadHQ has remade the RA2 Allied and Soviet Campaigns entirely, designed for the vanilla game 
+Link: <http://zombapro.ppmsite.com/index.php?page=Missions>
+
+Almost Perfect Red Alert 2 (APRA2) is a fan project to produce a Red Alert 2 campaign in Mental Omega.  <br />
+The team has made a quantity of high quality work that is publicly available, and consists of quite a few skilled and experienced mappers who can likely offer experience and advice. An excellent benchmark for any modern campaign developers who intend to use a mod's features to a high standard  <br />
 Discord Link - <https://discord.gg/Z7HsWA5pTv>
+
+Dawn of the Tiberium Age has been working on re-creating the original TD Campaigns as Co-Ops
+ModDB Post: <https://www.moddb.com/mods/the-dawn-of-the-tiberium-age/news/annoucing-our-td-gdi-campaign-co-op-remake>
+Discord: <https://discord.gg/YczsdZC>
+
+Flipped Missions is a mod for YR which reverses the roles of original YR missions so you play as the other side, another project woth a look at!
+ModDB: <https://www.moddb.com/mods/ra2fm>
+Discord: <https://discord.gg/tYuP82S>
