@@ -94,7 +94,7 @@ Description: A tool to resize maps, unlike the map editor this also moves smudge
 Github: <https://github.com/E1Elite/MapResize> <br />
 PPM: <https://ppmforums.com/topic-55391/mapresize/> <br />
 
-Name: FInal Sun Toolkit <br />
+Name: **Final Sun Toolkit** <br />
 Author: Holland (and various other authors for the tools) <br />
 Description: Software which contains multiple tools with it, as well as other optimisations <br />
 PPM: <https://ppmforums.com/topic-48112/a-finalsun-standalone-with-cncmods-and-toolkit/> <br />
