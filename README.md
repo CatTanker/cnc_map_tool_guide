@@ -162,3 +162,10 @@ Discord: <https://discord.gg/YczsdZC>
 Flipped Missions is a mod for YR which reverses the roles of original YR missions so you play as the other side, another project woth a look at!  <br />
 ModDB: <https://www.moddb.com/mods/ra2fm>  <br />
 Discord: <https://discord.gg/tYuP82S>
+
+
+Contributions / Future Uses:
+-
+While the primary purpose of this repository has been achieved, i do intend to maintain this for the foreseeable future. <br />
+In the event you believe i have missed a tool or tutorial, please make an issue and i will sort it when i can. <br />
+If you are able to make a PR and provide all the relevant information yourself, it will save me time as i can simply review and merge, which is much appreciated. <br />
