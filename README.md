@@ -27,12 +27,13 @@ Discord: <https://cdn.discordapp.com/attachments/446580509481369600/839781062468
 PPM       <https://ppmforums.com/download.php?id=72031&sid=5b50cb3c1696d792adb195e4360b46fd> 
 
 ---
-Alternatives:
+Modern Alternatives:
 -
 
 World Altering Editor (Formerly DTA Scenario Editor + Open Source) : <br />
 Author: Rampastring  <br />
-Description: "The World-Altering Editor (WAE)* is an open-source FinalSun and FinalAlert replacement. Originally developed for DTA and in use in the mod for a while, I've started adding features required for full support of TS and RA2 (primarily height support)".  <br />
+Description: "The World-Altering Editor (WAE)* is an open-source FinalSun and FinalAlert replacement. Originally developed for DTA and in use in the mod for a while, Rampastring started adding features required for full support of TS and RA2".  <br />
+As of 4/8/22, it has just had it's first release fr Tiberian Sun, and the only feature it is missing compared to FA2 is voxel rendering support. Otherwise, it is fully functional and with several improvements over the traditional editor.<br />
 Github: <https://github.com/Rampastring/TSMapEditor> <br />
 Introduction video: <https://www.youtube.com/watch?v=jIcr3nCqx7M> <br />
 Discord: <https://discord.gg/k4SVuMm> (Mod Haven Discord --> A channel under Dedicated Projects)  <br />
@@ -70,6 +71,7 @@ Author: Q45 <br />
 Description: A tool to generate tunnels in TS/YR Maps.  <br />
 This allows customisation of coordinates, direction, path, ect <br />
 However, it is .SWF so requires a flash player. <br />
+WARNING: No longer supported as it requires flash, i recommend using WAE's tunnel tools instead. <br />
 PPM: <https://ppmforums.com/topic-37881/ts-ra2-tunnel-drawer/> <br />
 Flash Player (so you can run it): <https://www.adobe.com/support/flashplayer/debug_downloads.html> <br />
 
@@ -113,6 +115,11 @@ Github:: <https://github.com/Starkku/TriggerIndexParamTool> <br />
 Author: vananasun <br />
 Description: A command line tool to manipulate Red Alert 2 Yuri's Revenge maps <br />
 Github:: <https://github.com/vananasun/yr-maptool> <br />
+
+Name: **MISTEST - Map Checker** <br />
+Author: G-E <br />
+Description: "Mission Tester is designed primarily to help troubleshoot mission maps, but is useful for quickly resolving trigger or object placement errors on mutiplayer maps as well. It will warn of errors like objects outside of the map bounds, often caused by resizing maps, it will find errors like missing waypoints for actions, or even non-existent sounds being played. <br />
+PPM: <https://www.ppmforums.com/topic-68090/mistest-a-script-to-test-mission-map-code-and-check-map-objects-for-errors/ <br />
 
 
 ---
