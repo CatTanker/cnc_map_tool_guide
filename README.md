@@ -118,8 +118,8 @@ Github:: <https://github.com/vananasun/yr-maptool> <br />
 
 Name: **MISTEST - Map Checker** <br />
 Author: G-E <br />
-Description: "Mission Tester is designed primarily to help troubleshoot mission maps, but is useful for quickly resolving trigger or object placement errors on mutiplayer maps as well. It will warn of errors like objects outside of the map bounds, often caused by resizing maps, it will find errors like missing waypoints for actions, or even non-existent sounds being played. <br />
-PPM: <https://www.ppmforums.com/topic-68090/mistest-a-script-to-test-mission-map-code-and-check-map-objects-for-errors/ <br />
+Description: "Mission Tester is designed primarily to help troubleshoot mission maps, but is useful for quickly resolving trigger or object placement errors on mutiplayer maps as well. It will warn of errors like objects outside of the map bounds, often caused by resizing maps, it will find errors like missing waypoints for actions, or even non-existent sounds being played." <br />
+PPM: <https://www.ppmforums.com/topic-68090/mistest-a-script-to-test-mission-map-code-and-check-map-objects-for-errors/> <br />
 
 
 ---
