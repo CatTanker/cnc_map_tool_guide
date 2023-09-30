@@ -33,7 +33,7 @@ Modern Alternatives:
 World Altering Editor (Formerly DTA Scenario Editor + Open Source) : <br />
 Author: Rampastring  <br />
 Description: "The World-Altering Editor (WAE)* is an open-source FinalSun and FinalAlert replacement. Originally developed for DTA and in use in the mod for a while, Rampastring started adding features required for full support of TS and RA2".  <br />
-As of 4/8/22, it has just had it's first release fr Tiberian Sun, and the only feature it is missing compared to FA2 is voxel rendering support. Otherwise, it is fully functional and with several improvements over the traditional editor.<br />
+As of 4/8/22, it has just had it's first release for Tiberian Sun, and the only feature it is missing compared to FA2 is voxel rendering support. Otherwise, it is fully functional and with several improvements over the traditional editor.<br />
 Github: <https://github.com/Rampastring/TSMapEditor> <br />
 Introduction video: <https://www.youtube.com/watch?v=jIcr3nCqx7M> <br />
 Discord: <https://discord.gg/k4SVuMm> (Mod Haven Discord --> A channel under Dedicated Projects)  <br />
