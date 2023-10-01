@@ -1,7 +1,7 @@
 This guide gives mostly step-by-step instructions, useful tips and advice on running Yuri's Revenge, the Map Editor and indirectly Tiberian Sun on Linux.
 These guides all assume *you are using the cncnet client, either officially or on a mod*
 
-Bottles Instructions: Intended for usage on the Dotnet 4.5 (?) Client, which YR is currently moving away from and TS still uses. 
+*Bottles Instructions: Intended for usage on the Dotnet 4.5 (?) Client, which YR is currently moving away from and TS still uses. *
 I find bottles seems to give me the most reliable result on my many re-installs, find information about it here: https://usebottles.com and download it to your OS.
 Most guides seem to recommend using Flatpack for the download, which may help if you are experiencing issues, but I have tested on he non-flatpack version and had no further issues
 Create new --> Application
@@ -33,15 +33,16 @@ Doesn't work on the exe in the main folder?
 Go into the /Resources folder and try the 3 client...exes inside there, chances are one will work. In my experience the ogl build is the most reliable.
 
 
-FA2SP with a Dark Theme
+*FA2SP with a Dark Theme*
 A Word of warning: there are a LOT of windows themes out there, i tried a few on my previous install and some seemed to work but most were a little dodgy (Some panels didn't change, some didn't sit nicely, some were too sharp....). You can changethemes using winecfg through the terminal (better yet through a wineprefix)
-
+This *only works* on recent patched Fa2s, using https://github.com/secsome/FA2sp 
+Mentalk Omega 3.3.6, RR 2.2.13 and any mod which has not been updated since 2020 will not have this patch.
 I found this gist (below) which on my system seems to provide a fully functioning dark theme based on Breeze, guidance for usage is included. As i run KDE Plasma this worked fairly well for me.
 Gist:   https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398
 ![Breeze Theme Screenshot](/Assets/breeze_fa2.png)
 
 
-Winetricks instructions: Intended for usage on the Dotnet 7+ client, but should work on the older client. 
+*Winetricks instructions: Intended for usage on the Dotnet 7+ client, but should work on the older client. *
 
 - Install wine (Ideally a recent one, personally i have tested the above on wine-8.14 on Arch Linux), through your package manager.
 - Install winetricks for greater control over individual prefixes (just do it)
@@ -58,7 +59,7 @@ Search for cnc_ddraw, tick the box and select ok to download it.
 
 Alright, you have your prefix set up, now lets use it. Depending on which client(s) you intend to run, do the following:
 
-Dotnet 4.5 Client:
+*Dotnet 4.5 Client:*
 - find your main mod directory, then the resources folder, right click and open in terminal, or find your way there using the <cd directory> command
 - Run <WINEPREFIX=([1] wine client(ogl/dx/xna).exe>
 [1] Means the absolute path to the wineprefix you just made, which can be found from the Browse Files selection in Winetricks and then copying the entire path it provides you in the top of your file explorer into [1]
@@ -69,7 +70,7 @@ Dotnet 4.5 Client:
 ○ → WINEPREFIX="/home/username_goes_here/.local/share/wineprefixes/CnCNet_Winetricks/" wine clientogl
 ```
 
-Dotnet 7+ Client:
+*Dotnet 7+ Client:*
  -Navigate to the main folder of the mod/game, and look for a launcher bash script. Names will vary
 E.G., in RotE, it is REClient.sh in the beta, and i believe CnCNet YR's is YRLauncher.sh (needs to be verified)
 - Try executing it, if nothing happens go into the terminal and type <bash (name of the script)>
@@ -96,9 +97,10 @@ You may still notice some major artefacts/glitches when using the esc menu and r
 The above applies to all of the solutions for playing YR on Linux, assuming you use the cncnet client
 Lutris should be a possible alternative but i do not use it so i can't offer any advice on it, but it should be a similar method to Bottles
 
+*Compatability and Troubleshooting Advice*
 
-Help! My game works fine but upon connecting to cncnet it crashes (Or if cncnet works but connecting to online games crashes instantly)
-Follow these instructions, you may need to modify the path if you are using bottles https://wiki.winehq.org/FAQ#Failed_to_use_ICMP_.28network_ping.29.2C_this_requires_special_permissions
+if your game works fine but upon connecting to cncnet (if your using the dotnet4.5 client, or an immediate desync in the dotnet 7 client) wine crashes, follow these instructions, you may need to modify the path if you are using bottles https://wiki.winehq.org/FAQ#Failed_to_use_ICMP_.28network_ping.29.2C_this_requires_special_permissions
 
 Getting an error complaining about permissions?
-chmod +x All of the exes. For the later client, i found this fixed a permissions issue when i did it on the script [2].sh
+chmod +x All of the exes in the game/mod folder. For the later client, i found this fixed a permissions issue when i did it on the script [2].sh
+Also check you as a non-root user actually have access to the files and folders
