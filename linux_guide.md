@@ -37,7 +37,7 @@ A Word of warning: there are a LOT of windows themes out there, i tried a few on
 
 I found this gist (below) which on my system seems to provide a fully functioning dark theme based on Breeze, guidance for usage is included. As i run KDE Plasma this worked fairly well for me.
 Gist:   https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398
-In Use: https://media.discordapp.net/attachments/842823067109031967/1127673048649191516/image.png?width=1148&height=664
+![Breeze Theme Screenshot](/assets/breeze_fa2.png)
 
 
 Winetricks instructions: Intended for usage on the Dotnet 7+ client, but should work on the older client. 
