@@ -1,4 +1,5 @@
 This guide gives mostly step-by-step instructions, useful tips and advice on running Yuri's Revenge, the Map Editor and indirectly Tiberian Sun on Linux.
+These guides all assume *you are using the cncnet client, either officially or on a mod*
 
 Bottles Instructions: Intended for usage on the Dotnet 4.5 (?) Client, which YR is currently moving away from and TS still uses. 
 I find bottles seems to give me the most reliable result on my many re-installs, find information about it here: https://usebottles.com and download it to your OS.
@@ -43,36 +44,35 @@ Gist:   https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398
 Winetricks instructions: Intended for usage on the Dotnet 7+ client, but should work on the older client. 
 
 - Install wine (Ideally a recent one, personally i have tested the above on wine-8.14 on Arch Linux), through your package manager.
-- Install winetricks for greater control over individual prefixes
+- Install winetricks for greater control over individual prefixes (just do it)
 
-Run winetricks, and you Should have a screen similar to https://media.discordapp.net/attachments/1101919157970284604/1147626796624400426/image.png . While you can complete the next steps globally, i highly recommend making a new wineprefix for CnC, and so will i in this guide
+Run winetricks (`winetricks` in your command line), and you Should have a screen similar to ![Winetricks First Menu](/Assets/winetricks_1.png) .
+While you can complete the next steps globally, i highly recommend making a new wineprefix for CnC, and so I will in this guide
 --> Create new wineprefix
 / 64 Architecture
 / Name it whatever you like, keep it suitable and ideally without spaces
-If you are prompted to install wine mono, do so if you ever intend to run the Dotnet 4.5 client. I did so when i tested for the 7+ client, and i  have had no side effects.
+If you are prompted to install wine mono, do so if you ever intend to run the Dotnet 4.5 client. I did so when i tested this guide on the 7+ dotnet client, and i have had no side effects.
 
 --> Install a windows DLL or component
 Search for cnc_ddraw, tick the box and select ok to download it. 
 
-Alright, you have your prefix set up, now lets use it.
+Alright, you have your prefix set up, now lets use it. Depending on which client(s) you intend to run, do the following:
 
 Dotnet 4.5 Client:
-> find your main mod directory, then the resources folder, right click and open in terminal, or find your way there using the <cd directory> command
-> Run <WINEPREFIX=([1] wine client(ogl/dx/xna).exe>
+- find your main mod directory, then the resources folder, right click and open in terminal, or find your way there using the <cd directory> command
+- Run <WINEPREFIX=([1] wine client(ogl/dx/xna).exe>
 [1] Means the absolute path to the wineprefix you just made, which can be found from the Browse Files selection in Winetricks and then copying the entire path it provides you in the top of your file explorer into [1]
-> hope it works, check the logs in the terminal for details, **but try all 3 exes **
-> 
+- hope it works, check the logs in the terminal for details, **but try all 3 exes **
+- 
 > e.g.:
 ```
 ○ → WINEPREFIX="/home/username_goes_here/.local/share/wineprefixes/CnCNet_Winetricks/" wine clientogl
 ```
 
-
-
 Dotnet 7+ Client:
-> Navigate to the main folder of the mod/game, and look for a launcher bash script. Names will vary
+ -Navigate to the main folder of the mod/game, and look for a launcher bash script. Names will vary
 E.G., in RotE, it is REClient.sh in the beta, and i believe CnCNet YR's is YRLauncher.sh (needs to be verified)
-> Try executing it, if nothing happens go into the terminal and type <bash (name of the script)>
+- Try executing it, if nothing happens go into the terminal and type <bash (name of the script)>
 if you get a message saying something along the lines of dotnet is not understood, you need to install the latest version.
 https://wiki.archlinux.org/title/.NET#Installation
 
@@ -87,6 +87,8 @@ wineconsole Resources/Compatibility/Unix/[2].bat &
 BACK_PID=$!
 wait $BACK_PID
 ```
+Be warned, most mod updaters *Will Override This File* - Back it up to save you confusion later on
+
 
 Try launching the game again, and it should be a bit smoother. 
 You may still notice some major artefacts/glitches when using the esc menu and returning to the game. Go into the client options and try all of the renderers in there, and hopefully (as with windows) one runs like a charm. For me, most tend to work (Default/CnC-DDraw), but TS-DDraw GDI fixes the esc menu breaking and lets me enter/exit between my game and other applications as i please.
