@@ -40,12 +40,14 @@ Go into the /Resources folder and try the 3 client...exes inside there, chances 
 
 **FA2SP with a Dark Theme**
 --
-A Word of warning: there are a LOT of windows themes out there, i tried a few on my previous install and some seemed to work but most were a little dodgy (Some panels didn't change, some didn't sit nicely, some were too sharp....). You can changethemes using winecfg through the terminal (better yet through a wineprefix)
-This *only works* on recent patched Fa2s, using https://github.com/secsome/FA2sp 
-Mentalk Omega 3.3.6, RR 2.2.13 and any mod which has not been updated since 2020 will not have this patch.
-I found this gist (below) which on my system seems to provide a fully functioning dark theme based on Breeze, guidance for usage is included. As i run KDE Plasma this worked fairly well for me.
+A Word of warning: there are a LOT of windows themes out there, i tried a few on my previous install and some seemed to work but most were a little dodgy (Some panels didn't change, some didn't sit nicely, some were too sharp....).
+You can change themes using winecfg through the terminal (better yet through a wineprefix)
+I believe this *only works* on recently patched Fa2s, using https://github.com/secsome/FA2sp, *but i have not tested on older editors* ///CHECK END OF DOCUMENT
+Mental Omega 3.3.6, RR 2.2.13 and any mod which has not been updated since 2020 will not have this patch.
+I found this gist (below) which on my system seems to provide a fully functioning dark theme based on Breeze, guidance for usage is included. As i run KDE Plasma this worked fairly well for me, matching the theme i used.
 Gist:   https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398
 ![Breeze Theme Screenshot](/Assets/breeze_fa2.png)
+I seem to recall https://www.reddit.com/r/linux_gaming/comments/n8hf6v/make_wine_look_like_windows_10/ working as well, but this was a while back and i am unable to confirm so.
 
 
 *Winetricks instructions:* Intended for usage on the Dotnet 7+ client, but should work on the older client.
@@ -54,25 +56,27 @@ Gist:   https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398
 - Install `winetricks` for greater control over individual prefixes (just do it)
 
 Run winetricks (`winetricks` in your command line), and you Should have a screen similar to ![Winetricks First Menu](/Assets/winetricks_1.png) .
-While you can complete the next steps globally, i highly recommend making a new wineprefix for CnC, and so I will in this guide
+While you can complete the next steps globally, i highly recommend making a new wineprefix for CnC, and so I will in this guide.
+
 --> *Create new wineprefix*
 - 64 Architecture
 -  Name it whatever you like, keep it suitable and ideally without spaces
 If you are prompted to install wine mono, do so if you ever intend to run the Dotnet 4.5 client. I did so when i tested this guide on the 7+ dotnet client, and i have had no side effects.
 
 --> *Install a windows DLL or component*
-Search for cnc_ddraw, tick the box and select ok to download it. 
+
+- Search for cnc_ddraw, tick the box and select ok to download it.
 
 Alright, you have your prefix set up, now lets use it. Depending on which client(s) you intend to run, do the following:
 
 
-*Dotnet 4.5 Client:*
+*Dotnet 4.5 Client: Winetricks*
 --
 - find your main mod directory, then the resources folder, right click and open in terminal, or find your way there using the `cd directory` command
-- Run `WINEPREFIX=([1] wine client(ogl/dx/xna).exe`
+- Run `WINEPREFIX([1] wine client(ogl/dx/xna.exe`
 [1] Means the absolute path to the wineprefix you just made, which can be found from the Browse Files selection in Winetricks and then copying the entire path it provides you in the top of your file explorer into [1]
 - hope it works, check the logs in the terminal for details, **but try all 3 exes **
-- 
+
 > e.g.:
 ```
 ○ → WINEPREFIX="/home/username_goes_here/.local/share/wineprefixes/CnCNet_Winetricks/" wine clientogl
@@ -80,7 +84,7 @@ Alright, you have your prefix set up, now lets use it. Depending on which client
 
 
 
-*Dotnet 7+ Client:*
+*Dotnet 7+ Client: Winetricks*
 --
  - Navigate to the main folder of the mod/game, and look for a launcher bash script. Names will vary
 E.G., in RotE, it is REClient.sh in the beta, and i believe CnCNet YR's is YRLauncher.sh (unverified)
