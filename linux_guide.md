@@ -14,16 +14,18 @@ In Settings:
 - Windows Version: Windows 10
 
 Config 1:
--
+--
 *Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise)
+
 - ddraw as a DLL Override *MANUALLY ENTERED*
 
 *Installed Dependencies:*
 - arial32/times32/courie32 (installed by default for applications in bottles)
 - Mono (Wine Mono)
 
--
+
 Config 2:
+--
 *Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise)
 - *ddraw through the cnc-ddraw dependency (**do not manually add** check the next step for details)
 
@@ -47,7 +49,7 @@ Gist:   https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398
 
 
 *Winetricks instructions:* Intended for usage on the Dotnet 7+ client, but should work on the older client.
-
+--
 - Install `wine` (Ideally a recent one, personally i have tested the above on wine-8.14 on Arch Linux), through your package manager.
 - Install `winetricks` for greater control over individual prefixes (just do it)
 
@@ -64,9 +66,8 @@ Search for cnc_ddraw, tick the box and select ok to download it.
 Alright, you have your prefix set up, now lets use it. Depending on which client(s) you intend to run, do the following:
 
 
-
--
 *Dotnet 4.5 Client:*
+--
 - find your main mod directory, then the resources folder, right click and open in terminal, or find your way there using the `cd directory` command
 - Run `WINEPREFIX=([1] wine client(ogl/dx/xna).exe`
 [1] Means the absolute path to the wineprefix you just made, which can be found from the Browse Files selection in Winetricks and then copying the entire path it provides you in the top of your file explorer into [1]
@@ -79,8 +80,8 @@ Alright, you have your prefix set up, now lets use it. Depending on which client
 
 
 
--
 *Dotnet 7+ Client:*
+--
  - Navigate to the main folder of the mod/game, and look for a launcher bash script. Names will vary
 E.G., in RotE, it is REClient.sh in the beta, and i believe CnCNet YR's is YRLauncher.sh (unverified)
 - Try executing it, if nothing happens go into the terminal and type `bash script_name`
