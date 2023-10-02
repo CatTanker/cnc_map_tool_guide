@@ -1,7 +1,7 @@
 This guide gives mostly step-by-step instructions, useful tips and advice on running Yuri's Revenge, the Map Editor and indirectly Tiberian Sun on Linux.
 These guides all assume *you are using the cncnet client, either officially or on a mod*
 --
-**Bottles Instructions: Intended for usage on the Dotnet 4.5 (?) Client, which YR is currently moving away from and TS still uses. **
+Bottles Instructions: Intended for usage on the Dotnet 4.5 (?) Client, which YR is currently moving away from and TS still uses.
 --
 I find bottles seems to give me the most reliable result on my many re-installs, find information about it here: https://usebottles.com and download it to your OS.
 Most guides seem to recommend using Flatpack for the download, which may help if you are experiencing issues, but I have tested on he non-flatpack version and had no further issues
@@ -21,6 +21,7 @@ Config 1:
 *Installed Dependencies:*
 - arial32/times32/courie32 (installed by default for applications in bottles)
 - Mono (Wine Mono)
+
 -
 Config 2:
 *Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise)
@@ -62,6 +63,7 @@ Search for cnc_ddraw, tick the box and select ok to download it.
 
 Alright, you have your prefix set up, now lets use it. Depending on which client(s) you intend to run, do the following:
 
+-
 *Dotnet 4.5 Client:*
 - find your main mod directory, then the resources folder, right click and open in terminal, or find your way there using the `cd directory` command
 - Run `WINEPREFIX=([1] wine client(ogl/dx/xna).exe`
@@ -73,6 +75,7 @@ Alright, you have your prefix set up, now lets use it. Depending on which client
 ○ → WINEPREFIX="/home/username_goes_here/.local/share/wineprefixes/CnCNet_Winetricks/" wine clientogl
 ```
 
+-
 *Dotnet 7+ Client:*
  - Navigate to the main folder of the mod/game, and look for a launcher bash script. Names will vary
 E.G., in RotE, it is REClient.sh in the beta, and i believe CnCNet YR's is YRLauncher.sh (unverified)
