@@ -63,6 +63,8 @@ Search for cnc_ddraw, tick the box and select ok to download it.
 
 Alright, you have your prefix set up, now lets use it. Depending on which client(s) you intend to run, do the following:
 
+
+
 -
 *Dotnet 4.5 Client:*
 - find your main mod directory, then the resources folder, right click and open in terminal, or find your way there using the `cd directory` command
@@ -74,6 +76,8 @@ Alright, you have your prefix set up, now lets use it. Depending on which client
 ```
 ○ → WINEPREFIX="/home/username_goes_here/.local/share/wineprefixes/CnCNet_Winetricks/" wine clientogl
 ```
+
+
 
 -
 *Dotnet 7+ Client:*
