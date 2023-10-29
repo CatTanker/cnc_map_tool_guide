@@ -128,5 +128,6 @@ If your having an issue with a *specific* mod, i advise looking at their discord
 
 
 
-Note: Although i have covered most of the *basics*, I am unable to test and approve everything myself. PArts may not work 100% consistently, and i only have EndeavourOS (Arch) to test on.
+Note: Although i have covered most of the *basics*, I am unable to test and approve everything myself. Parts may not work 100% consistently, and i only have EndeavourOS (Arch) to test on, and i am testing on an old PC meaning that i am unable to test some new possibilities, such as combining vkd3d and cnc-ddraw
 Any support from experienced users to expand this guide, such as tests with vulkan and certain graphical alterations would be greatly appreciated.
+
