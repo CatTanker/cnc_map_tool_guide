@@ -1,4 +1,4 @@
-This guide gives mostly step-by-step instructions, useful tips and advice on running Yuri's Revenge, the Map Editor and indirectly Tiberian Sun on Linux.
+ This guide gives mostly step-by-step instructions, useful tips and advice on running Yuri's Revenge, the Map Editor and indirectly Tiberian Sun on Linux.
 These guides all assume *you are using the cncnet client, either officially or on a mod*
 --
 Bottles Instructions: Intended for usage on the Dotnet 4.5 (?) Client, which YR is currently moving away from and TS still uses.
@@ -105,7 +105,7 @@ wait $BACK_PID
 Be warned, most mod updaters *Will Override This File* - Back it up to save you confusion later on
 
 
-Try launching the game again, and it should be a bit smoother. 
+Try launching the game again, and it should be a bit smoother.
 You may still notice some major artefacts/glitches when using the esc menu and returning to the game. Go into the client options and try all of the renderers in there, and hopefully (as with windows) one runs like a charm. For me, most tend to work (Default/CnC-DDraw), but TS-DDraw GDI fixes the esc menu breaking and lets me enter/exit between my game and other applications as i please.
 
 The above applies to all of the solutions for playing YR on Linux, assuming you use the cncnet client
@@ -131,3 +131,14 @@ If your having an issue with a *specific* mod, i advise looking at their discord
 Note: Although i have covered most of the *basics*, I am unable to test and approve everything myself. Parts may not work 100% consistently, and i only have EndeavourOS (Arch) to test on, and i am testing on an old PC meaning that i am unable to test some new possibilities, such as combining vkd3d and cnc-ddraw.
 Any support from experienced users to expand this guide, such as tests with vulkan and certain graphical alterations would be greatly appreciated.
 
+*External Sources*
+
+I have looked around into other guides for running CnC games on linux. There are quite a mix of methods, some requiring snap, some lutris and some just being general guidelines.<br>
+a generic Linux Gaming post summarising all of the CnC Games <https://www.reddit.com/r/linux_gaming/comments/mtixee/a_linux_users_guide_to_command_conquer/> <br>
+Advice on using CnCnet YR with linux, marginally outdated due to a change in client, but it is a useful reference <https://www.speich.net/articles/en/2021/12/19/how-to-install-the-cncnet-client-on-linux/> <br>
+Snap Package Github for CnCnet YR] - <https://github.com/mmtrt/cncra2yr> <br>
+When looking at Linux tutorials, you will find a lot of outdated sources. This is important because:
+- Wine has improved significantly in the past few years, especially with enhancements from proton due to the steam deck <br>
+- Anything that uses packages can become unmaintained and quickly out of date, or is broken in dependency hell  <br>
+- Linux distributions can change and drop out of favour, or the guide may advise on dependencies that no longer exist E.g. a guide may specify wine 4.5, when 8.xx is the current latest. Generally, use the latest wine where possible. <br>
+- Sadly most of the CnC games are not on steam, but if they are then check <https://www.protondb.com> for how well they run on linux from people's experiences, including computer specs and comments. wineHQ's application databse <https://appdb.winehq.org> is fairly limited, often outdated, but may be worth a check. Same applies to CrossOver <https://www.codeweavers.com/compatibility>   <br>
