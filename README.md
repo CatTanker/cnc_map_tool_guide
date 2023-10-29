@@ -2,8 +2,8 @@ This documentation contains a comprehensive list of tools and resources (listed 
 This github page also contains a growing volume of compatability tips and advice, including guidance on using CnC with Linux , within seperate .md files included in the github hierarchy. 
 
 **Document List**
-Tool Guide - This Document (Main Readme)
-Linux Guide - [linux_guide.md](linux_guide.md)!
+Tool Guide - This Document (Main Readme) <br />
+Linux Guide - [linux_guide.md](linux_guide.md)!<br />
 
 
 **Required Map Editors**
