@@ -3,7 +3,7 @@ This github page also contains a growing volume of compatability tips and advice
 
 **Document List**
 Tool Guide - This Document (Main Readme) <br />
-Linux Guide - [linux_guide.md](linux_guide.md)!<br />
+Linux Guide - [linux_guide.md](linux_guide.md)<br />
 
 
 **Required Map Editors**
