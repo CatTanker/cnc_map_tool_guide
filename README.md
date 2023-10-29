@@ -1,4 +1,11 @@
-A comprehensive list of tools and resources for producing maps for Tiberian Sun and Yuris Revenge, including source locations as well as a brief description
+This documentation contains a comprehensive list of tools and resources (listed below) for producing maps for Tiberian Sun and Yuris Revenge, including source locations as well as a brief description
+This github page also contains a growing volume of compatability tips and advice, including guidance on using CnC with Linux , within seperate .md files included in the github hierarchy. 
+
+**Document List**
+-
+Tool Guide - This Document (Main Readme) <br />
+Linux Guide - [linux_guide.md](linux_guide.md)<br />
+
 
 **Required Map Editors**
 ---
@@ -152,7 +159,7 @@ Chrono Storm       - <https://www.csra2.com> <br />
 
 ---
 
-Noteworthy Projects:
+**Noteworthy Projects:**
 -
 
 MadHQ has remade the RA2 Allied and Soviet Campaigns entirely, designed for the vanilla game 
@@ -171,8 +178,12 @@ ModDB: <https://www.moddb.com/mods/ra2fm>  <br />
 Discord: <https://discord.gg/tYuP82S>
 
 
-Contributions / Future Uses:
+**Contributions / Future Uses:**
 -
 While the primary purpose of this repository has been achieved, i do intend to maintain this for the foreseeable future. <br />
 In the event you believe i have missed a tool or tutorial, please make an issue and i will sort it when i can. <br />
 If you are able to make a PR and provide all the relevant information yourself, it will save me time as i can simply review and merge, which is much appreciated. <br />
+
+I aim to place this on ReadTheDocs to improve access. As usual, any support would be appreciated. 
+
+2023 October - Added a Linux Guide to this repository.
