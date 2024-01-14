@@ -1,41 +1,108 @@
 This guide gives mostly step-by-step instructions, useful tips and advice on running Yuri's Revenge, the Map Editor and indirectly Tiberian Sun on Linux.
 These guides all assume *you are using the cncnet client, either officially or on a mod*
---
-Bottles Instructions: Intended for usage on the Dotnet 4.5 (?) Client, which YR is currently moving away from and TS still uses.
---
-I find bottles seems to give me the most reliable result on my many re-installs, find information about it here: https://usebottles.com and download it to your OS.
-Most guides seem to recommend using Flatpack for the download, which may help if you are experiencing issues, but I have tested on he non-flatpack version and had no further issues
+
+The first step you will need to do is to figure out which client version you are using.
+Most pre-2024 CnCNet clients use the .NET framework. This includes, but is not limited to:
+    - Mental Omega 3.3.6
+    - Rise of the East 3.0.0j
+    - RA20XX
+    - Red Ressurection
+    - C&C Reloaded
+    - Mods forked off [TSClient](https://www.moddb.com/mods/tiberian-sun-client)
+
+According to the build instructions of the cncnet client in 2020:
+```
+The client has 3 builds: Windows (DirectX11), OpenGL and XNA.
+
+The Windows and OpenGL builds rely on .NET Framework 4.5 and MonoGame.
+The client has 3 builds: Windows (DirectX11), OpenGL and XNA.
+
+The Windows and OpenGL builds rely on .NET Framework 4.5 and MonoGame.
+```
+The above lines are where most of my reasoning lies for the dependencies installed.
+
+Despite a later (2023) push towards updating the client to use dotnet7, as of early 2024 these changes are being rolled back after dotnet 7 providing [a conbsiderably worse user experience](https://github.com/CnCNet/xna-cncnet-client/pull/494). Although a major part of this initial push was for better support on Mac / Linux, there were conflicts  with existing methods. This included strange placement of objects inside the client, the fact that the client runs your global wine rather than a dedicated prefix, causing issues such as extremely poor fps, and in some cases an instant desync upon entering a game through linux, but without any issues if entered from the same files on windows.Any advice provided from the dotnet 7 builds is as a result less-well tested and in the future may be kept for legacy support. While there are much fewer mods that use the dotnet 7 client, there may be cases where such support is needed. Example cases include early builds of TS Rubicon, RotE (as of december 2023) internal beta's client, and Project Phantom's internal client.
+
+
+The reason you will often see a ddraw or cnc-ddraw package mentioned as this means the game will use the ddraw supplied by the [client](https://github.com/FunkyFr3sh/cnc-ddraw), which will improve your experience significantly. I *highly recommend* you perform this recommendation.
+
+
+
+# Bottles Instructions
+I find bottles seems to give me the most reliable result on my many re-installs, find information about it [here](https://usebottles.com) and download it to your OS.
+Most guides seem to recommend using Flatpack for the download, which may help if you are experiencing issues, as well as providing some areas such as sandboxing, but I have tested on he non-flatpack version.
+
+
+## Dotnet 4.*
+### OpenGl (ogl) Build
 
 Create new --> Application
 In Settings:
 - Runner: Soda
-- DXVK/VKD3D : Disabled (my system does not support vulkan, but you can probably leave this on enabled)///CHECK END OF DOCUMENT
+- DXVK/VKD3D : Disabled
 - LatencyFleX : Disabled
-- Windows Version: Windows 10
+- Windows Version: Windows 10 (since some builds of phobos and other extensions require Windows 7 or higher)
 
-Config 1:
+#### Config 1: Manually Entered
 --
 *Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise)
 
 - ddraw as a DLL Override *MANUALLY ENTERED*
 
 *Installed Dependencies:*
-- arial32/times32/courie32 (installed by default for applications in bottles)
-- Mono (Wine Mono)
+- arial32/times32/courie32 [By Default]
+- Mono (Wine Mono) [Install Yourself]
 
 
-Config 2:
+#### Config 2: CnC-DDraw dependency
 --
 *Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise)
 - *ddraw through the cnc-ddraw dependency (**do not manually add** check the next step for details)
 
 *Installed Dependencies:*
-- arial32/times32/courie32 (installed by default for applications in bottles)
-- Mono (Wine Mono)
-- THEN install CnC-DDraw as a dependency
+- arial32/times32/courie32 [By Default]
+- Mono (Wine Mono) [Install Yourself]
+- THEN install CnC-DDraw as a dependency [Install Yourself]
 
-Doesn't work on the exe in the main folder?
-Go into the /Resources folder and try the 3 client...exes inside there, chances are one will work. In my experience the ogl build is the most reliable.
+
+After following all of the steps above, enter your bottle, click "Run Excutable", and guide it to your client folder / Resources, and then try "clientogl.exe", and the client should run fine, as well as the game.
+
+
+
+### XNA 4.0 (XNA) Build  TEST ME TOMORROW PLS PLS PLS
+
+Create new --> Application
+In Settings:
+- Runner: Soda
+- DXVK/VKD3D : Disabled
+- LatencyFleX : Disabled
+- Windows Version: Windows 10 (since some builds of phobos and other extensions require Windows 7 or higher)
+
+#### Config 1: Manually Entered
+--
+*Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise)
+
+- ddraw as a DLL Override *MANUALLY ENTERED*
+
+*Installed Dependencies:*
+- arial32/times32/courie32 [By Default]
+- Mono (Wine Mono) [Install Yourself]
+
+
+#### Config 2: CnC-DDraw dependency
+--
+*Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise)
+- *ddraw through the cnc-ddraw dependency (**do not manually add** check the next step for details)
+
+*Installed Dependencies:*
+- arial32/times32/courie32 [By Default]
+- Mono (Wine Mono) [Install Yourself]
+- THEN install CnC-DDraw as a dependency [Install Yourself]
+
+
+After following all of the steps above, enter your bottle, click "Run Excutable", and guide it to your client folder / Resources, and then try "clientogl.exe", and the client should run fine, as well as the game.
+
+
 
 
 **FA2SP with a Dark Theme**
