@@ -1,0 +1,8 @@
+site_name: CnC Tools and Resources
+site_url: https://example.com/
+nav:
+  - Home: index.md
+  - About: about.md
+  - Tools: tools.md
+  - Linux: linux.md
+theme: readthedocs
