@@ -4,5 +4,6 @@ nav:
   - Home: index.md
   - About: about.md
   - Tools: tools.md
+  - Map Resources: resources.md
   - Linux: linux.md
 theme: readthedocs
