@@ -1,0 +1,10 @@
+site_name: CnC Tools and Resources
+site_description: A series of resources for mappers and linux users for WW 2.5D games
+site_url: https://cattanker.github.io/CnC-Resource-Docs/
+repo_url: https://github.com/CatTanker/cnc_map_tool_guide
+nav:
+  - Home: home.md
+  - Tools: tools.md
+  - Map Resources: resources.md
+  - Linux: linux.md
+theme: readthedocs

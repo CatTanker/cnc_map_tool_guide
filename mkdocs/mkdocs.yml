@@ -1,8 +1,0 @@
-site_name: CnC Tools and Resources
-site_url: https://CnC-Resource-Docs.com/
-nav:
-  - Home: home.md
-  - Tools: tools.md
-  - Map Resources: resources.md
-  - Linux: linux.md
-theme: readthedocs
