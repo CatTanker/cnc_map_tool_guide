@@ -13,14 +13,11 @@ After suggestions to move to ReadTheDocs i finally took on this task in December
 I hope you find the spectrum of information available to be useful.
 
 
-
-
 ## Credits and Contributions
 While this is a solo project by myself (CatTanker), i am always up for collaboration if anyone wisahes to expand and contribute to this guide.
-I also need to provide a special thanks to:
-- Kerbiter, for technical support and suggestions.
-- Doomguy, moral support.
-- Lylak and AlliedG for suggesting that i improve the guide when it was in my discord server.
-- The developers of tools and resources linked, who without this project would be pointless
-
+I also need to provide a special thanks to: <br>
+- Kerbiter, for technical support and suggestions. <br>
+- Doomguy, moral support. <br>
+- Lylak and AlliedG for suggesting that i improve the guide when it was in my discord server. <br>
+- The developers of tools and resources linked, who without this project would be pointless <br>
 If you wish to have any input, you can reach me in most major CnC discords, and you can head to [this project's github page](https://github.com/CatTanker/cnc_map_tool_guide)
