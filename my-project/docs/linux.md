@@ -22,7 +22,7 @@ The XNA build relies on .NET Framework 4.0 and Microsoft's XNA Framework 4.0 Ref
 ```
 The above lines are where most of my reasoning lies for the dependencies installed.
 
-Despite a later (2023) push towards updating the client to use dotnet7, as of early 2024 these changes are being rolled back after dotnet 7 providing [a conbsiderably worse user experience](https://github.com/CnCNet/xna-cncnet-client/pull/494). Although a major part of this initial push was for better support on Mac / Linux, there were conflicts  with existing methods. This included strange placement of objects inside the client, the fact that the client runs your global wine rather than a dedicated prefix, causing issues such as extremely poor fps, and in some cases an instant desync upon entering a game through linux, but without any issues if entered from the same files on windows.Any advice provided from the dotnet 7 builds is as a result less-well tested and in the future may be kept for legacy support. While there are much fewer mods that use the dotnet 7 client, there may be cases where such support is needed. Example cases include early builds of TS Rubicon, RotE (as of december 2023) internal beta's client, and Project Phantom's internal client.
+Despite a later (2023) push towards updating the client to use dotnet7, as of early 2024 these changes are being rolled back due to dotnet 7 providing [a conbsiderably worse user experience](https://github.com/CnCNet/xna-cncnet-client/pull/494). Although a major part of this initial push was for better support on Mac / Linux, the vast majority of the userbase is on windows, and so the profits of this are limited. I also noticed that dotnet 7 clients tended to have a lot of bugs when run on linux, but looked/worked fine on windows,included strange placements of objects inside the client and no maps or scenarios even being listed in the client. The client also has a few minor oversights, such as the fact that the client runs your global wine rather than a dedicated prefix, causing issues such as extremely poor fps for several users, and in some cases an instant desync upon entering a game through linux, but without any issues if entered from the same files on windows. Any advice provided from the dotnet 7 builds is as a result less-well tested and in the future may be kept for legacy support. While there are much fewer mods that use the dotnet 7 client, there may be cases where such support is needed. Example cases include early builds of TS Rubicon, Rote's Beta (as of january 2024), and Project Phantom's client.
 
 
 The reason you will often see a ddraw or cnc-ddraw package mentioned as this means the game will use the ddraw supplied by the [client](https://github.com/FunkyFr3sh/cnc-ddraw), which will improve your experience significantly. I *highly recommend* you perform this recommendation.
@@ -70,24 +70,11 @@ After following all of the steps above, enter your bottle, click "Run Excutable"
 
 ## Winetricks Instructions
 
-[Winetricks](https://wiki.archlinux.org/title/wine#WINEPREFIX) is another method we can use to run TS and YR through cncnet. While it is possible to perform all of this using wine, it is not recommended.
+[Winetricks](https://wiki.archlinux.org/title/wine#WINEPREFIX) is another method we can use to run TS and YR through cncnet. While it is possible to perform all of this using wine only, it is not recommended and will require a few extra steps and alterations.
 
-- Install `wine` (Ideally a recent one, personally i have tested the above on wine-8.14 on Arch Linux), through your package manager.
-- Install `winetricks` for greater control over individual prefixes (just do it)
+- Install `wine` (Ideally a recent one, personally i have tested the above on wine-8.14 on Arch Linux), through your package manager. <br>
+- Install `winetricks` for greater control over individual prefixes (just do it)<br>
 
-Run winetricks (`winetricks` in your command line), and you Should have a screen similar to ![Winetricks First Menu](/Assets/winetricks_1.png) .
-While you can complete the next steps globally, i highly recommend making a new wineprefix for CnC, and so I will in this guide.
-
---> *Create new wineprefix* <br>
-- 64 Architecture <br>
--  Name it whatever you like, keep it suitable and ideally without spaces <br>
-If you are prompted to install wine mono, *do so*.
-
---> *Install a windows DLL or component*
-
-- Search for cnc_ddraw, tick the box and select ok to download it.
-
-Alright, you have your prefix set up, now lets use it. Depending on which client(s) you intend to run, do the following:
 
 
 ### Dotnet 4.* Clients + OpenGl (ogl) Build
@@ -125,7 +112,7 @@ WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/cncnet_4_X_d
 Run this inside the terminal and a basic GUI will open up. Select "Select Default Wineprefix", and at the top of the GUI it should have a path that matches the WINEPREFIX= line.
 Scroll down to find the "Run Arbitary Excutable" option. Select it and click ok, then navigate to your client's clientogl.exe excutable, run it and it should open fine.
 
-### Dotnet 7+ Client: Winetricks
+### Dotnet 7+ Client: Native
 #### Running it natively
 
 First of all, make sure you have the [dotnet runtime](https://dotnet.microsoft.com/en-us/download/dotnet/7.0), either from microsoft directly or downloaded through your [Distribution](https://wiki.archlinux.org/title/.NET#Installation)
@@ -151,15 +138,13 @@ if you notice this, first of all make a new prefix which just contains the ddraw
 WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/only_ddraw_override" winecfg
 ```
 This should take a moment and then open wine configuration. Once this opens, you need to head to the Libraries tab and write `ddraw` into the entrybox below "New Override for library", then click add, apply, and then ok.
-
-
-If you go into the Resources/Compatability/Unix folder of the game/mod, there should be a gamemd.sh script or something similar. Edit this with a text editor of your choosing so that it matches the text below.
+You then need to go into the Resources/Compatability/Unix folder of the game/mod, there should be a gamemd.sh script or something similar. Edit this with a text editor of your choosing so that it matches the text below.
 ```
 #!/bin/sh
 
 export WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/only_ddraw_override
 
-wineconsole Resources/Compatibility/Unix/[2].bat &
+wineconsole Resources/Compatibility/Unix/gamemd.bat & <-- this line should pre-exist and you should therefore not need to modify it, but the .bat file name may differ.
 BACK_PID=$!
 wait $BACK_PID
 ```
@@ -167,52 +152,86 @@ Be warned, most mod updaters *Will Override This File* - Back it up to save you 
 
 
 Try launching the game again, and it should be a bit smoother. 
-You may still notice some major artefacts/glitches when using the esc menu and returning to the game. Go into the client options and try all of the renderers in there, and hopefully (as with windows) one runs like a charm. For me, most tend to work (Default/CnC-DDraw), but TS-DDraw GDI fixes the esc menu breaking and lets me enter/exit between my game and other applications as i please.
+You may still notice some major artefacts/glitches when using the esc menu and returning to the game. Go into the client options and try all of the renderers in there, and hopefully (as with windows) one runs like a charm. For me, most tend to work (Default/CnC-DDraw), but TS-DDraw GDI fixes the esc menu breaking and lets me enter/exit between my game and other applications as I please.
 
-The above applies to all of the solutions for playing YR on Linux, assuming you use the cncnet client
-Lutris should be a possible alternative but i do not use it so i can't offer any advice on it, but it should be a similar method to Bottles
 
-## General Compatability and Troubleshooting Advice*
+## General Compatability and Troubleshooting Advice
 ### Connection Issues
-if your game works fine but upon connecting to cncnet (if your using the dotnet4.5 client, or an immediate desync in the dotnet 7 client) wine crashes, follow these instructions, you may need to modify the path if you are using bottles https://wiki.winehq.org/FAQ#Failed_to_use_ICMP_.28network_ping.29.2C_this_requires_special_permissions
+if your game works fine in skirmish but upon connecting to cncnet or upon entering an online match you either can't connect or get a desync, follow these [instructions](https://wiki.winehq.org/FAQ#Failed_to_use_ICMP_.28network_ping.29.2C_this_requires_special_permissions). Also check your ports / firewall allows you to send/recieve packets.
 ### Permission Errors
 Getting an error complaining about permissions?
-chmod +x All of the exes in the game/mod folder. For the later client, i found this fixed a permissions issue when i did it on the script [2].sh
+[chmod +x](https://wiki.archlinux.org/title/File_permissions_and_attributes) All of the exes in the game/mod folder. For the later client, i found this fixed a permissions issue on the dotnet 7 client.
 Also check you as a non-root user actually have access to the files and folders
 
-if you get an error message, especially while attempting to run the dotnet7 client (specifically the client, not the game), complaining something similar to "dotnet not a known command" or "dotnet unrecognised script", then you *need* to install dotnet 7. Check https://wiki.archlinux.org/title/.NET#Installation for further details
+**Do Not** run wine as root however, this will cause more consequences than and fix nothing. Administrator-related fixes tend to be as a result of permissions being incorrect. make sure to open the mod or game's folder and check everything has both read and write permissions, and make sure you apply any fixes to subfolders and subfiles too.
 
-As a general word of advice, if there is a known and trusted fix for x issue in y location, then it's alternative will likely work in linux
-*Do Not* run wine as root however, this will cause more consequences than it will ever fix. Administrator-related fixes tend to be as a result of permissions being incorrect. make sure to open the mod or game's folder and check everything has both read and write permissions, and make sure you apply any fixes to subfolders and subfiles too. Also check the chmod fix.
-
-If your having an issue with a *specific* mod, i advise looking at their discord and asking for help there, just don't ask in another mod's support channel.
+### Dotnet Not Found
+if you get an error message, especially while attempting to run the dotnet7 client (specifically the client, not the game), complaining something similar to "dotnet not a known command" or "dotnet unrecognised script", then you *need* to install dotnet 7. Check [Arch Wiki](https://wiki.archlinux.org/title/.NET#Installation) for further details.
 
 
-
-Note: Although i have covered most of the *basics*, I am unable to test and approve everything myself. Parts may not work 100% consistently, and i only have EndeavourOS (Arch) to test on, and i am testing on an old PC meaning that i am unable to test some new possibilities, such as combining vkd3d and cnc-ddraw.
-Any support from experienced users to expand this guide, such as tests with vulkan and certain graphical alterations would be greatly appreciated.
-
-
-
-
-Theory based methods tried:
-XNA using dotnet 4.0/4.5, and xna4.0 depdendecy. Always returned an error on the xna build
-also tried with mono
-ultimately redundant, use ogl instead
+### General Suppor
+As a general word of advice, if there is a known and trusted fix for an issue in a formal location, then it's alternative will likely work in linux.
+If your having an issue with a **specific** mod, i advise looking at their discord and asking for help there, just don't ask in another mod's support channel.
+[Mental Omega's Discord](https://discord.gg/KpJzhWY) has a Support Solutions FAQ, as well as an active support channel, so if you are struggling to run MO then i recommend seeking help there.
+[CnCNet also has a FAQ](https://forums.cncnet.org/forum/87-faqs/) webpage that you may find useful.
 
 
-**FA2SP with a Dark Theme**
+### Renderer Advice
+Most cncnet clients off only one build of CnC-DDraw, and often limited builds of other renderers such as TS-DDraw. If you want to test your renderer options thoroughly, check your game's main folder for a file called `ddraw.ini`.
+Open it through a text editor, and look for a tag called `Renderer=`
+This is likely set to Auto, but i recommend manually changing this for each option on CnC-DDraw and TS-DDraw.
+```
+; Select the renderer, opengl, gdi, auto. Default = auto = if OpenGL fails automatically use GDI
+renderer=auto
+```
+NOTE: I seem to recall a third option of dx, requires verification.
+
+
+## Final Alert 2 (and FS)
+Linux provides several new opportunities for people using FA2(SP) and FS(SP)
+The map editor can be run straight out of wine / bottles without any dependencies needed.
+### FA2SP with a Dark Theme
 --
-A Word of warning: there are a LOT of windows themes out there, i tried a few on my previous install and some seemed to work but most were a little dodgy (Some panels didn't change, some didn't sit nicely, some were too sharp....).
-You can change themes using winecfg through the terminal (better yet through a wineprefix)
-I believe this *only works* on recently patched Fa2s, using https://github.com/secsome/FA2sp, *but i have not tested on older editors* ///CHECK END OF DOCUMENT
-Mental Omega 3.3.6, RR 2.2.13 and any mod which has not been updated since 2020 will not have this patch.
-I found this gist (below) which on my system seems to provide a fully functioning dark theme based on Breeze, guidance for usage is included. As i run KDE Plasma this worked fairly well for me, matching the theme i used.
-Gist:   https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398
+A Word of warning: there are a LOT of windows themes out there, i tried a few on my previous install and some seemed to work but most were a little dodgy (Some panels didn't change, some didn't sit nicely, some were too sharp....).<br>
+You can change themes using winecfg through the terminal (better yet through a wineprefix)<br>
+```
+WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/map_editor" winecfg
+```
+I believe this *only works* on recently [patched Fa2s](https://github.com/secsome/FA2sp].
+Mental Omega 3.3.6, RR 2.2.13 and any mod which has not been updated since 2020 do not have this patch, and so you will need to add it yourself if you want a dark theme.<br>
+I found this [gist](https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398) which on my system seems to provide a fully functioning dark theme based on Breeze, guidance for usage is included. As i run KDE Plasma this worked fairly well for me, matching the theme i used.<br>
 ![Breeze Theme Screenshot](/Assets/breeze_fa2.png)
-I seem to recall https://www.reddit.com/r/linux_gaming/comments/n8hf6v/make_wine_look_like_windows_10/ working as well, but this was a while back and i am unable to confirm so.
+Note that the missing + icons to the left are a result of running it through my system's wine, but if you use [Bottles](https://usebottles.com) the glitch no longer occurs.
 
-full terminal
-env WINEPREFIX="/prefixes/cncnet_dotnet4_X_ogl/" wineboot -u
-env WINEPREFIX="/prefixes/cncnet_dotnet4_X_ogl/" winetricks cnc_ddraw
+I seem to recall [this](https://www.reddit.com/r/linux_gaming/comments/n8hf6v/make_wine_look_like_windows_10/) working as well, providing a more modern light theme option. Sadly this was a while back and i am unable to confirm so. The script also downloads off discord rather than a formal file source, and given discord's proposed changes to stop external download links, this may need to be mirrored.
+### Multi-Monitor Support
+While i am unsure if this is imply an original bug in FA2, or as a result of patches, but the application simply cannot be stretched between two screens.
+This may require some adjustment
 
+```
+WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/map_editor" winecfg
+```
+This will take a moment and open wine configuration. head to `Graphics` and click emulate a virtual desktop. Make sure the size is decent, you can move the virtual desktop around like a window, but make sure it does not have a length/width too large or you may have clipping issues, such as the screenshopt above where the bottom banner is completely cut off.
+You then run the map editor from this wineprefix like as I recommended in the Winetricks section. Alternatively you can use bottles to do the same.
+
+![Multiple-Monitors](/Assets/multi_monitor_fa2.png)
+## External Sources and Notes
+
+I have looked around into other guides for running CnC games on linux. There are quite a mix of methods, some requiring snap, some lutris and some just being general guidelines.<br>
+
+A generic Linux Gaming post summarising all of the CnC Games <https://www.reddit.com/r/linux_gaming/comments/mtixee/a_linux_users_guide_to_command_conquer/> <br>
+Advice on using CnCnet YR with linux, marginally outdated due to a change in client, but it is a useful reference <https://www.speich.net/articles/en/2021/12/19/how-to-install-the-cncnet-client-on-linux/> <br>
+Snap Package Github for CnCnet YR] - <https://github.com/mmtrt/cncra2yr> <br>
+When looking at Linux tutorials, you will find a lot of outdated sources. This is important because:<br>
+- Wine has improved significantly in the past few years, especially with enhancements from proton due to the steam deck <br>
+- Anything that uses packages can become unmaintained and quickly out of date, or is broken in dependency hell  <br>
+- Linux distributions can change and drop out of favour, or the guide may advise on dependencies that no longer exist E.g. a guide may specify wine 4.5, when 8.xx is the current latest. Generally, use the latest wine where possible. <br>
+- Sadly most of the CnC games are not on steam, but if they are then check <https://www.protondb.com> for how well they run on linux from people's experiences, including computer specs and comments. wineHQ's application databse <https://appdb.winehq.org> is fairly limited, often outdated, but may be worth a check. Same applies to CrossOver <https://www.codeweavers.com/compatibility>   <br>
+
+In theory, running the client and game through lutris is an option, however i have heard people who have tried this have noticed the game always instantly desyncs
+
+
+## Next Steps
+Although i have covered most of the *basics*, I am unable to test and approve everything myself. Parts may not work 100% consistently, and i only have EndeavourOS (Arch) to test on, and i am testing on an 13 y/o Desktop PC. This means that i am unable to test some new possibilities, such as combining vkd3d and cnc-ddraw.<br>
+Any support from experienced users to expand this guide, such as tests with vulkan and certain graphical alterations would be greatly appreciated.
+Contributions to this [repository](https://github.com/CatTanker/cnc_map_tool_guide) for any fixes and new methods or scripts would be greatly appreciated.

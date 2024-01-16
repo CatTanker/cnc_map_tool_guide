@@ -1,5 +1,5 @@
 
-# Sections
+# Map Resources
 
 ## Map Tutorials:
 

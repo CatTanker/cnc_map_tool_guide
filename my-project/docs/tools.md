@@ -1,6 +1,4 @@
 # Tools
-This documentation contains a comprehensive list of tools and resources (listed below) for producing maps for Tiberian Sun and Yuris Revenge, including source locations as well as a brief description
-This github page also contains a growing volume of compatability tips and advice, including guidance on using CnC with Linux , within seperate .md files included in the github hierarchy. 
 ## Required Map Editors
 
 ### [FA2] Final Alert 2:
