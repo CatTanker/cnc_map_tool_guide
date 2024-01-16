@@ -139,9 +139,10 @@ Description: A tool to resize maps, unlike the map editor this also moves smudge
 | Forum Thread | [PPM - Forum](https://ppmforums.com/topic55391/mapresize/) |
 | Source Code| [Github - Main Page (https://github.com/E1Elite/MapResize) |
 
- **Final Sun Toolkit <br />
+### Final Sun Toolkit <br />
 Author: Holland (and various other authors for the tools) <br />
 Description: Software which contains multiple tools with it, as well as other optimisations <br />
+
 | Topic | Source + Link |
 | ------------ | ------------- |
 | Forum Thread | [PPM - Forum](https://ppmforums.com/topic48112/afinalsunstandalonewithcncmodsandtoolkit/) |
@@ -149,6 +150,7 @@ Description: Software which contains multiple tools with it, as well as other op
 ### Map Rename Tool <br />
 Author: Snark <br />
 Description: This program will convert your .map file names to the map name (all credits to @Snark ). It's useful for organizing the maps that you download inside the cncnet client that are given a random file name, and means you can tell which map is which <br />
+
 | Topic | Source + Link |
 | ------------ | ------------- |
 | Direct Download | [Google Drive](https://drive.google.com/file/d/1IVkd7O1uWMVXdEi2BFbULCHilAHTGXU/view?usp=sharing) |
@@ -164,6 +166,7 @@ Description: A simple GUI program for adjusting numerical index values used as p
 ### Map Tool <br />
 Author: vananasun <br />
 Description: A command line tool to manipulate Red Alert 2 Yuri's Revenge maps <br />
+
 | Topic | Source + Link |
 | ------------ | ------------- |
 | Source Code | [Github - Main Page]](https://github.com/vananasun/yrmaptoo) |
@@ -171,6 +174,7 @@ Description: A command line tool to manipulate Red Alert 2 Yuri's Revenge maps <
 ### MISTEST  Map Checker <br />
 Author: GE <br />
 Description: "Mission Tester is designed primarily to help troubleshoot mission maps, but is useful for quickly resolving trigger or object placement errors on mutiplayer maps as well. It will warn of errors like objects outside of the map bounds, often caused by resizing maps, it will find errors like missing waypoints for actions, or even nonexistent sounds being played." <br />
+
 | Topic | Source + Link |
 | ------------ | ------------- |
 | Forum Thread | [PPM - Forum](https://www.ppmforums.com/topic-68090/) |
