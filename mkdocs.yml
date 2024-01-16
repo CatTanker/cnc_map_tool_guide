@@ -1,3 +1,18 @@
+theme:
+  name: readthedocs
+  highlightjs: true
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        # See: https://mkdocstrings.github.io/python/usage/
+        python:
+          options:
+            docstring_style: sphinx
+markdown_extensions:
+  - markdown_include.include:
+      base_path: .
+  - admonition
 site_name: CnC Tools and Resources
 site_description: A series of resources for mappers and linux users for WW 2.5D games
 site_url: https://cattanker.github.io/CnC-Resource-Docs/
@@ -7,4 +22,3 @@ nav:
   - Tools: tools.md
   - Map Resources: resources.md
   - Linux: linux.md
-theme: readthedocs
