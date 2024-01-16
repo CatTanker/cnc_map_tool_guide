@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://cattanker.github.io/CnC-Resource-Docs/linux/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Linux - CnC Tools and Resources</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Linux";
+        var mkdocs_page_input_path = "linux.md";
+        var mkdocs_page_url = "/CnC-Resource-Docs/linux/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> CnC Tools and Resources
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../home/">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tools/">Tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../resources/">Map Resources</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Linux</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bottles-instructions">Bottles Instructions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#dotnet-4-clients-opengl-ogl-build">Dotnet 4.* Clients + OpenGl (ogl) Build</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#config-1-manually-entered">Config 1: Manually Entered</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#config-2-cnc-ddraw-dependency">Config 2: CnC-DDraw dependency</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#winetricks-instructions">Winetricks Instructions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#dotnet-4-clients-opengl-ogl-build_1">Dotnet 4.* Clients + OpenGl (ogl) Build</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#running-through-your-prefix-completely-in-the-terminal">Running through your prefix completely in the terminal</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#running-through-your-prefix-completely-in-the-terminal_1">Running through your prefix completely in the terminal</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dotnet-7-client-native">Dotnet 7+ Client: Native</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#running-it-natively">Running it natively</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#game-compatability">Game Compatability</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#general-compatability-and-troubleshooting-advice">General Compatability and Troubleshooting Advice</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#connection-issues">Connection Issues</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#permission-errors">Permission Errors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dotnet-not-found">Dotnet Not Found</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#general-suppor">General Suppor</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#renderer-advice">Renderer Advice</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#final-alert-2-and-fs">Final Alert 2 (and FS)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#fa2sp-with-a-dark-theme">FA2SP with a Dark Theme</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#multi-monitor-support">Multi-Monitor Support</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#external-sources-and-notes">External Sources and Notes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#next-steps">Next Steps</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">CnC Tools and Resources</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Linux</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/CatTanker/cnc_map_tool_guide/edit/master/docs/linux.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="linux">Linux</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This guide gives mostly step-by-step instructions, useful tips and advice on running Yuri's Revenge, the Map Editor and indirectly Tiberian Sun on Linux.
+These guides all assume <em>you are using the cncnet client, either officially or on a mod</em></p>
+<p>The first step you will need to do is to figure out which client version you are using.
+Most pre-2024 CnCNet clients use the .NET framework. This includes, but is not limited to:<br>
+    - Mental Omega 3.3.6 <br>
+    - Rise of the East 3.0.0j <br>
+    - RA20XX <br>
+    - Red Ressurection <br>
+    - C&amp;C Reloaded <br>
+    - Mods forked off <a href="https://www.moddb.com/mods/tiberian-sun-client">TSClient</a> <br></p>
+<p>According to the build instructions of the cncnet client in 2020:</p>
+<pre><code>The client has 3 builds: Windows (DirectX11), OpenGL and XNA.
+
+The Windows and OpenGL builds rely on .NET Framework 4.5 and MonoGame.
+
+The XNA build relies on .NET Framework 4.0 and Microsoft's XNA Framework 4.0 Refresh.
+</code></pre>
+<p>The above lines are where most of my reasoning lies for the dependencies installed.</p>
+<p>Despite a later (2023) push towards updating the client to use dotnet7, as of early 2024 these changes are being rolled back due to dotnet 7 providing <a href="https://github.com/CnCNet/xna-cncnet-client/pull/494">a conbsiderably worse user experience</a>. Although a major part of this initial push was for better support on Mac / Linux, the vast majority of the userbase is on windows, and so the profits of this are limited. I also noticed that dotnet 7 clients tended to have a lot of bugs when run on linux, but looked/worked fine on windows,included strange placements of objects inside the client and no maps or scenarios even being listed in the client. The client also has a few minor oversights, such as the fact that the client runs your global wine rather than a dedicated prefix, causing issues such as extremely poor fps for several users, and in some cases an instant desync upon entering a game through linux, but without any issues if entered from the same files on windows. Any advice provided from the dotnet 7 builds is as a result less-well tested and in the future may be kept for legacy support. While there are much fewer mods that use the dotnet 7 client, there may be cases where such support is needed. Example cases include early builds of TS Rubicon, Rote's Beta (as of january 2024), and Project Phantom's client.</p>
+<p>The reason you will often see a ddraw or cnc-ddraw package mentioned as this means the game will use the ddraw supplied by the <a href="https://github.com/FunkyFr3sh/cnc-ddraw">client</a>, which will improve your experience significantly. I <em>highly recommend</em> you perform this recommendation.</p>
+<h2 id="bottles-instructions">Bottles Instructions</h2>
+<p>I find bottles seems to give me the most reliable result on my many re-installs, find information about it <a href="https://usebottles.com">here</a> and download it to your OS.
+Most guides seem to recommend using Flatpack for the download, which may help if you are experiencing issues, as well as providing some areas such as sandboxing, but I have tested on he non-flatpack version.</p>
+<h3 id="dotnet-4-clients-opengl-ogl-build">Dotnet 4.* Clients + OpenGl (ogl) Build</h3>
+<p>Create new --&gt; Application <br>
+In Settings: <br>
+- Runner: Soda <br>
+- DXVK/VKD3D : Disabled <br>
+- LatencyFleX : Disabled <br>
+- Windows Version: Windows 10 (since some builds of phobos and other extensions require Windows 7 or higher) <br></p>
+<h4 id="config-1-manually-entered">Config 1: Manually Entered</h4>
+<p>--
+<em>Dll Overrides:</em>  (Assume :Native, then Builtin, unless specified otherwise)</p>
+<ul>
+<li>ddraw as a DLL Override <em>MANUALLY ENTERED</em> <br></li>
+</ul>
+<p><em>Installed Dependencies:</em> <br>
+- arial32/times32/courie32 [By Default] <br>
+- Mono (Wine Mono) [Install Yourself] <br></p>
+<h4 id="config-2-cnc-ddraw-dependency">Config 2: CnC-DDraw dependency</h4>
+<p><em>Dll Overrides:</em>  (Assume :Native, then Builtin, unless specified otherwise)
+- <em>ddraw through the cnc-ddraw dependency (</em><em>do not manually add</em>* check the next step for details)</p>
+<p><em>Installed Dependencies:</em>
+- arial32/times32/courie32 [By Default]
+- Mono (Wine Mono) [Install Yourself]
+- THEN install CnC-DDraw as a dependency [Install Yourself]</p>
+<p>After following all of the steps above, enter your bottle, click "Run Excutable", and guide it to your client folder / Resources, and then try "clientogl.exe", and the client should run fine, as well as the game. In some cases the xna client also seems to work, but try the ogl build first.</p>
+<h2 id="winetricks-instructions">Winetricks Instructions</h2>
+<p><a href="https://wiki.archlinux.org/title/wine#WINEPREFIX">Winetricks</a> is another method we can use to run TS and YR through cncnet. While it is possible to perform all of this using wine only, it is not recommended and will require a few extra steps and alterations.</p>
+<ul>
+<li>Install <code>wine</code> (Ideally a recent one, personally i have tested the above on wine-8.14 on Arch Linux), through your package manager. <br></li>
+<li>Install <code>winetricks</code> for greater control over individual prefixes (just do it)<br></li>
+</ul>
+<h3 id="dotnet-4-clients-opengl-ogl-build_1">Dotnet 4.* Clients + OpenGl (ogl) Build</h3>
+<p>After installing relevant dependencies, open up a command line and put in</p>
+<pre><code>WINEPREFIX=&quot;/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/cncnet_4_X_ddraw&quot; winetricks cnc_ddraw
+</code></pre>
+<p>The next step is to see if wine-mono is installed or not. Run</p>
+<pre><code>WINEPREFIX=&quot;/home/main-i5-user/.local/share/wineprefixes/cncnet_4_X_ddraw&quot; wine uninstaller
+</code></pre>
+<p>If you see Wine Mono Runtime &amp; Wine Mono Windows Support, you have wine-mono installed and you should be safely able to move on to running the application (skip to the next section)</p>
+<p>If you do not have Wine Mono Runtime &amp; Wine Mono Windows Support listed, you can either install <a href="https://wiki.winehq.org/Mono">wine mono</a>, which i recommend doing through your distribution's package manager, <em>or</em> you can run:</p>
+<pre><code>WINEPREFIX=&quot;/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/cncnet_4_X_ddraw&quot; winetricks dotnet48
+</code></pre>
+<p>Okay, you have your prefix set up. There are several ways you can how run your exe. Both methods require some terminal usage.</p>
+<h4 id="running-through-your-prefix-completely-in-the-terminal">Running through your prefix completely in the terminal</h4>
+<pre><code>WINEPREFIX=&quot;/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/cncnet_4_X_ddraw&quot; wine &quot;Absolute path to your client's /.... /resources/clientogl.exe&quot;
+</code></pre>
+<p>You can navigate to your mod's resources folder through a file explorer, right click to find "Open Terminal Here", and then simply use the line above but with clientogl.exe only rather than the entire absolute path.</p>
+<h4 id="running-through-your-prefix-completely-in-the-terminal_1">Running through your prefix completely in the terminal</h4>
+<pre><code>WINEPREFIX=&quot;/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/cncnet_4_X_ddraw&quot; winetricks
+</code></pre>
+<p>Run this inside the terminal and a basic GUI will open up. Select "Select Default Wineprefix", and at the top of the GUI it should have a path that matches the WINEPREFIX= line.
+Scroll down to find the "Run Arbitary Excutable" option. Select it and click ok, then navigate to your client's clientogl.exe excutable, run it and it should open fine.</p>
+<h3 id="dotnet-7-client-native">Dotnet 7+ Client: Native</h3>
+<h4 id="running-it-natively">Running it natively</h4>
+<p>First of all, make sure you have the <a href="https://dotnet.microsoft.com/en-us/download/dotnet/7.0">dotnet runtime</a>, either from microsoft directly or downloaded through your <a href="https://wiki.archlinux.org/title/.NET#Installation">Distribution</a>
+The Dotnet7 Client should be able to run natively with linux, only using wine for running the game itself. Most mods using dotnet 7 should provide a .sh script alongside the main exe, which should run the client if run through your command line. if it exists, you should be able to run it with bash if your file explorer allows it, or you can simply open up that folder in terminal and type <code>bash scriptname.sh</code>
+If it does not exist, use this:</p>
+<pre><code>#!/bin/sh
+dotnet Resources/Binaries/UniversalGL/clientogl.dll
+</code></pre>
+<p>Although wine has very little support for running dotnet 7, mostly due to it's advertisement of running natively,and how recent dotnet 7 is, I have recently noticed that lutris and winetricks both have a dotnet 7 dependency. I have tried this prefix instillation and had <strong>no success</strong>, although i am leaving this hear in case someone wishes to try further, or if in the future it works.</p>
+<pre><code>WINEPREFIX=&quot;/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/cncnet_7_ddraw&quot; winetricks cnc_ddraw dotnetdesktop7
+</code></pre>
+<h4 id="game-compatability">Game Compatability</h4>
+<p>One issue that i noticed several of the dotnet 7 builds have is that in order to run the game they use a .sh script to run a .bat script to run the game. While this works fine in principle, it uses the default wine prefix, which will not have any ddraw modifications, and therefore means that the game will run extremely slow and may even have graphical artifacts.</p>
+<p>if you notice this, first of all make a new prefix which just contains the ddraw dependency. I am listing ddraw manually as an override for this instance, although the cnc_ddraw method i used earlier should work fine.</p>
+<pre><code>WINEPREFIX=&quot;/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/only_ddraw_override&quot; winecfg
+</code></pre>
+<p>This should take a moment and then open wine configuration. Once this opens, you need to head to the Libraries tab and write <code>ddraw</code> into the entrybox below "New Override for library", then click add, apply, and then ok.
+You then need to go into the Resources/Compatability/Unix folder of the game/mod, there should be a gamemd.sh script or something similar. Edit this with a text editor of your choosing so that it matches the text below.</p>
+<pre><code>#!/bin/sh
+
+export WINEPREFIX=&quot;/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/only_ddraw_override
+
+wineconsole Resources/Compatibility/Unix/gamemd.bat &amp; &lt;-- this line should pre-exist and you should therefore not need to modify it, but the .bat file name may differ.
+BACK_PID=$!
+wait $BACK_PID
+</code></pre>
+<p>Be warned, most mod updaters <em>Will Override This File</em> - Back it up to save you repeating this process later on.</p>
+<p>Try launching the game again, and it should be a bit smoother. 
+You may still notice some major artefacts/glitches when using the esc menu and returning to the game. Go into the client options and try all of the renderers in there, and hopefully (as with windows) one runs like a charm. For me, most tend to work (Default/CnC-DDraw), but TS-DDraw GDI fixes the esc menu breaking and lets me enter/exit between my game and other applications as I please.</p>
+<h2 id="general-compatability-and-troubleshooting-advice">General Compatability and Troubleshooting Advice</h2>
+<h3 id="connection-issues">Connection Issues</h3>
+<p>if your game works fine in skirmish but upon connecting to cncnet or upon entering an online match you either can't connect or get a desync, follow these <a href="https://wiki.winehq.org/FAQ#Failed_to_use_ICMP_.28network_ping.29.2C_this_requires_special_permissions">instructions</a>. Also check your ports / firewall allows you to send/recieve packets.</p>
+<h3 id="permission-errors">Permission Errors</h3>
+<p>Getting an error complaining about permissions?
+<a href="https://wiki.archlinux.org/title/File_permissions_and_attributes">chmod +x</a> All of the exes in the game/mod folder. For the later client, i found this fixed a permissions issue on the dotnet 7 client.
+Also check you as a non-root user actually have access to the files and folders</p>
+<p><strong>Do Not</strong> run wine as root however, this will cause more consequences than and fix nothing. Administrator-related fixes tend to be as a result of permissions being incorrect. make sure to open the mod or game's folder and check everything has both read and write permissions, and make sure you apply any fixes to subfolders and subfiles too.</p>
+<h3 id="dotnet-not-found">Dotnet Not Found</h3>
+<p>if you get an error message, especially while attempting to run the dotnet7 client (specifically the client, not the game), complaining something similar to "dotnet not a known command" or "dotnet unrecognised script", then you <em>need</em> to install dotnet 7. Check <a href="https://wiki.archlinux.org/title/.NET#Installation">Arch Wiki</a> for further details.</p>
+<h3 id="general-suppor">General Suppor</h3>
+<p>As a general word of advice, if there is a known and trusted fix for an issue in a formal location, then it's alternative will likely work in linux.
+If your having an issue with a <strong>specific</strong> mod, i advise looking at their discord and asking for help there, just don't ask in another mod's support channel.
+<a href="https://discord.gg/KpJzhWY">Mental Omega's Discord</a> has a Support Solutions FAQ, as well as an active support channel, so if you are struggling to run MO then i recommend seeking help there.
+<a href="https://forums.cncnet.org/forum/87-faqs/">CnCNet also has a FAQ</a> webpage that you may find useful.</p>
+<h3 id="renderer-advice">Renderer Advice</h3>
+<p>Most cncnet clients off only one build of CnC-DDraw, and often limited builds of other renderers such as TS-DDraw. If you want to test your renderer options thoroughly, check your game's main folder for a file called <code>ddraw.ini</code>.
+Open it through a text editor, and look for a tag called <code>Renderer=</code>
+This is likely set to Auto, but i recommend manually changing this for each option on CnC-DDraw and TS-DDraw.</p>
+<pre><code>; Select the renderer, opengl, gdi, auto. Default = auto = if OpenGL fails automatically use GDI
+renderer=auto
+</code></pre>
+<p>NOTE: I seem to recall a third option of dx, requires verification.</p>
+<h2 id="final-alert-2-and-fs">Final Alert 2 (and FS)</h2>
+<p>Linux provides several new opportunities for people using FA2(SP) and FS(SP)
+The map editor can be run straight out of wine / bottles without any dependencies needed.</p>
+<h3 id="fa2sp-with-a-dark-theme">FA2SP with a Dark Theme</h3>
+<p>--
+A Word of warning: there are a LOT of windows themes out there, i tried a few on my previous install and some seemed to work but most were a little dodgy (Some panels didn't change, some didn't sit nicely, some were too sharp....).<br>
+You can change themes using winecfg through the terminal (better yet through a wineprefix)<br></p>
+<pre><code>WINEPREFIX=&quot;/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/map_editor&quot; winecfg
+</code></pre>
+<p>I believe this <em>only works</em> on recently <a href="https://github.com/secsome/FA2sp].
+Mental Omega 3.3.6, RR 2.2.13 and any mod which has not been updated since 2020 do not have this patch, and so you will need to add it yourself if you want a dark theme.&lt;br&gt;
+I found this [gist](https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398) which on my system seems to provide a fully functioning dark theme based on Breeze, guidance for usage is included. As i run KDE Plasma this worked fairly well for me, matching the theme i used.&lt;br&gt;
+![Breeze Theme Screenshot](Assets/breeze_fa2.png)
+Note that the missing + icons to the left are a result of running it through my system's wine, but if you use [Bottles](https://usebottles.com) the glitch no longer occur">patched Fa2s</a>.</p>
+<p>I seem to recall <a href="https://www.reddit.com/r/linux_gaming/comments/n8hf6v/make_wine_look_like_windows_10/">this</a> working as well, providing a more modern light theme option. Sadly this was a while back and i am unable to confirm so. The script also downloads off discord rather than a formal file source, and given discord's proposed changes to stop external download links, this may need to be mirrored.</p>
+<h3 id="multi-monitor-support">Multi-Monitor Support</h3>
+<p>While i am unsure if this is imply an original bug in FA2, or as a result of patches, but the application simply cannot be stretched between two screens.
+This may require some adjustment</p>
+<pre><code>WINEPREFIX=&quot;/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/map_editor&quot; winecfg
+</code></pre>
+<p>This will take a moment and open wine configuration. head to <code>Graphics</code> and click emulate a virtual desktop. Make sure the size is decent, you can move the virtual desktop around like a window, but make sure it does not have a length/width too large or you may have clipping issues, such as the screenshopt above where the bottom banner is completely cut off.
+You then run the map editor from this wineprefix like as I recommended in the Winetricks section. Alternatively you can use bottles to do the same.</p>
+<p><img alt="Multiple-Monitors" src="../Assets/multi_monitor_fa2.png" /></p>
+<h2 id="external-sources-and-notes">External Sources and Notes</h2>
+<p>I have looked around into other guides for running CnC games on linux. There are quite a mix of methods, some requiring snap, some lutris and some just being general guidelines.<br></p>
+<p>A generic Linux Gaming post summarising all of the CnC Games <a href="https://www.reddit.com/r/linux_gaming/comments/mtixee/a_linux_users_guide_to_command_conquer/">https://www.reddit.com/r/linux_gaming/comments/mtixee/a_linux_users_guide_to_command_conquer/</a> <br>
+Advice on using CnCnet YR with linux, marginally outdated due to a change in client, but it is a useful reference <a href="https://www.speich.net/articles/en/2021/12/19/how-to-install-the-cncnet-client-on-linux/">https://www.speich.net/articles/en/2021/12/19/how-to-install-the-cncnet-client-on-linux/</a> <br>
+Snap Package Github for CnCnet YR] - <a href="https://github.com/mmtrt/cncra2yr">https://github.com/mmtrt/cncra2yr</a> <br>
+When looking at Linux tutorials, you will find a lot of outdated sources. This is important because:<br>
+- Wine has improved significantly in the past few years, especially with enhancements from proton due to the steam deck <br>
+- Anything that uses packages can become unmaintained and quickly out of date, or is broken in dependency hell  <br>
+- Linux distributions can change and drop out of favour, or the guide may advise on dependencies that no longer exist E.g. a guide may specify wine 4.5, when 8.xx is the current latest. Generally, use the latest wine where possible. <br>
+- Sadly most of the CnC games are not on steam, but if they are then check <a href="https://www.protondb.com">https://www.protondb.com</a> for how well they run on linux from people's experiences, including computer specs and comments. wineHQ's application databse <a href="https://appdb.winehq.org">https://appdb.winehq.org</a> is fairly limited, often outdated, but may be worth a check. Same applies to CrossOver <a href="https://www.codeweavers.com/compatibility">https://www.codeweavers.com/compatibility</a>   <br></p>
+<p>In theory, running the client and game through lutris is an option, however i have heard people who have tried this have noticed the game always instantly desyncs</p>
+<h2 id="next-steps">Next Steps</h2>
+<p>Although i have covered most of the <em>basics</em>, I am unable to test and approve everything myself. Parts may not work 100% consistently, and i only have EndeavourOS (Arch) to test on, and i am testing on an 13 y/o Desktop PC. This means that i am unable to test some new possibilities, such as combining vkd3d and cnc-ddraw.<br>
+Any support from experienced users to expand this guide, such as tests with vulkan and certain graphical alterations would be greatly appreciated.
+Contributions to this <a href="https://github.com/CatTanker/cnc_map_tool_guide">repository</a> for any fixes and new methods or scripts would be greatly appreciated.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../resources/" class="btn btn-neutral float-left" title="Map Resources"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/CatTanker/cnc_map_tool_guide" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../resources/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
