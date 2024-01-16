@@ -86,7 +86,7 @@ WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/cncnet_4_X_d
 
 The next step is to see if wine-mono is installed or not. Run
 ```
-WINEPREFIX="/home/main-i5-user/.local/share/wineprefixes/cncnet_4_X_ddraw" wine uninstaller
+WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/cncnet_4_X_ddraw" wine uninstaller
 ```
 
 If you see Wine Mono Runtime & Wine Mono Windows Support, you have wine-mono installed and you should be safely able to move on to running the application (skip to the next section)

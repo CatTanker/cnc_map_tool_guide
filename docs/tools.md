@@ -47,7 +47,7 @@ Several of the *Patched* map editors have this included but not in use, so check
 
 ### World Altering Editor : <br />
 Author: Rampastring + Contributors  <br />
-Description: The World Altering Editor (WAE) is an open source replacement to the traditional editors. unlike the originals, it is built using a modern code base, and as a result of being open source it does not require the use of dll injection to improve. Formerly known as the DTA Scenario Editor, as it was built for [Dawn of the Tiberium Age](https://www.moddb.com/mods/the-dawn-of-the-tiberium-age),it has since been growing in compatability for TS/YR, with a release for TSClient and Vanilla YR both available on the the releases page. As of 14/01/2024, there is also progress on a voxel renderer meaning that the editor can effectively replace FA2 for all quality PCs using win7 or later.
+Description: The World Altering Editor (WAE) is an open source replacement to the traditional editors. unlike the originals, it is built using a modern code base, and as a result of being open source it does not require the use of dll injection to improve. Formerly known as the DTA Scenario Editor, as it was built for [Dawn of the Tiberium Age](https://www.moddb.com/mods/the-dawn-of-the-tiberium-age), and it has since been growing in compatability for TS/YR, with a release for TSClient and Vanilla YR both available on the the releases page. As of v0.9.6 the editor how has a voxel renderer, meaning that the editor can effectively replace FA2 for all quality PCs using win7 or later, although it is arguably still behind in a few areas.
 
 | Topic | Source + Link |
 | ------------ | ------------- |
