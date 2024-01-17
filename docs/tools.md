@@ -6,16 +6,13 @@
 The Map Editor for Yuris Revenge. <br />
 Contains patches which have been developed by multiple members of the community <br />
 The patched FA2 link provides a clean working FA2 setup for the vanilla game (RA2/YR Unmodded)
-The FA2Sp link directs you to the extension itself, which can be dropped into a mods FA2, and should work fine assuming you check the changelog under releases <br />
+The FA2Sp link directs you to the extension itself, which can be dropped into a mod's FA2, and should work fine assuming you check the changelog under releases <br />
 
 | Topic | Source + Link |
 | ------------ | ------------- |
 | Patched FA2 [Vanilla] | [PPM - Forum](https://ppmforums.com/topic-47342/final-alert-2-yr-v102-patches/) |
 | FA2SP [Mods] | [Github - Main Page](https://github.com/secsome/FA2sp)|
 | FA2SP [Mods] | [Github - Releases](https://github.com/secsome/FA2sp/releases)|
-
-PPM:     <https://ppmforums.com/topic47342/finalalert2yrv102patches/> <br />
-Github:  <https://github.com/secsome/FA2sp>
 
 ### [FS] Final Sun:
 
@@ -32,10 +29,10 @@ The Tiberian Sun Client [TSC] also includes a build.
 
 ### Additions to the Editor:
 
-DDraw Renderer
+## DDraw Renderer
 
 Instead of using the system DDraw, FA2 and FS can instead use a local proxy DDraw.dll, improving the editor's speed considerably, which is especially useful for resource-heavy maps.
-Several of the *Patched* map editors have this included but not in use, so check your map editor's folder as the files may already exist, such as in a "ForWindows10" folder, containing a pre-configured setup. if you want an un-configured setup for unknown reasons, or simply want to know more about the wrapper, check the Link below. I also included a direct download, although i have lost which thread this is on so i am unable to verify if it is the latest
+Several of the *patched* map editors have this included but not in use, so check your map editor's folder as the files may already exist, such as in a "ForWindows10" folder, containing a pre-configured setup. if you want an un-configured setup for unknown reasons, or simply want to know more about the wrapper, check the unconfigured link below. I also included a direct download, although i have lost which thread this is on so i am unable to verify if it is the latest download.
 
 | Topic | Source + Link |
 | ------------ | ------------- |
@@ -47,7 +44,7 @@ Several of the *Patched* map editors have this included but not in use, so check
 
 ### World Altering Editor : <br />
 Author: Rampastring + Contributors  <br />
-Description: The World Altering Editor (WAE) is an open source replacement to the traditional editors. unlike the originals, it is built using a modern code base, and as a result of being open source it does not require the use of dll injection to improve. Formerly known as the DTA Scenario Editor, as it was built for [Dawn of the Tiberium Age](https://www.moddb.com/mods/the-dawn-of-the-tiberium-age), and it has since been growing in compatability for TS/YR, with a release for TSClient and Vanilla YR both available on the the releases page. As of v0.9.6 the editor how has a voxel renderer, meaning that the editor can effectively replace FA2 for all quality PCs using win7 or later, although it is arguably still behind in a few areas.
+Description: The World Altering Editor (WAE) is an open source replacement to the traditional editors. unlike the originals, it is built using a modern code base, and as a result of being open source it does not require the use of dll injection to improve. Formerly known as the DTA Scenario Editor, as it was built for [Dawn of the Tiberium Age](https://www.moddb.com/mods/the-dawn-of-the-tiberium-age), it has since been growing in compatability for TS/YR. A release for TSClient and Vanilla YR both available on the the releases page. As of v0.9.6 the editor now has a voxel renderer, meaning that the editor can effectively replace FA2 for all quality PCs using win7 or later, although it is arguably still behind in a few areas.
 
 | Topic | Source + Link |
 | ------------ | ------------- |
@@ -79,7 +76,7 @@ Although it is hosted on GitHub you can download the page and use it offline. <b
 
 ###  Trigger Analyser (Python) <br />
 Author: FrozenFrog <br />
-Description: A script to generate a trigger map of maps on the TS/RA Engine <br />
+Description: A script to generate a trigger map graphically on the TS/RA2 Engine.<br />
 
 | Topic | Source + Link |
 | ------------ | ------------- |
@@ -87,7 +84,7 @@ Description: A script to generate a trigger map of maps on the TS/RA Engine <br 
 
 ### Map Conversion Tool <br />
 Author:  Starkku <br />
-Description: A tool which can convert the theatre, tiles, rules and overlay of maps.  <br />
+Description: A tool which can convert the theatre, tiles, rules and overlay of maps based off user-configurable scripts. Essential if you wish to change the theatre of a map.  <br />
 
 | Topic | Source + Link |
 | ------------ | ------------- |
@@ -111,7 +108,7 @@ WARNING: No longer supported as it requires flash, i recommend using WAE's tunne
 ### Wavemaker <br />
 Author: PTapioK <br />
 Description: A brilliant tool which streamlines the production of mission and survival maps <br />
-It allows manipulation of Triggers, Scripts, Taskforces, Teams and Variables on both a single and batch scale <br />
+It allows manipulation of Triggers, Scripts, Taskforces, Teams and Variables on both a single and batch scale through an easy-to-see user interface. <br />
 
 
 | Topic | Source + Link |
@@ -120,7 +117,7 @@ It allows manipulation of Triggers, Scripts, Taskforces, Teams and Variables on 
 | Source Code| [Github - Main Page](https://github.com/PTapioK/TSWaveMaker) |
 
 ### Map Renderer <br />
-Author: zzattack <br />
+Author: zzattack + Others <br />
 Description: A Full Map Preview Renderer for maps <br />
 Also contains other features such as height maps, position markers as well as debug features! <br />
 
@@ -132,16 +129,16 @@ Also contains other features such as height maps, position markers as well as de
 
 ### Map Resize Tool <br />
 Author: E1 Elite <br />
-Description: A tool to resize maps, unlike the map editor this also moves smudges, tunnels ect <br />
+Description: A tool to resize maps. Unlike the standard map editor this moves everything, including tunnels and smudges. The UI is also very simply to understand. <br />
 
 | Topic | Source + Link |
 | ------------ | ------------- |
 | Forum Thread | [PPM - Forum](https://ppmforums.com/topic55391/mapresize/) |
-| Source Code| [Github - Main Page (https://github.com/E1Elite/MapResize) |
+| Source Code| [Github - Main Page](https://github.com/E1Elite/MapResize) |
 
 ### Final Sun Toolkit <br />
 Author: Holland (and various other authors for the tools) <br />
-Description: Software which contains multiple tools with it, as well as other optimisations <br />
+Description: Software which contains multiple tools with it, as well as other optimisations. TS Only <br />
 
 | Topic | Source + Link |
 | ------------ | ------------- |
@@ -149,7 +146,7 @@ Description: Software which contains multiple tools with it, as well as other op
 
 ### Map Rename Tool <br />
 Author: Snark <br />
-Description: This program will convert your .map file names to the map name (all credits to @Snark ). It's useful for organizing the maps that you download inside the cncnet client that are given a random file name, and means you can tell which map is which <br />
+Description: This program will convert your .map file names to the map name written internally. It's useful for organizing the maps that you download inside the cncnet client that are given a random file name, and means you can tell which map is which <br />
 
 | Topic | Source + Link |
 | ------------ | ------------- |
@@ -157,11 +154,11 @@ Description: This program will convert your .map file names to the map name (all
 
 ### Trigger Index Parameter Tool <br />
 Author: Starkku <br />
-Description: A simple GUI program for adjusting numerical index values used as parameters for map trigger events & actions aswell as AI team scripts in Command & Conquer: Tiberian Sun & Red Alert 2. Useful for Mod / Mission developers to fix any issues that occur after a house index change <br />
+Description: A simple GUI program for adjusting numerical index values used as parameters for map trigger events & actions aswell as AI team scripts in Command & Conquer: Tiberian Sun & Red Alert 2. Useful for Mod / Mission developers to fix any issues that occur after a house index change. <br />
 
 | Topic | Source + Link |
 | ------------ | ------------- |
-| Source Code | [Github - Main Page]](https://github.com/Starkku/TriggerIndexParamTool) |
+| Source Code | [Github - Main Page](https://github.com/Starkku/TriggerIndexParamTool) |
 
 ### Map Tool <br />
 Author: vananasun <br />
@@ -169,7 +166,7 @@ Description: A command line tool to manipulate Red Alert 2 Yuri's Revenge maps <
 
 | Topic | Source + Link |
 | ------------ | ------------- |
-| Source Code | [Github - Main Page]](https://github.com/vananasun/yrmaptoo) |
+| Source Code | [Github - Main Page](https://github.com/vananasun/yr-maptool) |
 
 ### MISTEST  Map Checker <br />
 Author: GE <br />
