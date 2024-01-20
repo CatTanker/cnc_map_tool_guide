@@ -55,13 +55,14 @@ In Settings: <br>
 
 #### Config 2: CnC-DDraw dependency
 
-*Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise)
+*Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise) <br>
+
 - *ddraw through the cnc-ddraw dependency (**do not manually add** check the next step for details)
 
 *Installed Dependencies:*
 - arial32/times32/courie32 [By Default]
 - Mono (Wine Mono) [Install Yourself]
-- THEN install CnC-DDraw as a dependency [Install Yourself]
+- CnC-DDraw as a dependency [Install Yourself]
 
 
 After following all of the steps above, enter your bottle, click "Run Excutable", and guide it to your client folder / Resources, and then try "clientogl.exe", and the client should run fine, as well as the game. In some cases the xna client also seems to work, but try the ogl build first.
