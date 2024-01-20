@@ -135,7 +135,7 @@ Also contains other features such as height maps, position markers as well as de
 | Topic | Source + Link |
 | ------------ | ------------- |
 | Forum Thread | [PPM - Forum](https://ppmforums.com/topic-29554-page-5/cnc-maps-renderer-rewritten-works-for-tiberian-sun-and-ra2/?postorder=asc) |
-| Source Code| [Github - Original Source (https://github.com/zzattack/ccmaps-net) |
+| Source Code| [Github - Original Source](https://github.com/zzattack/ccmaps-net) |
 
 
 ### Map Resize Tool <br />
