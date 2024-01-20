@@ -44,7 +44,7 @@ In Settings: <br>
 
 #### Config 1: Manually Entered
 --
-*Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise)
+*Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise)<br>
 
 - ddraw as a DLL Override *MANUALLY ENTERED* <br>
 

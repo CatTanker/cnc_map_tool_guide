@@ -5,7 +5,7 @@ The project started as a list of all the relevant mapping resources i have disco
 
 Over time i have worked on the list, adding new entries and improving it's relevance by mentioning areas such as the [World Altering Editor](https://github.com/Rampastring/WorldAlteringEditor).
 
-Since i frequently use linux as a daily driver, and have been since mid 2020, i realised there was relatively little formalised information about running WW 2.5D games on linux, and what there was tended to be un-coordinated. As with most linux users, I broke my build several times, and as a result got tired of having to dig out the same information each time in order to make a game somewhat run through trial and error. In 2023 I started my writeup, and as of October I pushed my first edition of my linux guide. I have since worked on expanding and simplifying the guide into the product that it is today.
+Since i frequently use linux as a daily driver, and have been since mid 2020, i realised there was relatively little formalised information about running WW 2.5D games on linux, and what there was tended to be un-coordinated. As with most linux users, I broke my build several times, and as a result got tired of having to dig out the same information each time in order to make a game somewhat run through trial and error. In 2023 I started my writeup, and as of October I pushed the first edition of my linux guide. I have since worked on expanding and simplifying the guide into the product that it is today.
 
 After suggestions to move to ReadTheDocs i finally took on this task in December 2023, and a month on I have finished the transition, meaning all materials are now re-formated and are on this web page.
 
@@ -21,11 +21,12 @@ if you spot any bugs, have a request or simply want to contribute, please open a
 
 
 ## Credits
+
+- CatTanker, project lead.<br>
 I also need to provide a special thanks to: <br>
-- CatTanker, project lead.
 - Kerbiter, for technical support and suggestions. <br>
 - Doomguy, moral support. <br>
-- Lylak and AlliedG for suggesting that i improve the guide when it was in my discord server. <br>
+- Lylak and AlliedG for suggesting that i improve the guide when it was only in my discord server. <br>
 - The developers of tools and resources linked, who without this project would be pointless. <br>
 - SCIPCION for occasional input.
 
