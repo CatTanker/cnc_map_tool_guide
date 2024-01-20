@@ -7,7 +7,7 @@ Over time i have worked on the list, adding new entries and improving it's relev
 
 Since i frequently use linux as a daily driver, and have been since mid 2020, i realised there was relatively little formalised information about running WW 2.5D games on linux, and what there was tended to be un-coordinated. As with most linux users, I broke my build several times, and as a result got tired of having to dig out the same information each time in order to make a game somewhat run through trial and error. In 2023 I started my writeup, and as of October I pushed my first edition of my linux guide. I have since worked on expanding and simplifying the guide into the product that it is today.
 
-After suggestions to move to ReadTheDocs i finally took on this task in December 2023, and a month on i have finished the transition, meaning all materials are now re-formated and are on this web page.
+After suggestions to move to ReadTheDocs i finally took on this task in December 2023, and a month on I have finished the transition, meaning all materials are now re-formated and are on this web page.
 
 I hope you find the spectrum of information available to be useful.
 
