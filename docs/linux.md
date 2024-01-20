@@ -22,7 +22,7 @@ The XNA build relies on .NET Framework 4.0 and Microsoft's XNA Framework 4.0 Ref
 ```
 The above lines are where most of my reasoning lies for the dependencies installed.
 
-Despite a later (2023) push towards updating the client to use dotnet7, as of early 2024 these changes are being rolled back due to dotnet 7 providing [a conbsiderably worse user experience](https://github.com/CnCNet/xna-cncnet-client/pull/494). Although a major part of this initial push was for better support on Mac / Linux, the vast majority of the userbase is on windows, and so the profits of this are limited. I also noticed that dotnet 7 clients tended to have a lot of bugs when run on linux, but looked/worked fine on windows,included strange placements of objects inside the client and no maps or scenarios even being listed in the client. The client also has a few minor oversights, such as the fact that the client runs your global wine rather than a dedicated prefix, causing issues such as extremely poor fps for several users, and in some cases an instant desync upon entering a game through linux, but without any issues if entered from the same files on windows. Any advice provided from the dotnet 7 builds is as a result less-well tested and in the future may be kept for legacy support. While there are much fewer mods that use the dotnet 7 client, there may be cases where such support is needed. Example cases include early builds of TS Rubicon, Rote's Beta (as of january 2024), and Project Phantom's client.
+Despite a later (2023) push towards updating the client to use dotnet7, as of early 2024 these changes are being rolled back due to dotnet 7 providing [a conbsiderably worse user experience](https://github.com/CnCNet/xna-cncnet-client/pull/494). Although a major part of this initial push was for better support on Mac / Linux, the vast majority of the userbase is on windows, and so the profits of this are limited. I also noticed that dotnet 7 clients tended to have a lot of bugs when run on linux, but looked/worked fine on windows,included strange placements of objects inside the client and no maps or scenarios even being listed in the client. The client also has a few minor oversights, such as the fact that the client runs your global wine rather than a dedicated prefix, causing issues such as extremely poor fps for several users, and in some cases an instant desync upon entering a game through linux, but without any issues if entered from the same files on windows. Any advice provided from the dotnet 7 builds is as a result less-well tested and in the future may be kept for legacy support. While there are much fewer mods that use the dotnet 7 client, there may be cases where such support is needed. Example cases include early builds of TS Rubicon, Rote's Beta (formerly), and Project Phantom's client.
 
 
 The reason you will often see a ddraw or cnc-ddraw package mentioned as this means the game will use the ddraw supplied by the [client](https://github.com/FunkyFr3sh/cnc-ddraw), which will improve your experience significantly. I *highly recommend* you perform this recommendation.
@@ -31,7 +31,7 @@ The reason you will often see a ddraw or cnc-ddraw package mentioned as this mea
 
 ## Bottles Instructions
 I find bottles seems to give me the most reliable result on my many re-installs, find information about it [here](https://usebottles.com) and download it to your OS.
-Most guides seem to recommend using Flatpack for the download, which may help if you are experiencing issues, as well as providing some areas such as sandboxing, but I have tested on he non-flatpack version.
+Most guides seem to recommend using Flatpack for the download, which may help if you are experiencing issues, as well as providing some areas such as sandboxing, but I have tested on the non-flatpack version.
 
 ### Dotnet 4.* Clients + OpenGl (ogl) Build
 
@@ -78,8 +78,9 @@ After following all of the steps above, enter your bottle, click "Run Excutable"
 
 
 ### Dotnet 4.* Clients + OpenGl (ogl) Build
+#### Instillation of prefixes
 
-After installing relevant dependencies, open up a command line and put in
+After installing relevant dependencies listed above, open up a command line and put in
 ```
 WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/cncnet_4_X_ddraw" winetricks cnc_ddraw
 ```
@@ -97,8 +98,7 @@ If you do not have Wine Mono Runtime & Wine Mono Windows Support listed, you can
 WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/cncnet_4_X_ddraw" winetricks dotnet48
 ```
 
-Okay, you have your prefix set up. There are several ways you can how run your exe. Both methods require some terminal usage.
-
+Okay, you have your prefix set up. There are several ways tha you can run your client's exe. Two methods require some terminal usage.
 #### Running through your prefix completely in the terminal
 ```
 WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/cncnet_4_X_ddraw" wine "Absolute path to your client's /.... /resources/clientogl.exe"
@@ -110,13 +110,16 @@ You can navigate to your mod's resources folder through a file explorer, right c
 WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/cncnet_4_X_ddraw" winetricks
 ```
 Run this inside the terminal and a basic GUI will open up. Select "Select Default Wineprefix", and at the top of the GUI it should have a path that matches the WINEPREFIX= line.
-Scroll down to find the "Run Arbitary Excutable" option. Select it and click ok, then navigate to your client's clientogl.exe excutable, run it and it should open fine.
+Scroll down to find the "Run Arbitary Excutable" option. Select it and click ok, then navigate to your client's clientogl.exe excutable inside the resources folder, run it and it should open fine.
+
+#### User Interface Only
+In some installs you may be able to search for a `winetricks` application from your system's menu. From here you a GUI called `Winetricks - choose a wineprefix` will appear. Scrtoll down the list until you find the wineprefix you just made, `cncnet_4_X_ddraw`, and select ok. Scroll down to find the "Run Arbitary Excutable" option. Select it and click ok, then navigate to your client's clientogl.exe excutable inside the resources folder, run it and it should open fine.
 
 ### Dotnet 7+ Client: Native
 #### Running it natively
 
-First of all, make sure you have the [dotnet runtime](https://dotnet.microsoft.com/en-us/download/dotnet/7.0), either from microsoft directly or downloaded through your [Distribution](https://wiki.archlinux.org/title/.NET#Installation)
-The Dotnet7 Client should be able to run natively with linux, only using wine for running the game itself. Most mods using dotnet 7 should provide a .sh script alongside the main exe, which should run the client if run through your command line. if it exists, you should be able to run it with bash if your file explorer allows it, or you can simply open up that folder in terminal and type `bash scriptname.sh`
+First of all, make sure you have the [dotnet runtime](https://dotnet.microsoft.com/en-us/download/dotnet/7.0), either from microsoft directly or downloaded through your [Distribution](https://wiki.archlinux.org/title/.NET#Installation).
+The Dotnet7 Client should be able to run natively with linux, only using wine for running the game itself. Most mods using dotnet 7 should provide a .sh script alongside the main exe, which should run the client if run through your command line. if it exists, you should be able to run it with bash if your file explorer allows it, or you can simply open up that folder in terminal and type `bash scriptname.sh`.
 If it does not exist, use this:
 ```
 #!/bin/sh
@@ -157,27 +160,27 @@ You may still notice some major artefacts/glitches when using the esc menu and r
 
 ## General Compatability and Troubleshooting Advice
 ### Connection Issues
-if your game works fine in skirmish but upon connecting to cncnet or upon entering an online match you either can't connect or get a desync, follow these [instructions](https://wiki.winehq.org/FAQ#Failed_to_use_ICMP_.28network_ping.29.2C_this_requires_special_permissions). Also check your ports / firewall allows you to send/recieve packets.
+if your game works fine in skirmish but upon connecting to cncnet or upon entering an online match you either can't connect or get a desync, follow these [instructions](https://wiki.winehq.org/FAQ#Failed_to_use_ICMP_.28network_ping.29.2C_this_requires_special_permissions). Also check your firewall is open and that it allows you to send/recieve packets.
 ### Permission Errors
 Getting an error complaining about permissions?
-[chmod +x](https://wiki.archlinux.org/title/File_permissions_and_attributes) All of the exes in the game/mod folder. For the later client, i found this fixed a permissions issue on the dotnet 7 client.
+[chmod +x ...](https://wiki.archlinux.org/title/File_permissions_and_attributes) all of the exes in the game/mod folder. For the later client, i found this fixed a permissions issue on the dotnet 7 client.
 Also check you as a non-root user actually have access to the files and folders
 
-**Do Not** run wine as root however, this will cause more consequences than and fix nothing. Administrator-related fixes tend to be as a result of permissions being incorrect. make sure to open the mod or game's folder and check everything has both read and write permissions, and make sure you apply any fixes to subfolders and subfiles too.
+**Do Not** run wine as root however, this will cause more consequences and fix nothing. Administrator-related fixes tend to be as a result of permissions being incorrect. make sure to open the mod or game's folder and check everything has both read and write permissions, and make sure you apply any fixes to subfolders and subfiles too.
 
 ### Dotnet Not Found
-if you get an error message, especially while attempting to run the dotnet7 client (specifically the client, not the game), complaining something similar to "dotnet not a known command" or "dotnet unrecognised script", then you *need* to install dotnet 7. Check [Arch Wiki](https://wiki.archlinux.org/title/.NET#Installation) for further details.
+if you get an error message, especially while attempting to run the dotnet7 client (specifically the client, not the game), complaining something similar to "dotnet not a known command" or "dotnet unrecognised script", then you *need* to install dotnet 7 runtime. Check [Arch Wiki](https://wiki.archlinux.org/title/.NET#Installation) for further details.
 
 
-### General Suppor
+### General Support
 As a general word of advice, if there is a known and trusted fix for an issue in a formal location, then it's alternative will likely work in linux.
 If your having an issue with a **specific** mod, i advise looking at their discord and asking for help there, just don't ask in another mod's support channel.
-[Mental Omega's Discord](https://discord.gg/KpJzhWY) has a Support Solutions FAQ, as well as an active support channel, so if you are struggling to run MO then i recommend seeking help there.
-[CnCNet also has a FAQ](https://forums.cncnet.org/forum/87-faqs/) webpage that you may find useful.
+[Mental Omega's Discord](https://discord.gg/KpJzhWY) has a Support Solutions FAQ, as well as an active support channel, so if you are struggling to run **MO** then i recommend seeking help there.
+[CnCNet also has a FAQ](https://forums.cncnet.org/forum/87-faqs/) webpage that you may find useful, as well as an active support channel in their discord.
 
 
 ### Renderer Advice
-Most cncnet clients off only one build of CnC-DDraw, and often limited builds of other renderers such as TS-DDraw. If you want to test your renderer options thoroughly, check your game's main folder for a file called `ddraw.ini`.
+Most cncnet clients offer only one build of CnC-DDraw, and often limited builds of other renderers such as TS-DDraw. If you want to test your renderer options thoroughly, check your game's main folder for a file called `ddraw.ini`.
 Open it through a text editor, and look for a tag called `Renderer=`
 This is likely set to Auto, but i recommend manually changing this for each option on CnC-DDraw and TS-DDraw.
 ```
@@ -189,7 +192,7 @@ NOTE: I seem to recall a third option of dx, requires verification.
 
 ## Final Alert 2 (and FS)
 Linux provides several new opportunities for people using FA2(SP) and FS(SP)
-The map editor can be run straight out of wine / bottles without any dependencies needed.
+The map editor can be run straight out of wine / bottles without any dependencies.
 ### FA2SP with a Dark Theme
 --
 A Word of warning: there are a LOT of windows themes out there, i tried a few on my previous install and some seemed to work but most were a little dodgy (Some panels didn't change, some didn't sit nicely, some were too sharp....).<br>
@@ -204,9 +207,11 @@ I found this [gist](https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89
 Note that the missing + icons to the left are a result of running it through my system's wine, but if you use [Bottles](https://usebottles.com) the glitch no longer occurs.
 
 I seem to recall [this](https://www.reddit.com/r/linux_gaming/comments/n8hf6v/make_wine_look_like_windows_10/) working as well, providing a more modern light theme option. Sadly this was a while back and i am unable to confirm so. The script also downloads off discord rather than a formal file source, and given discord's proposed changes to stop external download links, this may need to be mirrored.
+
+Wine supports the theme engine of **XP**, so a lot of your choiches are limited, although any modifications you make only apply to your wineprefix, so unlike windows you cannot brick your system with it.
+
 ### Multi-Monitor Support
-While i am unsure if this is imply an original bug in FA2, or as a result of patches, but the application simply cannot be stretched between two screens.
-This may require some adjustment
+While i am unsure if this is simply an original bug in FA2, or as a result of patches, but the application simply cannot be stretched between two screens.
 
 ```
 WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/map_editor" winecfg
@@ -234,4 +239,4 @@ In theory, running the client and game through lutris is an option, however i ha
 ## Next Steps
 Although i have covered most of the *basics*, I am unable to test and approve everything myself. Parts may not work 100% consistently, and i only have EndeavourOS (Arch) to test on, and i am testing on an 13 y/o Desktop PC. This means that i am unable to test some new possibilities, such as combining vkd3d and cnc-ddraw.<br>
 Any support from experienced users to expand this guide, such as tests with vulkan and certain graphical alterations would be greatly appreciated.
-Contributions to this [repository](https://github.com/CatTanker/cnc_map_tool_guide) for any fixes and new methods or scripts would be greatly appreciated.
+Contributions to this [repository](https://github.com/CatTanker/cnc_map_tool_guide) for any fixes and new methods or scripts would also be greatly appreciated.
