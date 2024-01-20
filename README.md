@@ -1,6 +1,6 @@
 # NOTE
 
-This project has moved to [ReadTheDocs](cc-resource-docs.readthedocs.io)
+This project has moved to [ReadTheDocs](https://cc-resource-docs.readthedocs.io)
 
 The information provided below is therefore for legacy purposes only, and is no longer updated
 
