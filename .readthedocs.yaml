@@ -23,3 +23,6 @@ mkdocs:
 python:
   install:
   - requirements: docs/reqtest.txt
+formats:
+  - epub
+  - pdf
