@@ -2,3 +2,4 @@ mkdocstrings-python
 mkdocs==1.5.3
 markdown-include
 mkdocs-with-pdf
+mkdocs-autozip
