@@ -2,6 +2,7 @@ theme:
   name: readthedocs
 plugins:
   - search
+  - with-pdf:
   - mkdocstrings:
       handlers:
         # See: https://mkdocstrings.github.io/python/usage/
