@@ -16,6 +16,10 @@ build:
   apt_packages:
     # Required for mkdocs-with-pdf
     - weasyprint
+  jobs:
+    post_install:
+      mkdir -p $READTHEDOCS_OUTPUT/html/
+
 mkdocs:
   configuration: mkdocs.yml
   fail_on_warning: false
@@ -24,6 +28,3 @@ mkdocs:
 python:
   install:
   - requirements: docs/reqtest.txt
-formats:
-  - epub
-  - pdf
