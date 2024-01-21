@@ -18,8 +18,10 @@ build:
     - weasyprint
   jobs:
     post_build:
-      - mkdir -p $READTHEDOCS_OUTPUT/html/
+      - mkdir -p $READTHEDOCS_OUTPUT/pdf/
       - mkdocs build
+      - ls -lR
+      - mv /home/docs/checkouts/readthedocs.org/user_builds/cc-resource-docs/checkouts/4/_readthedocs/html/..builds.pdf $READTHEDOCS_OUTPUT/pdf/
 
 mkdocs:
   configuration: mkdocs.yml
