@@ -3,8 +3,8 @@ theme:
 plugins:
   - search
   - with-pdf:
-    combined: true
-    output_path: ../pdf/builds.pdf
+       combined: true
+       output_path: ../pdf/builds.pdf
    - autozip:
        # TODO: find a way to use $READTHEDOCS_OUTPUT and $READTHEDOCS_PROJECT
        # source_zip_dir: $READTHEDOCS_OUTPUT
