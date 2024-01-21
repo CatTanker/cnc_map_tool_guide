@@ -1,5 +1,4 @@
 mkdocstrings-python
-mkdocs
+mkdocs==1.5.3
 markdown-include
 mkdocs-with-pdf
-weasyprint

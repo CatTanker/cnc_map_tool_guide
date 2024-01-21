@@ -3,6 +3,10 @@ theme:
 plugins:
   - search
   - with-pdf:
+      cover_subtitle: PDF created with mkdocs-with-pdf
+      # TODO: find a way to use $READTHEDOCS_OUTPUT and $READTHEDOCS_PROJECT
+      # output_path: $READTHEDOCS_OUTPUT/$READTHEDOCS_PROJECT.pdf
+      output_path: ../pdf/builds.pdf
   - mkdocstrings:
       handlers:
         # See: https://mkdocstrings.github.io/python/usage/
@@ -15,7 +19,7 @@ site_description: A series of resources for mappers and linux users for WW 2.5D 
 site_url: https://cattanker.github.io/CnC-Resource-Docs/
 repo_url: https://github.com/CatTanker/cnc_map_tool_guide
 nav:
-#  - Home: home.md
+#  - Home: home.md redundant, since index.md seems to be hardcoded
   - Tools: tools.md
   - Map Resources: resources.md
   - Linux: linux.md

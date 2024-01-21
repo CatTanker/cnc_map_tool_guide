@@ -13,7 +13,9 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.12"
-
+  apt_packages:
+    # Required for mkdocs-with-pdf
+    - weasyprint
 mkdocs:
   configuration: mkdocs.yml
 
