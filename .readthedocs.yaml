@@ -18,7 +18,7 @@ build:
     - weasyprint
   jobs:
     post_build:
-#      - mkdir -p $READTHEDOCS_OUTPUT/pdf/
+      - mkdir -p $READTHEDOCS_OUTPUT/pdf/
       - ls -lR
 #      - mv ./site/builds.pdf $READTHEDOCS_OUTPUT/pdf/
 

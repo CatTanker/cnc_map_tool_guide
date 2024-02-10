@@ -30,3 +30,5 @@ I also need to provide a special thanks to: <br>
 - The developers of tools and resources linked, who without this project would be pointless. <br>
 - SCIPCION for occasional input.
 
+## PDF Download
+A downloadable PDf should be available [here](site/builds.pdf)
