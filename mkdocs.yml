@@ -7,6 +7,7 @@ plugins:
 #      custom_checkbox: true
   - search
   - autorefs
+#  - attr_list
 #  - autozip:
 #      # TODO: find a way to use $READTHEDOCS_OUTPUT and $READTHEDOCS_PROJECT
 #      # source_zip_dir: $READTHEDOCS_OUTPUT

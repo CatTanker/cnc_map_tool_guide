@@ -18,10 +18,10 @@ build:
     - weasyprint
   jobs:
     post_build:
-      - mkdir -p $READTHEDOCS_OUTPUT/pdf/
+#      - mkdir -p $READTHEDOCS_OUTPUT/pdf/
       - ls -lR
-      - mv ./_readthedocs/html/builds.pdf $READTHEDOCS_OUTPUT/pdf/
-      - ls -lR
+#      - mv ./_readthedocs/html/builds.pdf $READTHEDOCS_OUTPUT/pdf/
+#      - ls -lR
 mkdocs:
   configuration: mkdocs.yml
   fail_on_warning: false
