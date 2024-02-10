@@ -34,9 +34,12 @@ I find bottles seems to give me the most reliable result on my many re-installs,
 Most guides seem to recommend using Flatpack for the download, which may help if you are experiencing issues, as well as providing some areas such as sandboxing, but I have tested on the non-flatpack version.
 
 
-### Dotnet 4.* Clients + OpenGl (ogl) Build
+Below I have included the configuration that I use for Bottles so that you can produce the bottle in steps following the GUI.You should complete the main initial steps and then follow either Config 1 or Config 2 (Recommended) There are also runner options included in a table a little further down.
+If you would prefer, I now include a bottles configuration .yml that you can [download](CnCNet_Bottles_Config.yml) and then import back into bottlesas a configuration.
 
-Create new --> Application <br>
+### Dotnet 4.* Clients + OpenGl (ogl) Build - Manually Entered
+
+Create new --> *Application* <br>
 In Settings: <br>
 - Runner: Check Runner Compatability Table <br>
 - DXVK/VKD3D : Disabled <br>
@@ -44,10 +47,9 @@ In Settings: <br>
 - Windows Version: Windows 10 (since some builds of phobos and other extensions require Windows 7 or higher) <br>
 
 #### Config 1: Manually Entered
---
-*Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise)<br>
 
-- ddraw as a DLL Override *MANUALLY ENTERED* <br>
+*Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise)<br>
+- ddraw as a DLL Override *Enter Manually* <br>
 
 *Installed Dependencies:* <br>
 - arial32/times32/courie32 [By Default] <br>
@@ -56,17 +58,13 @@ In Settings: <br>
 
 #### Config 2: CnC-DDraw dependency (Recommended)
 
-*Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise) <br>
-
-- *ddraw through the cnc-ddraw dependency (**do not manually add** check the next step for details)
-
 *Installed Dependencies:*
 - arial32/times32/courie32 [By Default]
 - Mono (Wine Mono) [Install Yourself]
 - CnC-DDraw as a dependency [Install Yourself]
 
 
-After following all of the steps above, enter your bottle, click "Run Excutable", and guide it to your client folder / Resources, and then try "clientogl.exe", and the client should run fine, as well as the game. In some cases the xna client also seems to work, but try the ogl build first.
+After following all of the steps above, enter your bottle, click "Run Excutable", and guide it to your client folder / Resources, and then try "clientogl.exe", and the client should run fine, as well as the game. In some cases the xna client also seems to work, but try the ogl build first. **Do not expect the exe included in the root of the mod folder, eg. 'MentalOmegaClient.exe' to work, use the .ogl build!**
 
 
 
@@ -169,7 +167,7 @@ You may still notice some major artefacts/glitches when using the esc menu and r
 | &#x2612; | wine-ge-proton8-25 | Fully Functional | Launches Incorrectly | Unaccessible - Launch Issue | Pressing esc --> Game Controls instantly closes gamemd |
 | &#x2612; | Sys-Wine-9.1 (From package Manager) | Fully Functional | Syringe Issue | Unaccessible - Syringe Issue | Pressing esc --> Game Controls instantly closes gamemd |
 | &#x2611; | Caffe-8.21 | Fully Functional | Fully Functional | Fully Functional | |
-| &#x2611 | kron4ek-wine-8.20-amd64 | Fully Functional | Fully Functional | Fully Functional | |
+| &#x2611; | kron4ek-wine-8.20-amd64 | Fully Functional | Fully Functional | Fully Functional | |
 
 This table has been tested using the Bottles Config 2 specifically on MO 3.3.6, with fully functional runners also tested on other mods.
 You will need to install most of these runners from inside bottles, through the 'Main Menu' button in the top-right corner, 'Preferences', and then from the 'Runners' tab.
@@ -190,6 +188,7 @@ if you get an error message, especially while attempting to run the dotnet7 clie
 
 -  Often with 'mono' it appears that the client is without sound.
 -  With some renderers the minimap is black and appears very glitchy ingame. Works in functionality though. **Changes between renderers.**
+-  I usually listen to my own music while i play, but i have noticed that multiple runners seem to *fail* to load *music* from theme files, so while you can hear structures being built and "conscript reporting", you may not be able to listen to hell march through the game itself. *Requires Investigation.*
 
 ### General Support
 As a general word of advice, if there is a known and trusted fix for an issue in a formal location, then it's alternative will likely work in linux.
@@ -219,7 +218,7 @@ You can change themes using winecfg through the terminal (better yet through a w
 ```
 WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/map_editor" winecfg
 ```
-I believe this *only works* on recently [patched Fa2s](https://github.com/secsome/FA2sp].
+I believe this *only works* on recently [patched Fa2s](https://github.com/secsome/FA2sp).
 Mental Omega 3.3.6, RR 2.2.13 and any mod which has not been updated since 2020 do not have this patch, and so you will need to add it yourself if you want a dark theme.<br>
 I found this [gist](https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398) which on my system seems to provide a fully functioning dark theme based on Breeze, guidance for usage is included. As i run KDE Plasma this worked fairly well for me, matching the theme i used.<br>
 ![Breeze Theme Screenshot](Assets/breeze_fa2.png)
