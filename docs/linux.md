@@ -30,12 +30,11 @@ The reason you will often see a ddraw or cnc-ddraw package mentioned as this mea
 
 
 ## Bottles Instructions
-I find bottles seems to give me the most reliable result on my many re-installs, find information about it [here](https://usebottles.com) and download it to your OS.
+I find bottles seems to give me the most reliable result on my many re-installs, find information about it [here](https://usebottles.com) and download it to your OS.<br>
 Most guides seem to recommend using Flatpack for the download, which may help if you are experiencing issues, as well as providing some areas such as sandboxing, but I have tested on the non-flatpack version.
 
-
-Below I have included the configuration that I use for Bottles so that you can produce the bottle in steps following the GUI.You should complete the main initial steps and then follow either Config 1 or Config 2 (Recommended) There are also runner options included in a table a little further down.
-If you would prefer, I now include a bottles configuration .yml that you can [download](CnCNet_Bottles_Config.yml) and then import back into bottlesas a configuration.
+Below I have included the configuration that I use for Bottles so that you can produce the bottle in steps following the GUI. You should complete the main initial steps and then follow either Config 1 or Config 2 (Recommended).  There are also runner options included in a table a little further down.<br>
+If you would prefer, I now include a bottles configuration .yml that you can [download](Assets/CnCNet_Bottles_Config.yml) and then import back into bottlesas a configuration.
 
 ### Dotnet 4.* Clients + OpenGl (ogl) Build - Manually Entered
 
@@ -66,7 +65,20 @@ In Settings: <br>
 
 After following all of the steps above, enter your bottle, click "Run Excutable", and guide it to your client folder / Resources, and then try "clientogl.exe", and the client should run fine, as well as the game. In some cases the xna client also seems to work, but try the ogl build first. **Do not expect the exe included in the root of the mod folder, eg. 'MentalOmegaClient.exe' to work, use the .ogl build!**
 
+### Runner Compatability
+| Recommended | Runner | Client Compatability | Offline Compatability | Online Compatability | Notes |
+| ------------ | ------------ | ------------- | ------------- | ------------- | ------------- |
+| &#x2611; | Soda-7.0.9 | Fully Functional | Functional | Functional | Pressing esc --> Game Controls instantly closes gamemd |
+| &#x2612; | Soda-8.0.2 | Fully Functional | Launches Incorrectly  | Unaccessible - launch Issue|  |
+| &#x2612; | Vanigilla-8.6 | Not Functional | Unnaccesible  | Unaccessible | Error upon launching the client |
+| &#x2612; | Lutris-7.2 | Fully Functional | Functional | Fails to connect to gamesurge - Error Denied | Port/ICMP Issue? |
+| &#x2612; | wine-ge-proton8-25 | Fully Functional | Launches Incorrectly | Unaccessible - Launch Issue | Pressing esc --> Game Controls instantly closes gamemd |
+| &#x2612; | Sys-Wine-9.1 (From package Manager) | Fully Functional | Syringe Issue | Unaccessible - Syringe Issue | Pressing esc --> Game Controls instantly closes gamemd |
+| &#x2611; | Caffe-8.21 | Fully Functional | Fully Functional | Fully Functional | |
+| &#x2611; | kron4ek-wine-8.20-amd64 | Fully Functional | Fully Functional | Fully Functional | |
 
+This table has been tested using the Bottles Config 2 specifically on MO 3.3.6, with fully functional runners also tested on other mods.
+You will need to install most of these runners from inside bottles, through the 'Main Menu' button in the top-right corner, 'Preferences', and then from the 'Runners' tab.
 
 ## Winetricks Instructions
 
@@ -157,20 +169,6 @@ Be warned, most mod updaters *Will Override This File* - Back it up to save you 
 Try launching the game again, and it should be a bit smoother. 
 You may still notice some major artefacts/glitches when using the esc menu and returning to the game. Go into the client options and try all of the renderers in there, and hopefully (as with windows) one runs like a charm. For me, most tend to work (Default/CnC-DDraw), but TS-DDraw GDI fixes the esc menu breaking and lets me enter/exit between my game and other applications as I please.
 
-## Runner Compatability
-| Recommended | Runner | Client Compatability | Offline Compatability | Online Compatability | Notes |
-| ------------ | ------------ | ------------- | ------------- | ------------- | ------------- |
-| &#x2611; | Soda-7.0.9 | Fully Functional | Functional | Functional | Pressing esc --> Game Controls instantly closes gamemd |
-| &#x2612; | Soda-8.0.2 | Fully Functional | Launches Incorrectly  | Unaccessible - launch Issue|  |
-| &#x2612; | Vanigilla-8.6 | Not Functional | Unnaccesible  | Unaccessible | Error upon launching the client |
-| &#x2612; | Lutris-7.2 | Fully Functional | Functional | Fails to connect to gamesurge - Error Denied | Port/ICMP Issue? |
-| &#x2612; | wine-ge-proton8-25 | Fully Functional | Launches Incorrectly | Unaccessible - Launch Issue | Pressing esc --> Game Controls instantly closes gamemd |
-| &#x2612; | Sys-Wine-9.1 (From package Manager) | Fully Functional | Syringe Issue | Unaccessible - Syringe Issue | Pressing esc --> Game Controls instantly closes gamemd |
-| &#x2611; | Caffe-8.21 | Fully Functional | Fully Functional | Fully Functional | |
-| &#x2611; | kron4ek-wine-8.20-amd64 | Fully Functional | Fully Functional | Fully Functional | |
-
-This table has been tested using the Bottles Config 2 specifically on MO 3.3.6, with fully functional runners also tested on other mods.
-You will need to install most of these runners from inside bottles, through the 'Main Menu' button in the top-right corner, 'Preferences', and then from the 'Runners' tab.
 ## General Compatability and Troubleshooting Advice
 ### Connection Issues
 if your game works fine in skirmish but upon connecting to cncnet or upon entering an online match you either can't connect or get a desync, follow these [instructions](https://wiki.winehq.org/FAQ#Failed_to_use_ICMP_.28network_ping.29.2C_this_requires_special_permissions). Also check your firewall is open and that it allows you to send/recieve packets.
@@ -202,17 +200,15 @@ Most cncnet clients offer only one build of CnC-DDraw, and often limited builds 
 Open it through a text editor, and look for a tag called `Renderer=`
 This is likely set to Auto, but i recommend manually changing this for each option on CnC-DDraw and TS-DDraw.
 ```
-; Select the renderer, opengl, gdi, auto. Default = auto = if OpenGL fails automatically use GDI
+; Select the renderer, opengl,dx, gdi, auto. Default = auto = if OpenGL fails automatically use GDI
 renderer=auto
 ```
-NOTE: I seem to recall a third option of dx, requires verification.
 
 
 ## Final Alert 2 (and FS)
 Linux provides several new opportunities for people using FA2(SP) and FS(SP)
 The map editor can be run straight out of wine / bottles without any dependencies.
 ### FA2SP with a Dark Theme
---
 A Word of warning: there are a LOT of windows themes out there, i tried a few on my previous install and some seemed to work but most were a little dodgy (Some panels didn't change, some didn't sit nicely, some were too sharp....).<br>
 You can change themes using winecfg through the terminal (better yet through a wineprefix)<br>
 ```
