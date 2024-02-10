@@ -33,11 +33,12 @@ The reason you will often see a ddraw or cnc-ddraw package mentioned as this mea
 I find bottles seems to give me the most reliable result on my many re-installs, find information about it [here](https://usebottles.com) and download it to your OS.
 Most guides seem to recommend using Flatpack for the download, which may help if you are experiencing issues, as well as providing some areas such as sandboxing, but I have tested on the non-flatpack version.
 
+
 ### Dotnet 4.* Clients + OpenGl (ogl) Build
 
 Create new --> Application <br>
 In Settings: <br>
-- Runner: Soda <br>
+- Runner: Check Runner Compatability Table <br>
 - DXVK/VKD3D : Disabled <br>
 - LatencyFleX : Disabled <br>
 - Windows Version: Windows 10 (since some builds of phobos and other extensions require Windows 7 or higher) <br>
@@ -53,7 +54,7 @@ In Settings: <br>
 - Mono (Wine Mono) [Install Yourself] <br>
 
 
-#### Config 2: CnC-DDraw dependency
+#### Config 2: CnC-DDraw dependency (Recommended)
 
 *Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise) <br>
 
@@ -71,10 +72,10 @@ After following all of the steps above, enter your bottle, click "Run Excutable"
 
 ## Winetricks Instructions
 
-[Winetricks](https://wiki.archlinux.org/title/wine#WINEPREFIX) is another method we can use to run TS and YR through cncnet. While it is possible to perform all of this using wine only, it is not recommended and will require a few extra steps and alterations.
+[Winetricks](https://wiki.archlinux.org/title/wine#WINEPREFIX) is another method we can use to run TS and YR through cncnet. While it is possible to perform all of this using wine only, it is not recommended and will require a few extra steps and alterations. It is mostly run from the command line with a very limited GUI, so i recommend Bottles instead, although winetricks should be fully functional.
 
-- Install `wine` (Ideally a recent one, personally i have tested the above on wine-8.14 on Arch Linux), through your package manager. <br>
-- Install `winetricks` for greater control over individual prefixes (just do it)<br>
+- Install `wine` (Ideally a modern verion, as this is a dependency for winetricks), through your package manager. <br>
+- Install `winetricks` for greater control over individual prefixes (just do it) <br>
 
 
 
@@ -158,7 +159,20 @@ Be warned, most mod updaters *Will Override This File* - Back it up to save you 
 Try launching the game again, and it should be a bit smoother. 
 You may still notice some major artefacts/glitches when using the esc menu and returning to the game. Go into the client options and try all of the renderers in there, and hopefully (as with windows) one runs like a charm. For me, most tend to work (Default/CnC-DDraw), but TS-DDraw GDI fixes the esc menu breaking and lets me enter/exit between my game and other applications as I please.
 
+## Runner Compatability
+| Recommended | Runner | Client Compatability | Offline Compatability | Online Compatability | Notes |
+| ------------ | ------------ | ------------- | ------------- | ------------- | ------------- |
+| &#x2611; | Soda-7.0.9 | Fully Functional | Functional | Functional | Pressing esc --> Game Controls instantly closes gamemd |
+| &#x2612; | Soda-8.0.2 | Fully Functional | Launches Incorrectly  | Unaccessible - launch Issue|  |
+| &#x2612; | Vanigilla-8.6 | Not Functional | Unnaccesible  | Unaccessible | Error upon launching the client |
+| &#x2612; | Lutris-7.2 | Fully Functional | Functional | Fails to connect to gamesurge - Error Denied | Port/ICMP Issue? |
+| &#x2612; | wine-ge-proton8-25 | Fully Functional | Launches Incorrectly | Unaccessible - Launch Issue | Pressing esc --> Game Controls instantly closes gamemd |
+| &#x2612; | Sys-Wine-9.1 (From package Manager) | Fully Functional | Syringe Issue | Unaccessible - Syringe Issue | Pressing esc --> Game Controls instantly closes gamemd |
+| &#x2611; | Caffe-8.21 | Fully Functional | Fully Functional | Fully Functional | |
+| &#x2611 | kron4ek-wine-8.20-amd64 | Fully Functional | Fully Functional | Fully Functional | |
 
+This table has been tested using the Bottles Config 2 specifically on MO 3.3.6, with fully functional runners also tested on other mods.
+You will need to install most of these runners from inside bottles, through the 'Main Menu' button in the top-right corner, 'Preferences', and then from the 'Runners' tab.
 ## General Compatability and Troubleshooting Advice
 ### Connection Issues
 if your game works fine in skirmish but upon connecting to cncnet or upon entering an online match you either can't connect or get a desync, follow these [instructions](https://wiki.winehq.org/FAQ#Failed_to_use_ICMP_.28network_ping.29.2C_this_requires_special_permissions). Also check your firewall is open and that it allows you to send/recieve packets.
@@ -172,6 +186,10 @@ Also check you as a non-root user actually have access to the files and folders
 ### Dotnet Not Found
 if you get an error message, especially while attempting to run the dotnet7 client (specifically the client, not the game), complaining something similar to "dotnet not a known command" or "dotnet unrecognised script", then you *need* to install dotnet 7 runtime. Check [Arch Wiki](https://wiki.archlinux.org/title/.NET#Installation) for further details.
 
+### Wine-Introduced Limitations
+
+-  Often with 'mono' it appears that the client is without sound.
+-  With some renderers the minimap is black and appears very glitchy ingame. Works in functionality though. **Changes between renderers.**
 
 ### General Support
 As a general word of advice, if there is a known and trusted fix for an issue in a formal location, then it's alternative will likely work in linux.

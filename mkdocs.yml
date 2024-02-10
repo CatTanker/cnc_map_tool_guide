@@ -1,12 +1,12 @@
 theme:
-  name: readthedocs
+   name: readthedocs
+#  name: material
 plugins:
+#  - def_list
+#  - pymdownx.tasklist:
+#      custom_checkbox: true
   - search
-  - with-pdf:
-      cover_subtitle: PDF created with mkdocs-with-pdf
-      # TODO: find a way to use $READTHEDOCS_OUTPUT and $READTHEDOCS_PROJECT
-      # output_path: $READTHEDOCS_OUTPUT/$READTHEDOCS_PROJECT.pdf
-      output_path: builds.pdf
+  - autorefs
 #  - autozip:
 #      # TODO: find a way to use $READTHEDOCS_OUTPUT and $READTHEDOCS_PROJECT
 #      # source_zip_dir: $READTHEDOCS_OUTPUT
@@ -20,6 +20,11 @@ plugins:
         python:
           options:
             docstring_style: sphinx
+  - with-pdf :
+      cover_subtitle: PDF created with mkdocs-with-pdf
+      # TODO: find a way to use $READTHEDOCS_OUTPUT and $READTHEDOCS_PROJECT
+      # output_path: $READTHEDOCS_OUTPUT/$READTHEDOCS_PROJECT.pdf
+      output_path: builds.pdf
 
 site_name: CnC Tools and Resources
 site_description: A series of resources for mappers and linux users for WW 2.5D games
