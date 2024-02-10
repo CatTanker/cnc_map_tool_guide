@@ -31,4 +31,4 @@ I also need to provide a special thanks to: <br>
 - SCIPCION for occasional input.
 
 ## PDF Download
-A downloadable PDF should be available [here](builds.pdf){:download="CnC_PDF"}
+A downloadable PDF should be available [here](builds.pdf)
