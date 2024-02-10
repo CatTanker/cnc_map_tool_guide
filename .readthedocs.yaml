@@ -20,8 +20,8 @@ build:
     post_build:
       - mkdir -p $READTHEDOCS_OUTPUT/pdf/
       - ls -lR
-#      - mv ./site/builds.pdf $READTHEDOCS_OUTPUT/pdf/
-
+      - mv ./_readthedocs/html/builds.pdf $READTHEDOCS_OUTPUT/pdf/
+      - ls -lR
 mkdocs:
   configuration: mkdocs.yml
   fail_on_warning: false
