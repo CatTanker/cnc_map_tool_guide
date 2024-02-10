@@ -30,51 +30,63 @@ The reason you will often see a ddraw or cnc-ddraw package mentioned as this mea
 
 
 ## Bottles Instructions
-I find bottles seems to give me the most reliable result on my many re-installs, find information about it [here](https://usebottles.com) and download it to your OS.
+I find bottles seems to give me the most reliable result on my many re-installs, find information about it [here](https://usebottles.com) and download it to your OS.<br>
 Most guides seem to recommend using Flatpack for the download, which may help if you are experiencing issues, as well as providing some areas such as sandboxing, but I have tested on the non-flatpack version.
 
-### Dotnet 4.* Clients + OpenGl (ogl) Build
+Below I have included the configuration that I use for Bottles so that you can produce the bottle in steps following the GUI. You should complete the main initial steps and then follow either Config 1 or Config 2 (Recommended).  There are also runner options included in a table a little further down.<br>
+If you would prefer, I now include a bottles configuration .yml that you can [download](Assets/CnCNet_Bottles_Config.yml) and then import back into bottlesas a configuration.
 
-Create new --> Application <br>
+### Dotnet 4.* Clients + OpenGl (ogl) Build - Manually Entered
+
+Create new --> *Application* <br>
 In Settings: <br>
-- Runner: Soda <br>
+- Runner: Check Runner Compatability Table <br>
 - DXVK/VKD3D : Disabled <br>
 - LatencyFleX : Disabled <br>
 - Windows Version: Windows 10 (since some builds of phobos and other extensions require Windows 7 or higher) <br>
 
 #### Config 1: Manually Entered
---
-*Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise)<br>
 
-- ddraw as a DLL Override *MANUALLY ENTERED* <br>
+*Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise)<br>
+- ddraw as a DLL Override *Enter Manually* <br>
 
 *Installed Dependencies:* <br>
 - arial32/times32/courie32 [By Default] <br>
 - Mono (Wine Mono) [Install Yourself] <br>
 
 
-#### Config 2: CnC-DDraw dependency
+#### Config 2: CnC-DDraw dependency (Recommended)
 
-*Dll Overrides:*  (Assume :Native, then Builtin, unless specified otherwise) <br>
-
-- *ddraw through the cnc-ddraw dependency (**do not manually add** check the next step for details)
-
-*Installed Dependencies:*
-- arial32/times32/courie32 [By Default]
-- Mono (Wine Mono) [Install Yourself]
-- CnC-DDraw as a dependency [Install Yourself]
+*Installed Dependencies:*<br>
+- arial32/times32/courie32 [By Default]<br>
+- Mono (Wine Mono) [Install Yourself]<br>
+- CnC-DDraw as a dependency [Install Yourself]<br>
 
 
-After following all of the steps above, enter your bottle, click "Run Excutable", and guide it to your client folder / Resources, and then try "clientogl.exe", and the client should run fine, as well as the game. In some cases the xna client also seems to work, but try the ogl build first.
 
+After following all of the steps above, enter your bottle, click "Run Excutable", and guide it to your client folder / Resources, and then try "clientogl.exe", and the client should run fine, as well as the game. In some cases the xna client also seems to work, but try the ogl build first. **Do not expect the exe included in the root of the mod folder, eg. 'MentalOmegaClient.exe' to work, use the .ogl build!**<br>
 
+### Runner Compatability
+| Recommended | Runner | Client Compatability | Offline Compatability | Online Compatability | Notes |
+| ------------ | ------------ | ------------- | ------------- | ------------- | ------------- |
+| &#x2611; | Soda-7.0.9 | Fully Functional | Functional | Functional | Pressing esc --> Game Controls instantly closes gamemd |
+| &#x2612; | Soda-8.0.2 | Fully Functional | Launches Incorrectly  | Unaccessible - launch Issue|  |
+| &#x2612; | Vanigilla-8.6 | Not Functional | Unnaccesible  | Unaccessible | Error upon launching the client |
+| &#x2612; | Lutris-7.2 | Fully Functional | Functional | Fails to connect to gamesurge - Error Denied | Port/ICMP Issue? |
+| &#x2612; | wine-ge-proton8-25 | Fully Functional | Launches Incorrectly | Unaccessible - Launch Issue | Pressing esc --> Game Controls instantly closes gamemd |
+| &#x2612; | Sys-Wine-9.1 (From package Manager) | Fully Functional | Syringe Issue | Unaccessible - Syringe Issue | Pressing esc --> Game Controls instantly closes gamemd |
+| &#x2611; | Caffe-8.21 | Fully Functional | Fully Functional | Fully Functional | |
+| &#x2611; | kron4ek-wine-8.20-amd64 | Fully Functional | Fully Functional | Fully Functional | |
+
+This table has been tested using the Bottles Config 2 specifically on MO 3.3.6, with fully functional runners also tested on other mods.
+You will need to install most of these runners from inside bottles, through the 'Main Menu' button in the top-right corner, 'Preferences', and then from the 'Runners' tab.
 
 ## Winetricks Instructions
 
-[Winetricks](https://wiki.archlinux.org/title/wine#WINEPREFIX) is another method we can use to run TS and YR through cncnet. While it is possible to perform all of this using wine only, it is not recommended and will require a few extra steps and alterations.
+[Winetricks](https://wiki.archlinux.org/title/wine#WINEPREFIX) is another method we can use to run TS and YR through cncnet. While it is possible to perform all of this using wine only, it is not recommended and will require a few extra steps and alterations. It is mostly run from the command line with a very limited GUI, so i recommend Bottles instead, although winetricks should be fully functional.<br>
 
-- Install `wine` (Ideally a recent one, personally i have tested the above on wine-8.14 on Arch Linux), through your package manager. <br>
-- Install `winetricks` for greater control over individual prefixes (just do it)<br>
+- Install `wine` (Ideally a modern verion, as this is a dependency for winetricks), through your package manager. <br>
+- Install `winetricks` for greater control over individual prefixes (just do it) <br>
 
 
 
@@ -158,7 +170,6 @@ Be warned, most mod updaters *Will Override This File* - Back it up to save you 
 Try launching the game again, and it should be a bit smoother. 
 You may still notice some major artefacts/glitches when using the esc menu and returning to the game. Go into the client options and try all of the renderers in there, and hopefully (as with windows) one runs like a charm. For me, most tend to work (Default/CnC-DDraw), but TS-DDraw GDI fixes the esc menu breaking and lets me enter/exit between my game and other applications as I please.
 
-
 ## General Compatability and Troubleshooting Advice
 ### Connection Issues
 if your game works fine in skirmish but upon connecting to cncnet or upon entering an online match you either can't connect or get a desync, follow these [instructions](https://wiki.winehq.org/FAQ#Failed_to_use_ICMP_.28network_ping.29.2C_this_requires_special_permissions). Also check your firewall is open and that it allows you to send/recieve packets.
@@ -172,6 +183,11 @@ Also check you as a non-root user actually have access to the files and folders
 ### Dotnet Not Found
 if you get an error message, especially while attempting to run the dotnet7 client (specifically the client, not the game), complaining something similar to "dotnet not a known command" or "dotnet unrecognised script", then you *need* to install dotnet 7 runtime. Check [Arch Wiki](https://wiki.archlinux.org/title/.NET#Installation) for further details.
 
+### Wine-Introduced Limitations
+
+-  Often with 'mono' it appears that the client is without sound.
+-  With some renderers the minimap is black and appears very glitchy ingame. Works in functionality though. **Changes between renderers.**
+-  I usually listen to my own music while i play, but i have noticed that multiple runners seem to *fail* to load *music* from theme files, so while you can hear structures being built and "conscript reporting", you may not be able to listen to hell march through the game itself. *Requires Investigation.*
 
 ### General Support
 As a general word of advice, if there is a known and trusted fix for an issue in a formal location, then it's alternative will likely work in linux.
@@ -185,23 +201,21 @@ Most cncnet clients offer only one build of CnC-DDraw, and often limited builds 
 Open it through a text editor, and look for a tag called `Renderer=`
 This is likely set to Auto, but i recommend manually changing this for each option on CnC-DDraw and TS-DDraw.
 ```
-; Select the renderer, opengl, gdi, auto. Default = auto = if OpenGL fails automatically use GDI
+; Select the renderer, opengl,dx, gdi, auto. Default = auto = if OpenGL fails automatically use GDI
 renderer=auto
 ```
-NOTE: I seem to recall a third option of dx, requires verification.
 
 
 ## Final Alert 2 (and FS)
 Linux provides several new opportunities for people using FA2(SP) and FS(SP)
 The map editor can be run straight out of wine / bottles without any dependencies.
 ### FA2SP with a Dark Theme
---
 A Word of warning: there are a LOT of windows themes out there, i tried a few on my previous install and some seemed to work but most were a little dodgy (Some panels didn't change, some didn't sit nicely, some were too sharp....).<br>
 You can change themes using winecfg through the terminal (better yet through a wineprefix)<br>
 ```
 WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/map_editor" winecfg
 ```
-I believe this *only works* on recently [patched Fa2s](https://github.com/secsome/FA2sp].
+I believe this *only works* on recently [patched Fa2s](https://github.com/secsome/FA2sp).
 Mental Omega 3.3.6, RR 2.2.13 and any mod which has not been updated since 2020 do not have this patch, and so you will need to add it yourself if you want a dark theme.<br>
 I found this [gist](https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398) which on my system seems to provide a fully functioning dark theme based on Breeze, guidance for usage is included. As i run KDE Plasma this worked fairly well for me, matching the theme i used.<br>
 ![Breeze Theme Screenshot](Assets/breeze_fa2.png)
