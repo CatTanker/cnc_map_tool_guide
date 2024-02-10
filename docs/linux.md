@@ -57,13 +57,14 @@ In Settings: <br>
 
 #### Config 2: CnC-DDraw dependency (Recommended)
 
-*Installed Dependencies:*
-- arial32/times32/courie32 [By Default]
-- Mono (Wine Mono) [Install Yourself]
-- CnC-DDraw as a dependency [Install Yourself]
+*Installed Dependencies:*<br>
+- arial32/times32/courie32 [By Default]<br>
+- Mono (Wine Mono) [Install Yourself]<br>
+- CnC-DDraw as a dependency [Install Yourself]<br>
 
 
-After following all of the steps above, enter your bottle, click "Run Excutable", and guide it to your client folder / Resources, and then try "clientogl.exe", and the client should run fine, as well as the game. In some cases the xna client also seems to work, but try the ogl build first. **Do not expect the exe included in the root of the mod folder, eg. 'MentalOmegaClient.exe' to work, use the .ogl build!**
+
+After following all of the steps above, enter your bottle, click "Run Excutable", and guide it to your client folder / Resources, and then try "clientogl.exe", and the client should run fine, as well as the game. In some cases the xna client also seems to work, but try the ogl build first. **Do not expect the exe included in the root of the mod folder, eg. 'MentalOmegaClient.exe' to work, use the .ogl build!**<br>
 
 ### Runner Compatability
 | Recommended | Runner | Client Compatability | Offline Compatability | Online Compatability | Notes |
@@ -82,7 +83,7 @@ You will need to install most of these runners from inside bottles, through the 
 
 ## Winetricks Instructions
 
-[Winetricks](https://wiki.archlinux.org/title/wine#WINEPREFIX) is another method we can use to run TS and YR through cncnet. While it is possible to perform all of this using wine only, it is not recommended and will require a few extra steps and alterations. It is mostly run from the command line with a very limited GUI, so i recommend Bottles instead, although winetricks should be fully functional.
+[Winetricks](https://wiki.archlinux.org/title/wine#WINEPREFIX) is another method we can use to run TS and YR through cncnet. While it is possible to perform all of this using wine only, it is not recommended and will require a few extra steps and alterations. It is mostly run from the command line with a very limited GUI, so i recommend Bottles instead, although winetricks should be fully functional.<br>
 
 - Install `wine` (Ideally a modern verion, as this is a dependency for winetricks), through your package manager. <br>
 - Install `winetricks` for greater control over individual prefixes (just do it) <br>
