@@ -18,8 +18,7 @@ build:
     - weasyprint
   jobs:
     post_build:
-      - mkdir -p $READTHEDOCS_OUTPUT/pdf/
-      - mkdocs build
+#      - mkdir -p $READTHEDOCS_OUTPUT/pdf/
       - ls -lR
       - mv ./site/builds.pdf $READTHEDOCS_OUTPUT/pdf/
 
@@ -30,4 +29,4 @@ mkdocs:
 # Optionally declare the Python requirements required to build your docs
 python:
   install:
-  - requirements: docs/reqtest.txt
+  - requirements: docs/requirements.ln
