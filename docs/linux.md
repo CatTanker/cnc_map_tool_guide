@@ -1,3 +1,7 @@
+---
+hide:
+  - navigation
+---
 # Linux
 ## Introduction
 This guide gives mostly step-by-step instructions, useful tips and advice on running Yuri's Revenge, the Map Editor and indirectly Tiberian Sun on Linux.
