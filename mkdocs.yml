@@ -1,11 +1,48 @@
 theme:
-   name: readthedocs
-#  name: material
+  name: material
+  features:
+    - content.code.copy
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.path
+    - navigation.footer
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
 plugins:
+#  - offline
 #  - def_list
 #  - pymdownx.tasklist:
 #      custom_checkbox: true
   - search
+
   - autorefs
 #  - attr_list
 #  - autozip:
@@ -29,10 +66,26 @@ plugins:
 
 site_name: CnC Tools and Resources
 site_description: A series of resources for mappers and linux users for WW 2.5D games
-site_url: https://cattanker.github.io/CnC-Resource-Docs/
+#site_url: https://cattanker.github.io/CnC-Resource-Docs/
 repo_url: https://github.com/CatTanker/cnc_map_tool_guide
+repo_name: Documentation Github Page
 nav:
 #  - Home: home.md redundant, since index.md seems to be hardcoded
+  - Landing Page: index.md
   - Tools: tools.md
   - Map Resources: resources.md
   - Linux: linux.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@squidfunk
+      name: squidfunk on Fosstodon
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

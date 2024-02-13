@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Tools
 ## Required Map Editors
 
