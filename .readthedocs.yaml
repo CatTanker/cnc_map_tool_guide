@@ -16,8 +16,8 @@ build:
   apt_packages:
     # Required for mkdocs-with-pdf
     - weasyprint
-  jobs:
-    post_build:
+#  jobs:
+#    post_build:
 #      - mkdir -p $READTHEDOCS_OUTPUT/pdf/
 #      - ls -lR
 #      - mv ./_readthedocs/html/builds.pdf $READTHEDOCS_OUTPUT/pdf/
