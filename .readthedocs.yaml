@@ -19,7 +19,7 @@ build:
   jobs:
     post_build:
 #      - mkdir -p $READTHEDOCS_OUTPUT/pdf/
-      - ls -lR
+#      - ls -lR
 #      - mv ./_readthedocs/html/builds.pdf $READTHEDOCS_OUTPUT/pdf/
 #      - ls -lR
 mkdocs:
