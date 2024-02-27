@@ -72,7 +72,10 @@ repo_name: Documentation Github Page
 nav:
 #  - Home: home.md redundant, since index.md seems to be hardcoded
   - Landing Page: index.md
-  - Tools: tools.md
+  - 'Mapping Tools':
+    - 'Core Tools': 'core_editors.md'
+    - 'Modern Options': 'modern_editors.md'
+    - 'Assistive Tools': 'additional_tools.md'
   - Map Resources: resources.md
   - Linux: linux.md
 
