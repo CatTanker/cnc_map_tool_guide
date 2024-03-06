@@ -12,7 +12,7 @@ I have outlined several useful mapping tutorials and mapping archives that i hav
 | Description | Source + Link | Author |
 | ------------ | ------------- | ------------- |
 | FA2 Tutorials Playlist | [YouTube](https://www.youtube.com/playlist?list=PLPTX4WpN_n2Pd1duBlBT8Ht5OFiuKy_JS) | Burg |
-| FA2 Tutorials Playlist | [YouTube](hhttps://www.youtube.com/playlist?list=PLa9Udz4hdmEOVfsjXD36XUgvSigAPMpST) | YosefAnan |
+| FA2 Tutorials Playlist | [YouTube](https://www.youtube.com/playlist?list=PLa9Udz4hdmEOVfsjXD36XUgvSigAPMpST) | YosefAnan |
 | FS Tutorials Playlist | [YouTube](https://www.youtube.com/playlist?list=PLSe1fqlsB-g45L-iHP01YevQVbD2DaDOt) | Holland |
 | FA2 Written Guide | [CnCNet Forums](https://forums.cncnet.org/topic/8245-how-to-make-ra2-yr-maps-final-alert-2-tutorial/) | RaVaGe |
 | Scripting Index | [PPM Forums](https://ppmforums.com/topic47332/thecompleteanddefinitivemappingindex/) | McPwny |
