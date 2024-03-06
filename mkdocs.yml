@@ -77,8 +77,12 @@ nav:
     - 'Modern Options': 'modern_editors.md'
     - 'Assistive Tools': 'additional_tools.md'
   - Map Resources: resources.md
-  - Linux: linux.md
-
+  - 'Linux Resources':
+    - 'Introduction': 'linuxintro.md'
+    - 'Bottles': 'bottles.md'
+    - 'WineTricks' : 'winetricks.md'
+    - 'Support and Compatability' : 'linuxsupport.md'
+    - 'Editor Tool Compatability' : 'linuxtools.md'
 extra:
   social:
     - icon: fontawesome/brands/mastodon
