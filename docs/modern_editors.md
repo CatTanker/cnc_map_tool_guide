@@ -24,7 +24,7 @@ Another example is After Dark CC Blue, provided by SCIPCION on Windows 10. I bel
 This example uses [fluent from niivu's Windows 10 Themes](https://github.com/niivu/Windows-10-themes). The creator also has a large collection of other windows 10 & 11 [themes](https://www.deviantart.com/niivu/gallery) that you can experiment with as well.
 ![Win10_Fluent](Assets/fluent.png)
 
-Ultimately it is your decision if you wish to risk modifying windows in such a way, especially with WAE as a modern alternative. I have also written advice on applying a dark theme in [linux](linux.md), however the options are more limited.
+Ultimately it is your decision if you wish to risk modifying windows in such a way, especially with WAE as a modern alternative. I have also written advice on applying a dark theme in [linux](linuxtools.md), however the options are more limited.
 
 
 <!---#| Github |[Link](https://github.com/FunkyFr3sh/cnc-ddraw)| -->
