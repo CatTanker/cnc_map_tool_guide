@@ -77,7 +77,9 @@ nav:
     - 'Core Tools': 'core_editors.md'
     - 'Modern Options': 'modern_editors.md'
     - 'Assistive Tools': 'additional_tools.md'
-  - Map Resources: resources.md
+  - 'Resources':
+    - 'Mapping': 'mapresources.md'
+    - 'Renderers': 'rendererresources.md'
   - 'Linux Resources':
     - 'Introduction': 'linuxintro.md'
     - 'Bottles': 'bottles.md'

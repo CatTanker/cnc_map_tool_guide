@@ -1,0 +1,83 @@
+# Renderer Conguration
+## Using DXVK
+
+![Vulkan Logo](https://d29g4g2dyqv443.cloudfront.net/sites/default/files/Vulkan_Logo.png)
+
+[DXVK](https://github.com/doitsujin/dxvk) is a Vulkan-based translation layer for Direct3D 9/10/11 that is intended for usage on Linux systems using wine. I highly recommend enabling this if you are using Linux as it requires very little effort to set up, especially if you are using GUI tools such as [bottles](bottles.md) or lutris. This is well-tested and is in some cases enabled by default for people running Windows games on Steam using Proton.
+
+While this does not have a major effect, comparing using the `renderer=gdi` inside `draw.ini`, I received around 30 more fps running the same 1v1 skirmish map inside MO 3.3.6 with dxvk enabled than with it disabled. I also felt the game was a bit smoother, with the fps having less variance and rarely dropping below 300 with dxvk on compared to running often around the 280-310 mark without dxvk. Tested using Bottles Caffe on Linux, with an I5-2500K. I am also using an NVIDIA GPU, and given that dxvk was initially developed for AMD I am likely not receiving the full performance benefit. In comparisons using Fading Dusk, I also received around 30fps more in each renderer setting, although the overall fps was consistently lower on all settings due to TS's smaller cell size meaning more is rendered at once.
+
+However, although support may be more limited due to Windows not being the the original development target, you can use this on Windows for YR and TS.
+
+NOTE: Your GPU **NEEDS** to support vulkan for you to use this.
+
+### Installation for Windows
+Please note this assumes your game works without any issues. You may also need to install vulkan libraries if you haven't already.
+
+Pre-Instillation: please run the game and follow `Settings/Pause Menu --> Game Controls --> keyboard --> Development --> FPS Counter` and set the hotkey of this to something that you can easily access but doesn't overwrite anything, such as `/`. For TS, you need to find the Toggle Info Panel option and set that to an unused hotkey instead. This allows us to compare the speeds of the game beforehand and afterward. I recommend heading ingame and taking note of the FPS you can achieve in a game with uncapped speed control.
+
+DXVK has also recieved little testing on TS/YR, although I have experienced several games (including over an hour of PvP online) with one or more users using DXVK, so this should not cause a desync.
+
+1. Install DXVK into your game's folder
+    1. Head to DXVK's [releases page](https://github.com/doitsujin/dxvk/releases).
+    2. Download the `dxvk.x.x.tar.gz` file and open it. You may need a [file archiver](https://www.7-zip.org/) to open it.
+    3. Head into the x32 folder and copy only the **d3d9.dll** file.
+    4. Paste this into your game's top folder, where gamemd.exe or TiberianSun.exe are located.
+2. Install CnC-DDraw.
+    Your instillation, especially if it uses cncnet, likely already has cnc-ddraw. Update to the latest version.
+
+    1. Head to CnC-DDraw's [releases page](https://github.com/FunkyFr3sh/cnc-ddraw/releases).
+    2. Download `CnC-DDraw.zip` to your PC.
+    3. Extract this into your game's top folder, where gamemd.exe or TiberianSun.exe are located.
+    4. Run `cnc-ddraw config.exe`.
+
+3. Testing
+    1. open the client, and make sure the renderer is set on cnc-ddraw in settings.
+    2. Open the configuration exe listed above, head to Advanced Settings, and turn off limit frame rate.
+        1. Renderer and change from `automatic` to `Direct3D 9`.
+        2. Run the game. Use the hotkey you assigned earlier to study the FPS, and check that entering the tab menu (diplomacy menu) and options menus (save game, game controls, exit game) and heading back into the game itself all work fine.
+        3. Exit and make a note of the FPS and how well it runs (compatibility as listed above, and how smooth the game feels).
+        4. Repeat the last 3 steps but using `OpenGl` and `GDI`.
+    3. Open `cnc-ddraw config.exe` again and set the renderer to always be the best running one.
+    4. Decide if you want to turn on `limit frame rate` again.
+4. Profit!
+
+
+If you decide that your game is less stable, you run into difficulties or simply have fps drops then to uninstall you simply delete `d3d9.dll` from your folder.
+
+
+
+## Scaling with CnC-DDraw
+
+![Sharp Scaling](https://cdn.cloudflare.steamstatic.com/steam/apps/1213210/extras/Graphics_Switching_610.png?t=1659021785)
+
+For a game without any zoom functions such as TS and YR, and given the games were intended for 800x600 screens 20 years ago, visibility can become an issue. Especially apparent in TS due to the game having smaller cells, parts such as infantry and minimaps may become extremely difficult to distinguish.
+
+Before starting, I highly recommend that you head to CnC-DDraw's [releases page](https://github.com/FunkyFr3sh/cnc-ddraw/releases) to overwrite your existing ddraw components and ensure you have the latest.
+
+Follow [this tutorial](https://www.moddb.com/members/rampastring/blogs/tutorial-sharp-scaling-dta-and-other-client-based-games-with-cnc-ddraw) on setting up scaling for DTA. This also applies to every mod using cnc-ddraw and the cncnet client. If the resolution you need to scale from, such as 960x540 for 1080p scaling, does not exist as an option inside the client, then you can add this to your game's original ini file, such as SUN.ini for TS.
+
+
+If you wish to configure the upscaling process further, follow the steps below.
+
+For OpenGL:
+
+According to the latest `ddraw.ini`:
+```ini
+; Preliminary libretro shader support - (Requires 'renderer=opengl*') https://github.com/libretro/glsl-shaders
+; 2x scaling example: https://imgur.com/a/kxsM1oY - 4x scaling example: https://imgur.com/a/wjrhpFV
+; You can specify a full path to a .glsl shader file here or use one of the values listed below
+; Possible values: Nearest neighbor, Bilinear, Bicubic, Lanczos, xBR-lv2
+shader=...
+```
+Note this is also configurable from `cnc-ddraw config.exe` that is provided from CnC-DDraw's [releases page](https://github.com/FunkyFr3sh/cnc-ddraw/releases).
+
+For the Direct3D9 renderer, enter ddraw.ini and test out the following options ingame to see which you prefer.
+According to the latest `ddraw.ini`:
+```ini
+; Upscaling filter for the direct3d9* renderers
+; Possible values: 0 = nearest-neighbor, 1 = bilinear, 2 = bicubic, 3 = lanczos (bicubic/lanczos only support 16/32bit color depth games)
+d3d9_filter=...
+```
+
+GDI as a renderer does not scale well there is no scaling option other than linear scaling.
