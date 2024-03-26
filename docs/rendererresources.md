@@ -1,13 +1,30 @@
 # Renderer Conguration
-## Using DXVK
+## Renderer Choices
 
+Typically bundled with the CnCNet Client, there are several renderers you have that you can choose from. These improve compatibility with modern operating systems and if you pick right could make the game playable as well as drastically impact performance.
+
+For most users you should start with [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw), which is currently the most developed and maintained renderer. Most mods ship this simply as a `CnC-DDraw` option inside the client's options menu. If the game seems to run or you face issues such as being unable to return to the game itself after clicking the pause menu (or have an invisible mouse), head into `ddraw.ini` and change `renderer=auto` to `ogl`, then `gdi`, then `dx` and see which provides you with the best experience.
+
+Assuming this does not solve your issue, you should try the [TS-DDraw](https://github.com/CnCNet/ts-ddraw/releases) renderer and all of the choices available (OpenGl, GDI, etc, same as CnC-DDraw)
+
+Another popular renderer if the above two struggle is [DDrawCompat](https://github.com/narzoul/DDrawCompat) which allows the game to run on the Dirext X it was made for rather than converting it into a later API. This is not compatible with DXVK however.
+
+There are also a number of edge case renderers such as DxWnd, DDWrapper and IE-DDraw that are much smaller, often an older development and have relatively little support, configuration and documentation available. These may help a small minority of people but other alternatives should be preferred and tested first.
+
+
+## Using DXVK
+### Summary
 ![Vulkan Logo](https://d29g4g2dyqv443.cloudfront.net/sites/default/files/Vulkan_Logo.png)
 
-[DXVK](https://github.com/doitsujin/dxvk) is a Vulkan-based translation layer for Direct3D 9/10/11 that is intended for usage on Linux systems using wine. I highly recommend enabling this if you are using Linux as it requires very little effort to set up, especially if you are using GUI tools such as [bottles](bottles.md) or lutris. This is well-tested and is in some cases enabled by default for people running Windows games on Steam using Proton.
+[DXVK](https://github.com/doitsujin/dxvk) is a Vulkan-based translation layer for Direct3D 9/10/11 that is intended for usage on Linux systems using wine. I highly recommend enabling this if you are using Linux as it requires very little effort to set up, especially if you are using GUI tools such as [bottles](bottles.md), winetricks or lutris. This is well-tested and is in some cases enabled by default for people running Windows games on Steam using Proton.
 
 While this does not have a major effect, comparing using the `renderer=gdi` inside `draw.ini`, I received around 30 more fps running the same 1v1 skirmish map inside MO 3.3.6 with dxvk enabled than with it disabled. I also felt the game was a bit smoother, with the fps having less variance and rarely dropping below 300 with dxvk on compared to running often around the 280-310 mark without dxvk. Tested using Bottles Caffe on Linux, with an I5-2500K. I am also using an NVIDIA GPU, and given that dxvk was initially developed for AMD I am likely not receiving the full performance benefit. In comparisons using Fading Dusk, I also received around 30fps more in each renderer setting, although the overall fps was consistently lower on all settings due to TS's smaller cell size meaning more is rendered at once.
 
-However, although support may be more limited due to Windows not being the the original development target, you can use this on Windows for YR and TS.
+Performance increases will vary between PC. Older PCs that support vulkan will certainly notice the difference and if you do not regularly achieve 60fps, you may be able to now.
+
+Top-of-the-range PCs will benefit less, as the chances are your CPU can cope with whatever is thrown at it. It may help if you decide to run an extremely intensive map, such as some of the larger campaign maps included in mods. Since it is typically very hard to play at anything above 200fps, and onlien can sometimes struggle to reach 30, the benefits may be missed.
+
+However, although support may be more limited due to Windows not being the the original development target, you can use this on Windows for YR and TS, simply check below.
 
 NOTE: Your GPU **NEEDS** to support vulkan for you to use this.
 
