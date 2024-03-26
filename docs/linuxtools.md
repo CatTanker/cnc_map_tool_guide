@@ -33,7 +33,7 @@ You then run the map editor from this wineprefix like as I recommended in the Wi
 is it possible to run the World Altering Editor on linux. While a native linux buildcould be a future goal, for now the editor can run using a compatability layer.
 I highly recommend using [Bottles](https://usebottles.com) for this as it allows possibly the easiest instillation and customisation of new runners.
 
-1.Preparing the bottle:
+1. Preparing the bottle:
     1. Create a new bottle, as an application (not gaming or custom).
     2. Head to Settings and make sure the runner's version is above 9.0.
         If it is not:
