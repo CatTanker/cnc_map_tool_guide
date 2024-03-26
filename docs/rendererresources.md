@@ -7,7 +7,7 @@ For most users you should start with [CnC-DDraw](https://github.com/FunkyFr3sh/c
 
 Assuming this does not solve your issue, you should try the [TS-DDraw](https://github.com/CnCNet/ts-ddraw/releases) renderer and all of the choices available (OpenGl, GDI, etc, same as CnC-DDraw)
 
-Another popular renderer if the above two struggle is [DDrawCompat](https://github.com/narzoul/DDrawCompat) which allows the game to run on the Dirext X it was made for rather than converting it into a later API. This is not compatible with DXVK however.
+Another popular renderer if the above two struggle is [DDrawCompat](https://github.com/narzoul/DDrawCompat) which allows the game to run on the Dirext X it was made for rather than converting it into a later API. This is not compatible with DXVK however. This was included in the Steam edition by default.
 
 There are also a number of edge case renderers such as DxWnd, DDWrapper and IE-DDraw that are much smaller, often an older development and have relatively little support, configuration and documentation available. These may help a small minority of people but other alternatives should be preferred and tested first.
 
