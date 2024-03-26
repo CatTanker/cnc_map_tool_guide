@@ -30,31 +30,31 @@ You then run the map editor from this wineprefix like as I recommended in the Wi
 
 ## World Altering editor
 
-is it possible to run the World Altering Editor on linux. While a native linux buildcould be a future goal, for now the editor can run using a compatability layer.
-I highly recommend using [Bottles](https://usebottles.com) for this as it allows possibly the easiest instillation and customisation of new runners.
+It is possible to run the World Altering Editor on Linux. While a native Linux build could be a future goal, for now the editor can at least be run using a compatibility layer.
+I highly recommend using [Bottles](https://usebottles.com) for this as it allows possibly the easiest installation and customization of new runners.
 
 1. Preparing the bottle:
     1. Create a new bottle, as an application (not gaming or custom).
     2. Head to Settings and make sure the runner's version is above 9.0. If it is not:
         1. Head to the main page where you select bottles
-        2. Click on the 3 dots ore lines (theme dependent) by the search arrow
+        2. Click on the 3 dots or 3 lines (theme dependent) by the search icon at the top-right of your window.
         3. Select Preferences
         4. Head to the runners tab
         5. Download a runner version that is =>9.0. I recommend Caffe-9.2, and kron4ek-wine-9.4-amb64
-        6. Go back to the bottle and select either of thse as a runner.
+        6. Go back to the bottle and select either of these as a runner.
 
-Note that the latest wine versions should also work if you select them as a runner. This would need to be installed onto yourr system from your distribution or building from source though, rather than through bottles.
+Note that the latest wine versions should also work if you select them as a runner. This would need to be installed onto your system from your distribution or building from source though, rather than through bottles.
 
 2. Installing Dotnet 8 Desktop Runtime
     2. Head to [Microsoft's Dotnet page](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) and download the latest x64 installer for **.NET Desktop Runtime 8.x.x**, the one which only has an installer for Windows.
-    3. Go into your bottle, click `Run Excutable` and select the exe you have just downloaded.
+    3. Go into your bottle, click `Run Executable` and select the exe you have just downloaded.
     4. Head through the instillation page, agreeing and telling it to install it.
 
 3. Running the World Altering Editor
-    1. Find your World Altering Editor inside your bottle's `Run Excutable`
+    1. Find your World Altering Editor inside your bottle's `Run Executable`
     2. Open `WorldAlteringEditor.exe`
-    3. Click on `Browse` and use wine's clunky file browser to find your mod/game's folder
-    4. Select a map, either using browse again or using the built in file browser to select the map
-    5. Open the map and enjoy!`
+    3. Click on `Browse` and use Wine's clunky file browser to find your mod/game's folder
+    4. Select a map, either using browse again or using the built-in file browser to select the map
+    5. Open the map and enjoy!
 
 
