@@ -35,15 +35,15 @@ I highly recommend using [Bottles](https://usebottles.com) for this as it allows
 
 1. Preparing the bottle:
     1. Create a new bottle, as an application (not gaming or custom).
-    2. Head to Settings and make sure the runner's version is above 9.0.
-        If it is not:
+    2. Head to Settings and make sure the runner's version is above 9.0. If it is not:
             1. Head to the main page where you select bottles
             2. Click on the 3 dots ore lines (theme dependent) by the search arrow
             3. Select Preferences
             4. Head to the runners tab
             5. Download a runner version that is =>9.0. I recommend Caffe-9.2, and kron4ek-wine-9.4-amb64
             6. Go back to the bottle and select either of thse as a runner.
-        Note that the latest wine versions should also work if you select them as a runner. This would need to be installed onto yourr system from your distribution or building from source though, rather than through bottles.
+
+Note that the latest wine versions should also work if you select them as a runner. This would need to be installed onto yourr system from your distribution or building from source though, rather than through bottles.
 
 2. Installing Dotnet 8 Desktop Runtime
     2. Head to [Microsoft's Dotnet page](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) and download the latest x64 installer for **.NET Desktop Runtime 8.x.x**, the one which only has an installer for Windows.
