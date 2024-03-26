@@ -6,6 +6,22 @@ Getting an error complaining about permissions?
 [chmod +x ...](https://wiki.archlinux.org/title/File_permissions_and_attributes) all of the exes in the game/mod folder. For the later client, i found this fixed a permissions issue on the dotnet 7 client.
 Also check you as a non-root user actually have access to the files and folders
 
+On the Dotnet 8 Client, using UniversalGl natively, if you have an error saying permissions denied when launching the game, such as this in `client.log`:
+```
+24.03. 16:53:52.899    Writing spawn.ini
+24.03. 16:53:52.899    Writing map.
+24.03. 16:53:52.899    Loading map INI from (path to map file)).map
+24.03. 16:53:52.903    About to launch main game executable.
+24.03. 16:53:52.919    Writing settings INI.
+24.03. 16:53:52.919    Launch executable: (home --> client --> resources..))wine-md.sh
+24.03. 16:53:52.919    Launch arguments:  -SPAWN -LOG -CD -INCLUDE -INHERITANCE -ICON Resources/gameicon.ico
+24.03. 16:53:52.920    Error launching wine-md.sh: System.ComponentModel.Win32Exception (13): An error occurred trying to start process '/home/(username)/Local Files/Project Phantom/Resources/Compatibility/Unix/wine-md.sh' with working directory '/home/main-i5-kde/Local Files/Project Phantom'. Permission denied
+   at System.Diagnostics.Process.ForkAndExecProcess(ProcessStartInfo startInfo, String reso
+```
+
+enter properties of `PPLauncher.sh` and set this as **excutable** and make sure it has full RWX access. The head to the wine-md.sh file inside the `Resources/Compatibility/` section and give this the same permissions. The game should now run.
+
+
 **Do Not** run wine as root however, this will cause more consequences and fix nothing. Administrator-related fixes tend to be as a result of permissions being incorrect. make sure to open the mod or game's folder and check everything has both read and write permissions, and make sure you apply any fixes to subfolders and subfiles too.
 
 ### Dotnet Not Found
@@ -32,6 +48,9 @@ This is likely set to Auto, but i recommend manually changing this for each opti
 ; Select the renderer, opengl,dx, gdi, auto. Default = auto = if OpenGL fails automatically use GDI
 renderer=auto
 ```
+
+Also check the newly introduced [renderer wiki section](rendererresources.md).
+
 
 ## External Sources and Notes
 
