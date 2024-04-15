@@ -3,7 +3,7 @@
 
 Typically bundled with the CnCNet Client, there are several renderers you have that you can choose from. These improve compatibility with modern operating systems and if you pick right could make the game playable as well as drastically impact performance.
 
-For most users you should start with [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw), which is currently the most developed and maintained renderer. Most mods ship this simply as a `CnC-DDraw` option inside the client's options menu. If the game seems to run or you face issues such as being unable to return to the game itself after clicking the pause menu (or have an invisible mouse), head into `ddraw.ini` and change `renderer=auto` to `ogl`, then `gdi`, then `dx` and see which provides you with the best experience.
+For most users you should start with [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw), which is currently the most developed and maintained renderer. Most mods ship this simply as a `CnC-DDraw` option inside the client's options menu. If the game seems to run or you face issues such as being unable to return to the game itself after clicking the pause menu (or have an invisible mouse), head into `ddraw.ini` and change `renderer=auto` to `ogl`, then `dx`, then `gdi` and see which provides you with the best experience.
 
 Assuming this does not solve your issue, you should try the [TS-DDraw](https://github.com/CnCNet/ts-ddraw/releases) renderer and all of the choices available (OpenGl, GDI, etc, same as CnC-DDraw)
 
@@ -16,7 +16,7 @@ There are also a number of edge case renderers such as DxWnd, DDWrapper and IE-D
 ### Summary
 ![Vulkan Logo](https://d29g4g2dyqv443.cloudfront.net/sites/default/files/Vulkan_Logo.png)
 
-[DXVK](https://github.com/doitsujin/dxvk) is a Vulkan-based translation layer for Direct3D 9/10/11 that is intended for usage on Linux systems using wine. I highly recommend enabling this if you are using Linux as it requires very little effort to set up, especially if you are using GUI tools such as [bottles](bottles.md), winetricks or lutris. This is well-tested and is in some cases enabled by default for people running Windows games on Steam using Proton.
+[DXVK](https://github.com/doitsujin/dxvk) is a Vulkan-based translation layer for Direct3D 9/10/11 that was initially intended for usage on Linux systems using wine. I highly recommend enabling this if you are using Linux as it requires very little effort to set up, especially if you are using GUI tools such as [bottles](bottles.md), winetricks or lutris. This is well-tested and is in some cases enabled by default for people running Windows games on Steam using Proton.
 
 While this does not have a major effect, comparing using the `renderer=gdi` inside `draw.ini`, I received around 30 more fps running the same 1v1 skirmish map inside MO 3.3.6 with dxvk enabled than with it disabled. I also felt the game was a bit smoother, with the fps having less variance and rarely dropping below 300 with dxvk on compared to running often around the 280-310 mark without dxvk. Tested using Bottles Caffe on Linux, with an I5-2500K. I am also using an NVIDIA GPU, and given that dxvk was initially developed for AMD I am likely not receiving the full performance benefit. In comparisons using Fading Dusk, I also received around 30fps more in each renderer setting, although the overall fps was consistently lower on all settings due to TS's smaller cell size meaning more is rendered at once.
 
@@ -61,8 +61,6 @@ DXVK has also recieved little testing on TS/YR, although I have experienced seve
 
 
 If you decide that your game is less stable, you run into difficulties or simply have fps drops then to uninstall you simply delete `d3d9.dll` from your folder.
-
-
 
 ## Scaling with CnC-DDraw
 
