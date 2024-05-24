@@ -3,59 +3,59 @@
 
 Typically bundled with the CnCNet Client, there are several renderers you have that you can choose from. These improve compatibility with modern operating systems and if you pick right could make the game playable as well as drastically impact performance.
 
-For most users you should start with [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw), which is currently the most developed and maintained renderer. Most mods ship this simply as a `CnC-DDraw` option inside the client's options menu. If the game seems to run or you face issues such as being unable to return to the game itself after clicking the pause menu (or have an invisible mouse), head into `ddraw.ini` and change `renderer=auto` to `ogl`, then `dx`, then `gdi` and see which provides you with the best experience.
+For most users, you should start with [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw), which is currently the most developed and maintained renderer. Most mods ship this simply as a `CnC-DDraw` option inside the client's options menu. If the game seems to run or you face issues such as being unable to return to the game itself after clicking the pause menu (or have an invisible mouse), head into `ddraw.ini` and change `renderer=auto` to `ogl`, then `dx`, then `gdi` and see which provides you with the best experience.
 
-Assuming this does not solve your issue, you should try the [TS-DDraw](https://github.com/CnCNet/ts-ddraw/releases) renderer and all of the choices available (OpenGl, GDI, etc, same as CnC-DDraw)
+Assuming this does not solve your issue, you should try the [TS-DDraw](https://github.com/CnCNet/ts-ddraw/releases) renderer and all of the choices available (OpenGL, GDI, etc, same as CnC-DDraw)
 
-Another popular renderer if the above two struggle is [DDrawCompat](https://github.com/narzoul/DDrawCompat) which allows the game to run on the Dirext X it was made for rather than converting it into a later API. This is not compatible with DXVK however. This was included in the Steam edition by default.
+Another popular renderer assuming the above two struggle is [DDrawCompat](https://github.com/narzoul/DDrawCompat) which is another DLL wrapper which works using the native DirectDraw libraries, rather than converting it to a later format such as cnc-ddraw. This is not compatible with DXVK however, and is included in the Steam edition of YR by default.
 
-There are also a number of edge case renderers such as DxWnd, DDWrapper and IE-DDraw that are much smaller, often an older development and have relatively little support, configuration and documentation available. These may help a small minority of people but other alternatives should be preferred and tested first.
+There are also a number of edge case renderers such as DxWnd, DDWrapper and IE-DDraw which are much smaller, often an older development and have relatively little support, configuration and documentation available. These may help a small minority of people but other alternatives should be preferred and tested first.
 
 
 ## Using DXVK
 ### Summary
 ![Vulkan Logo](https://d29g4g2dyqv443.cloudfront.net/sites/default/files/Vulkan_Logo.png)
 
-[DXVK](https://github.com/doitsujin/dxvk) is a Vulkan-based translation layer for Direct3D 9/10/11 that was initially intended for usage on Linux systems using wine. I highly recommend enabling this if you are using Linux as it requires very little effort to set up, especially if you are using GUI tools such as [bottles](bottles.md), winetricks or lutris. This is well-tested and is in some cases enabled by default for people running Windows games on Steam using Proton.
+[DXVK](https://github.com/doitsujin/dxvk) is a Vulkan-based translation layer for Direct3D 9/10/11 that was initially intended for usage on Linux systems using wine/proton. I highly recommend enabling this if you are using Linux as it requires very little effort to set up, especially if you are using GUI tools such as [bottles](bottles.md), winetricks or lutris. This is well-tested and is in some cases enabled by default for people running Windows games on Steam using Proton.
 
-While this does not have a major effect, comparing using the `renderer=gdi` inside `draw.ini`, I received around 30 more fps running the same 1v1 skirmish map inside MO 3.3.6 with dxvk enabled than with it disabled. I also felt the game was a bit smoother, with the fps having less variance and rarely dropping below 300 with dxvk on compared to running often around the 280-310 mark without dxvk. Tested using Bottles Caffe on Linux, with an I5-2500K. I am also using an NVIDIA GPU, and given that dxvk was initially developed for AMD I am likely not receiving the full performance benefit. In comparisons using Fading Dusk, I also received around 30fps more in each renderer setting, although the overall fps was consistently lower on all settings due to TS's smaller cell size meaning more is rendered at once.
+While this does not have a major effect, comparing using the `renderer=gdi` inside `draw.ini`, I received around 30 more fps (with uncapped fps) running the same 1v1 skirmish map inside MO 3.3.6 with dxvk enabled than with it disabled. I also felt the game was a bit smoother, with the fps having less variance and rarely dropping below 300 with dxvk on compared to running often around the 280-310 mark without dxvk. Tested using Bottles Caffe on Linux, with an I5-2500K. I am also using an NVIDIA GPU, and given that dxvk was initially developed for AMD I am likely not receiving the full performance benefit. In comparisons using Fading Dusk, I also received around 30fps more in each renderer setting, although the overall fps was consistently lower on all settings due to TS's smaller cell size meaning more is rendered at once. Other users have confirmed the average increase to more accurately be at around a 10% FPS increase, or at around 10-15fps in more realistic settings.
 
-Performance increases will vary between PC. Older PCs that support vulkan will certainly notice the difference and if you do not regularly achieve 60fps, you may be able to now.
-
-Top-of-the-range PCs will benefit less, as the chances are your CPU can cope with whatever is thrown at it. It may help if you decide to run an extremely intensive map, such as some of the larger campaign maps included in mods. Since it is typically very hard to play at anything above 200fps, and onlien can sometimes struggle to reach 30, the benefits may be missed.
+Performance increases will vary between PCs. Older PCs that support Vulkan will certainly notice the difference and if you do not regularly achieve 60fps, you may be able to now. Top-of-the-range PCs will benefit less, as the chances are your CPU can cope with whatever is thrown at it. It may help if you decide to run an extremely intensive map, such as some of the larger campaign maps included in mods. Since it is typically very hard to play at anything above 200fps, and online can sometimes struggle to reach 30fps given connection limitations, the benefits may be missed.
 
 However, although support may be more limited due to Windows not being the the original development target, you can use this on Windows for YR and TS, simply check below.
 
-NOTE: Your GPU **NEEDS** to support vulkan for you to use this.
+NOTE: Your GPU **NEEDS** to support Vulkan for you to use this.
 
 ### Installation for Windows
-Please note this assumes your game works without any issues. You may also need to install vulkan libraries if you haven't already.
+Please note this assumes your game works without any issues. You may also need to install Vulkan libraries if you haven't already.
 
 Pre-Instillation: please run the game and follow `Settings/Pause Menu --> Game Controls --> keyboard --> Development --> FPS Counter` and set the hotkey of this to something that you can easily access but doesn't overwrite anything, such as `/`. For TS, you need to find the Toggle Info Panel option and set that to an unused hotkey instead. This allows us to compare the speeds of the game beforehand and afterward. I recommend heading ingame and taking note of the FPS you can achieve in a game with uncapped speed control.
 
-DXVK has also recieved little testing on TS/YR, although I have experienced several games (including over an hour of PvP online) with one or more users using DXVK, so this should not cause a desync.
+DXVK has also received little testing on TS/YR, although I have experienced several games (including several hours of PvP online) with one or more users using DXVK, so this should not cause a desync.
 
 1. Install DXVK into your game's folder
     1. Head to DXVK's [releases page](https://github.com/doitsujin/dxvk/releases).
     2. Download the `dxvk.x.x.tar.gz` file and open it. You may need a [file archiver](https://www.7-zip.org/) to open it.
     3. Head into the x32 folder and copy only the **d3d9.dll** file.
     4. Paste this into your game's top folder, where gamemd.exe or TiberianSun.exe are located.
+
 2. Install CnC-DDraw.
     Your instillation, especially if it uses cncnet, likely already has cnc-ddraw. Update to the latest version.
-
+    1. Open the client, and make sure the renderer is set on cnc-ddraw in settings. If it is not, then change it.
+    2. Exit the client.
     1. Head to CnC-DDraw's [releases page](https://github.com/FunkyFr3sh/cnc-ddraw/releases).
     2. Download `CnC-DDraw.zip` to your PC.
     3. Extract this into your game's top folder, where gamemd.exe or TiberianSun.exe are located.
-    4. Run `cnc-ddraw config.exe`.
 
+
+If you are not using the cncnet client, then the following section will apply directly to you. If you are, you will need to follow these steps by editing the `ddraw.ini` fine manually.
 3. Testing
-    1. open the client, and make sure the renderer is set on cnc-ddraw in settings.
-    2. Open the configuration exe listed above, head to Advanced Settings, and turn off limit frame rate.
-        1. Renderer and change from `automatic` to `Direct3D 9`.
+    1. Open the configuration exe listed above, head to Advanced Settings, and turn off limit frame rate.
+        1. Renderer and change from `automatic` to `Direct3D 9`. For cncnet client users, you need to enter `ddraw` and change `renderer=(presumably auto")` to `renderer=dx`
         2. Run the game. Use the hotkey you assigned earlier to study the FPS, and check that entering the tab menu (diplomacy menu) and options menus (save game, game controls, exit game) and heading back into the game itself all work fine.
         3. Exit and make a note of the FPS and how well it runs (compatibility as listed above, and how smooth the game feels).
-        4. Repeat the last 3 steps but using `OpenGl` and `GDI`.
-    3. Open `cnc-ddraw config.exe` again and set the renderer to always be the best running one.
+        4. Repeat the last 3 steps but using OpenGL (`ogl`) and (`gdi`).
+    3. Open `cnc-ddraw config.exe` again and set the renderer to always be the best running one. For cncnet client users, you simply need to edit the `ddraw.ini` file back to using the ideal renderer.
     4. Decide if you want to turn on `limit frame rate` again.
 4. Profit!
 
@@ -64,7 +64,7 @@ If you decide that your game is less stable, you run into difficulties or simply
 
 ## Scaling with CnC-DDraw
 
-![Sharp Scaling](https://cdn.cloudflare.steamstatic.com/steam/apps/1213210/extras/Graphics_Switching_610.png?t=1659021785)
+(requires a example image)
 
 For a game without any zoom functions such as TS and YR, and given the games were intended for 800x600 screens 20 years ago, visibility can become an issue. Especially apparent in TS due to the game having smaller cells, parts such as infantry and minimaps may become extremely difficult to distinguish.
 
