@@ -64,7 +64,7 @@ If you decide that your game is less stable, you run into difficulties or simply
 
 ## Scaling with CnC-DDraw
 
-(requires a example image)
+[Example Image Requested (see the footer)]]
 
 For a game without any zoom functions such as TS and YR, and given the games were intended for 800x600 screens 20 years ago, visibility can become an issue. Especially apparent in TS due to the game having smaller cells, parts such as infantry and minimaps may become extremely difficult to distinguish.
 
@@ -96,3 +96,7 @@ d3d9_filter=...
 ```
 
 GDI as a renderer does not scale well there is no scaling option other than linear scaling.
+
+
+Image Request:
+Rather than using Rampastring's example image in his moddb post, I would appreciate any donation examples of such scaling in use in a non-DTA environment, to show how it performs in a non-total-conversion mod. The screenshots an be in a game or mod of your choice, as long as you provide a before (same rewsolution but without scaling) and after (with scaling) plus a config. Message me on discord or file an issue if you are willing to lend a hand. Thanks! Native resolution should be QHD or higher.
