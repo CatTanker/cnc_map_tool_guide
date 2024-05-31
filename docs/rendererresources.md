@@ -64,7 +64,7 @@ If you decide that your game is less stable, you run into difficulties or simply
 
 ## Scaling with CnC-DDraw
 
-[Example Image Requested (see the footer)]]
+[Example Image Requested (see the footer)]
 
 For a game without any zoom functions such as TS and YR, and given the games were intended for 800x600 screens 20 years ago, visibility can become an issue. Especially apparent in TS due to the game having smaller cells, parts such as infantry and minimaps may become extremely difficult to distinguish.
 
