@@ -49,6 +49,7 @@ DXVK has also received light testing on YR and MO. I am aware that several peopl
 
 
 If you are not using the cncnet client, then the following section will apply directly to you. If you are, you will need to follow these steps by editing the `ddraw.ini` fine manually. if you are using a recent build of the cncnet client and/or have configured phobos to set the 6 speed options to a specific rate, then you will not be able to test the unlimited fps amount.
+
 3. Testing
     1. Open the configuration exe listed above, head to Advanced Settings, and turn off limit frame rate.
         1. Renderer and change from `automatic` to `Direct3D 9`. For cncnet client users, you need to enter `ddraw` and change `renderer=(presumably "auto")` to `renderer=dx`
