@@ -3,7 +3,7 @@
 
 Typically bundled with the CnCNet Client, there are several renderers you have that you can choose from. These improve compatibility with modern operating systems and if you pick right could make the game playable as well as drastically impact performance.
 
-For most users, you should start with [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw), which is currently the most developed and maintained renderer. Most mods ship this simply as a `CnC-DDraw` option inside the client's options menu. If the game seems to run or you face issues such as being unable to return to the game itself after clicking the pause menu (or have an invisible mouse), head into `ddraw.ini` and change `renderer=auto` to `ogl`, then `dx`, then `gdi` and see which provides you with the best experience.
+For most users, you should start with [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw), which is currently the most developed and maintained renderer. Most mods ship this simply as a `CnC-DDraw` option inside the client's options menu. If the game seems to run or you face issues such as being unable to return to the game itself after clicking the pause menu (or have an invisible mouse), head into `ddraw.ini` and change `renderer=auto` to `ogl`, then `dx`, then `gdi` and see which provides you with the best experience. Be aware that the changes you make in the cnc-ddraw configuration exe tend to be overwriten by the client on game launch.
 
 Assuming this does not solve your issue, you should try the [TS-DDraw](https://github.com/CnCNet/ts-ddraw/releases) renderer and all of the choices available (OpenGL, GDI, etc, same as CnC-DDraw)
 
@@ -31,7 +31,7 @@ Please note this assumes your game works without any issues. You may also need t
 
 Pre-Instillation: please run the game and follow `Settings/Pause Menu --> Game Controls --> keyboard --> Development --> FPS Counter` and set the hotkey of this to something that you can easily access but doesn't overwrite anything, such as `/`. For TS, you need to find the Toggle Info Panel option and set that to an unused hotkey instead. This allows us to compare the speeds of the game beforehand and afterward. I recommend heading ingame and taking note of the FPS you can achieve in a game with uncapped speed control.
 
-DXVK has also received little testing on TS/YR, although I have experienced several games (including several hours of PvP online) with one or more users using DXVK, so this should not cause a desync.
+DXVK has also received light testing on YR and MO. I am aware that several people have extensively used this method, and both in an online environment and in singleplayer. There have been no reports of this leading to a desync, so this should be safe to use, and i recommend it especially if you are using `renderer=dx`.
 
 1. Install DXVK into your game's folder
     1. Head to DXVK's [releases page](https://github.com/doitsujin/dxvk/releases).
@@ -40,7 +40,7 @@ DXVK has also received little testing on TS/YR, although I have experienced seve
     4. Paste this into your game's top folder, where gamemd.exe or TiberianSun.exe are located.
 
 2. Install CnC-DDraw.
-    Your instillation, especially if it uses cncnet, likely already has cnc-ddraw. Update to the latest version.
+    Your instillation, especially if it uses cncnet, likely already has cnc-ddraw. Updating to the latest version is recommended.
     1. Open the client, and make sure the renderer is set on cnc-ddraw in settings. If it is not, then change it.
     2. Exit the client.
     1. Head to CnC-DDraw's [releases page](https://github.com/FunkyFr3sh/cnc-ddraw/releases).
@@ -48,10 +48,10 @@ DXVK has also received little testing on TS/YR, although I have experienced seve
     3. Extract this into your game's top folder, where gamemd.exe or TiberianSun.exe are located.
 
 
-If you are not using the cncnet client, then the following section will apply directly to you. If you are, you will need to follow these steps by editing the `ddraw.ini` fine manually.
+If you are not using the cncnet client, then the following section will apply directly to you. If you are, you will need to follow these steps by editing the `ddraw.ini` fine manually. if you are using a recent build of the cncnet client and/or have configured phobos to set the 6 speed options to a specific rate, then you will not be able to test the unlimited fps amount.
 3. Testing
     1. Open the configuration exe listed above, head to Advanced Settings, and turn off limit frame rate.
-        1. Renderer and change from `automatic` to `Direct3D 9`. For cncnet client users, you need to enter `ddraw` and change `renderer=(presumably auto")` to `renderer=dx`
+        1. Renderer and change from `automatic` to `Direct3D 9`. For cncnet client users, you need to enter `ddraw` and change `renderer=(presumably "auto")` to `renderer=dx`
         2. Run the game. Use the hotkey you assigned earlier to study the FPS, and check that entering the tab menu (diplomacy menu) and options menus (save game, game controls, exit game) and heading back into the game itself all work fine.
         3. Exit and make a note of the FPS and how well it runs (compatibility as listed above, and how smooth the game feels).
         4. Repeat the last 3 steps but using OpenGL (`ogl`) and (`gdi`).
