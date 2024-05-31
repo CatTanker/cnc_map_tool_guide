@@ -99,4 +99,4 @@ GDI as a renderer does not scale well there is no scaling option other than line
 
 
 Image Request:
-Rather than using Rampastring's example image in his moddb post, I would appreciate any donation examples of such scaling in use in a non-DTA environment, to show how it performs in a non-total-conversion mod. The screenshots an be in a game or mod of your choice, as long as you provide a before (same rewsolution but without scaling) and after (with scaling) plus a config. Message me on discord or file an issue if you are willing to lend a hand. Thanks! Native resolution should be QHD or higher.
+Rather than using Rampastring's example image in his moddb post, I would appreciate any donation examples of such scaling in use in a non-DTA environment, to show how it performs in a non-total-conversion mod. The screenshots can be in a game or mod of your choice, as long as you provide a before (same resolution but without scaling) and after (with scaling) plus a config (which renderer settings were being used). Message me on discord or file an issue if you are willing to lend a hand. Thanks! Native resolution should be QHD or higher.
