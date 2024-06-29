@@ -17,7 +17,7 @@ I hope you find the spectrum of information available to be useful.
 
 
 ## Contributions
-While this is currently a solo project, i am always up for collaboration if anyone wisahes to expand and contribute to this guide. <br>
+While this is currently a solo project, i am always up for collaboration if anyone wishes to expand and contribute to this guide. <br>
 If you wish to have any input, you can reach me in most major CnC discords.
 
 This project's raw documentation is hosted in [this project's github page](https://github.com/CatTanker/cnc_map_tool_guide) <br>
