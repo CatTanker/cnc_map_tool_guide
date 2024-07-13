@@ -46,10 +46,10 @@ In some cases, antivirus can often have false positives on files that are contai
 ```
 [19:51:02] WinMain: Trying to load executable file "gamemd.exe"...
 
-[19:51:02] SyringeDebugger::RetrieveInfo: Retrieving info from the executable file...
-[19:51:02] SyringeDebugger::RetrieveInfo: Failed to open the executable!
-[19:52:48] WinMain: ERROR: Could not load executable file, exiting...
-[19:52:48] WinMain: Exiting on failure.
+[hh:mm:ss] SyringeDebugger::RetrieveInfo: Retrieving info from the executable file...
+[hh:mm:ss] SyringeDebugger::RetrieveInfo: Failed to open the executable!
+[hh:mm:ss] WinMain: ERROR: Could not load executable file, exiting...
+[hh:mm:ss] WinMain: Exiting on failure.
 
 ```
  Whitelisting your entire mod folder is often a good first step. If a file is isolated/removed, you will need to tell your AV to restore it. In most cases, this is either `Syringe.exe`,`ares.dll`, or one of the `client__.exe` files in resources.
@@ -87,9 +87,13 @@ if your getting any of the following errors or problems:
 
 - Invisible Mouse upon using tab (stats), esc (options)
 
-Head over to the renderers option in the client and try others. Also have a read of (link to renderers doc).
+Then head over to the [renderers page](https://cc-resource-docs.readthedocs.io/rendererresources/) for guidance and advice.
 
+## Crash during the loading screen (Steam Only)
+
+The latest version of YR from steam (and the EA App) require a special `syringe.exe` file. This can be downloaded from the [ares website](https://launchpad.net/ares/+download), by selecting the emergency update syringe.exe for Steam and EA App editions (and the mo specific one for mods that have customised their file extension to a specific one rather than ___md.*, such as ___mo.mix or ___re.mix files)
 
 External Links:
+[CnCnet FAQ](https://forums.cncnet.org/topic/6866-frequently-asked-questions/) - Covers a few topics that are not mentioned here, such as DroneBL Blacklisting.
 
-[hmm](https://forums.cncnet.org/topic/6866-frequently-asked-questions/)
+ Also a special thanks to Mo Discord Staff for putting together a quality guide that I could base parts of this article from.
