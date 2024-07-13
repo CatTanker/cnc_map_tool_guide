@@ -1,5 +1,5 @@
 
-![Winetricks](https://www.unixmen.com/wp-content/uploads/2012/05/winehq-logo.png)
+![Winetricks](https://upload.wikimedia.org/wikipedia/commons/a/a9/WINE-logo.svg)
 
 ## Winetricks Instructions
 
