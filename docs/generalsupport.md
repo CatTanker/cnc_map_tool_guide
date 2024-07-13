@@ -77,6 +77,12 @@ Do not launch it from:
 
 - Mission Saves (the auto generated ones)
 
+### External Links
+
+[CnCnet FAQ](https://forums.cncnet.org/topic/6866-frequently-asked-questions/) - Covers a few topics that are not mentioned here, such as DroneBL Blacklisting.
+[Linux Pages](https://cc-resource-docs.readthedocs.io/linuxsupport/) - Covers linux specific support
+
+
 ## Renderer Issues
 
 if your getting any of the following errors or problems:
@@ -92,8 +98,5 @@ Then head over to the [renderers page](https://cc-resource-docs.readthedocs.io/r
 ## Crash during the loading screen (Steam Only)
 
 The latest version of YR from steam (and the EA App) require a special `syringe.exe` file. This can be downloaded from the [ares website](https://launchpad.net/ares/+download), by selecting the emergency update syringe.exe for Steam and EA App editions (and the mo specific one for mods that have customised their file extension to a specific one rather than ___md.*, such as ___mo.mix or ___re.mix files)
-
-External Links:
-[CnCnet FAQ](https://forums.cncnet.org/topic/6866-frequently-asked-questions/) - Covers a few topics that are not mentioned here, such as DroneBL Blacklisting.
 
  Also a special thanks to Mo Discord Staff for putting together a quality guide that I could base parts of this article from.
