@@ -92,4 +92,4 @@ Head over to the renderers option in the client and try others. Also have a read
 
 External Links:
 
-(hmm)[https://forums.cncnet.org/topic/6866-frequently-asked-questions/]
+[hmm](https://forums.cncnet.org/topic/6866-frequently-asked-questions/)
