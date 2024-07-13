@@ -84,6 +84,7 @@ nav:
   - 'Linux Resources':
     - 'Introduction': 'linuxintro.md'
     - 'Bottles': 'bottles.md'
+    - 'Lutris' : 'lutris.md'
     - 'WineTricks' : 'winetricks.md'
     - 'Support and Compatability' : 'linuxsupport.md'
     - 'Editor Tool Compatability' : 'linuxtools.md'
