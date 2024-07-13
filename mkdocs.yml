@@ -86,8 +86,8 @@ nav:
     - 'Bottles': 'bottles.md'
     - 'Lutris' : 'lutris.md'
     - 'WineTricks' : 'winetricks.md'
-    - 'Support and Compatability' : 'linuxsupport.md'
-    - 'Editor Tool Compatability' : 'linuxtools.md'
+    - 'Support and Compatibility' : 'linuxsupport.md'
+    - 'Editor Tool Compatibility' : 'linuxtools.md'
 extra:
   analytics:
     provider: google
