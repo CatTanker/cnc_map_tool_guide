@@ -1,10 +1,16 @@
-## General compatibility and Troubleshooting Advice
-
 Most of the advice here is either Generic (applies to all methods of running cncnet) or a wine-specific issue that only applies if you choose to use winetricks instead of Bottles.
 
 ### Connection Issues [winetricks only]
 
 If your game works fine in skirmish but upon connecting to cncnet or upon entering an online match you either can't connect or get a desync, follow these [instructions](https://wiki.winehq.org/FAQ#Failed_to_use_ICMP_.28network_ping.29.2C_this_requires_special_permissions). Also check your firewall is open and that it allows you to send/recieve packets.
+
+### Mouse cursor to actual pointer is offset in the latest client when running it through bottles.
+
+Go into your bottle --> settings --> Display --> Advanced Display Settings --> and try other backend renderers.
+
+### Mouse Cursor is not window locked when using bottles
+
+Go into your bottle --> settings --> Display --> Advanced Display Settings --> and turn FUllscreen Mouse Capture on. Also ensure your renderer is in fullscreen and (if you see an option) is also locking your cursor. Check this through the client settings page or simply opening up `ddraw.ini` and editing it.
 
 ### Permission Errors [general]
 Getting an error complaining about permissions?
