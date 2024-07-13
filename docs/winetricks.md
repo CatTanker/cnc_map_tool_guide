@@ -59,7 +59,7 @@ If it does not exist, use this directly in the command line from the top of your
 dotnet Resources/BinariesNET8/UniversalGL/clientogl.dll "$@"
 ```
 
-#### Game Compatability
+#### Game compatibility
 One issue that i noticed several of the dotnet 8 builds have is that in order to run the game they use a .sh script to run a .bat script to run the game. While this works fine in principle, it uses the default wine prefix, which will not have any ddraw modifications, and therefore means that the game will run extremely slow and may even have graphical artifacts.
 
 if you notice this, first of all make a new prefix which just contains the ddraw dependency. I am listing ddraw manually as an override for this instance, although the cnc_ddraw method i used earlier should work fine.
@@ -67,7 +67,7 @@ if you notice this, first of all make a new prefix which just contains the ddraw
 WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/only_ddraw_override" winecfg
 ```
 This should take a moment and then open wine configuration. Once this opens, you need to head to the Libraries tab and write `ddraw` into the entrybox below "New Override for library", then click add, apply, and then ok.
-You then need to go into the Resources/Compatability/Unix folder of the game/mod, there should be a gamemd.sh script or something similar. Edit this with a text editor of your choosing so that it matches the text below.
+You then need to go into the Resources/Compatibility/Unix folder of the game/mod, there should be a gamemd.sh script or something similar. Edit this with a text editor of your choosing so that it matches the text below.
 ```
 #!/bin/sh
 
