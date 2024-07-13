@@ -80,6 +80,7 @@ nav:
   - 'Resources':
     - 'Mapping': 'mapresources.md'
     - 'Renderers': 'rendererresources.md'
+    - 'Support' : 'generalsupport.md'
   - 'Linux Resources':
     - 'Introduction': 'linuxintro.md'
     - 'Bottles': 'bottles.md'
