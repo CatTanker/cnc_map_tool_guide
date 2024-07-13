@@ -19,7 +19,7 @@ On the Dotnet 8 Client, using UniversalGl natively, if you have an error saying 
    at System.Diagnostics.Process.ForkAndExecProcess(ProcessStartInfo startInfo, String reso
 ```
 
-enter properties of `PPLauncher.sh` and set this as **excutable** and make sure it has full RWX access. The head to the wine-md.sh file inside the `Resources/Compatibility/` section and give this the same permissions. The game should now run.
+enter properties of `YRLauncher.sh` and set this as **excutable** and make sure it has full RWX access. The head to the wine-md.sh file inside the `Resources/Compatibility/` section and give this the same permissions. The game should now run.
 
 
 **Do Not** run wine as root however, this will cause more consequences and fix nothing. Administrator-related fixes tend to be as a result of permissions being incorrect. make sure to open the mod or game's folder and check everything has both read and write permissions, and make sure you apply any fixes to subfolders and subfiles too.
