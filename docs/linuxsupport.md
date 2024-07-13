@@ -10,7 +10,7 @@ Go into your bottle --> settings --> Display --> Advanced Display Settings --> a
 
 ### Mouse Cursor is not window locked when using bottles
 
-Go into your bottle --> settings --> Display --> Advanced Display Settings --> and turn FUllscreen Mouse Capture on. Also ensure your renderer is in fullscreen and (if you see an option) is also locking your cursor. Check this through the client settings page or simply opening up `ddraw.ini` and editing it.
+Go into your bottle --> settings --> Display --> Advanced Display Settings --> and turn Fullscreen Mouse Capture on. Also ensure your renderer is in fullscreen and (if you see an option) is also locking your cursor. Check this through the client settings page or simply opening up `ddraw.ini` and editing it.
 
 ### Permission Errors [general]
 Getting an error complaining about permissions?

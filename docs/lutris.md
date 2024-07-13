@@ -37,3 +37,7 @@ Setting it up:
 You can duplicate the launcher by right clicking and selecting duplicate, duplicate, and then changing the exe launcher path to another mod or game.
 
 If you get asked to install mono, say yes and follow the instructions, then continue on.
+
+
+### CnCNet Vanilla YR
+There are scripts if you select Search the Lutris website for installers that will let you open up the EA App/Origin, and guide you through installing cncnet.
