@@ -15,7 +15,7 @@ Note that the missing + icons to the left are a result of running it through my 
 
 I seem to recall [this](https://www.reddit.com/r/linux_gaming/comments/n8hf6v/make_wine_look_like_windows_10/) working as well, providing a more modern light theme option. Sadly this was a while back and i am unable to confirm so. The script also downloads off discord rather than a formal file source, and given discord's proposed changes to stop external download links, this may need to be mirrored.
 
-Wine supports the theme engine of **XP**, so a lot of your choiches are limited, although any modifications you make only apply to your wineprefix, so unlike windows you cannot brick your system with it.
+Wine supports the theme engine of **XP**, so a lot of your choices are limited, although any modifications you make only apply to your wineprefix, so unlike windows you cannot brick your system with it. There are also a surprising amount of decent Xp themes lying around on places such as DevianArt, so i recommend looking for some free ones and trying them out.
 
 ### Multi-Monitor Support
 While i am unsure if this is simply an original bug in FA2, or as a result of patches, but the application simply cannot be stretched between two screens.

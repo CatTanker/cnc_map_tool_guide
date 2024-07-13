@@ -1,5 +1,5 @@
 
-![Winetricks](https://www.unixmen.com/wp-content/uploads/2012/05/winehq-logo.png)
+![Winetricks](https://upload.wikimedia.org/wikipedia/commons/a/a9/WINE-logo.svg)
 
 ## Winetricks Instructions
 
@@ -48,26 +48,26 @@ Scroll down to find the "Run Arbitary Excutable" option. Select it and click ok,
 #### User Interface Only
 In some installs you may be able to search for a `winetricks` application from your system's menu. From here you a GUI called `Winetricks - choose a wineprefix` will appear. Scrtoll down the list until you find the wineprefix you just made, `cncnet_4_X_ddraw`, and select ok. Scroll down to find the "Run Arbitary Excutable" option. Select it and click ok, then navigate to your client's clientogl.exe excutable inside the resources folder, run it and it should open fine.
 
-### Dotnet 7+ Client - Native
+### Dotnet 8 Client - Native
 #### Running it
-First of all, make sure you have the [dotnet runtime](https://dotnet.microsoft.com/en-us/download/dotnet/7.0), either from microsoft directly or downloaded through your [Distribution](https://wiki.archlinux.org/title/.NET#Installation).
-The Dotnet7 Client should be able to run natively with linux, only using wine for running the game itself. Most mods using dotnet 7 should provide a .sh script alongside the main exe, which should run the client if run through your command line. if it exists, you should be able to run it with bash if your file explorer allows it, or you can simply open up that folder in terminal and type `bash scriptname.sh`.
-If it does not exist, use this:
+First of all, make sure you have the [dotnet runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0), either from microsoft directly or downloaded through your [Distribution](https://wiki.archlinux.org/title/.NET#Installation).
+The Dotnet 8 Client should be able to run natively with linux, only using wine for running the game itself. Most mods using dotnet 8 should provide a .sh script alongside the main exe, which should run the client if run through your command line. if it exists, you should be able to run it with bash if your file explorer allows it, or you can simply open up that folder in terminal and type `bash scriptname.sh`.
+If it does not exist, use this directly in the command line from the top of your mod folder:
 ```
 #!/bin/sh
-dotnet Resources/Binaries/UniversalGL/clientogl.dll
-```
-by heading to the top of your mod directory (where gamemd.exe is), opening a terminal up and running the command above.
 
-#### Game Compatability
-One issue that i noticed several of the dotnet 7 builds have is that in order to run the game they use a .sh script to run a .bat script to run the game. While this works fine in principle, it uses the default wine prefix, which will not have any ddraw modifications, and therefore means that the game will run extremely slow and may even have graphical artifacts.
+dotnet Resources/BinariesNET8/UniversalGL/clientogl.dll "$@"
+```
+
+#### Game compatibility
+One issue that i noticed several of the dotnet 8 builds have is that in order to run the game they use a .sh script to run a .bat script to run the game. While this works fine in principle, it uses the default wine prefix, which will not have any ddraw modifications, and therefore means that the game will run extremely slow and may even have graphical artifacts.
 
 if you notice this, first of all make a new prefix which just contains the ddraw dependency. I am listing ddraw manually as an override for this instance, although the cnc_ddraw method i used earlier should work fine.
 ```
 WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/only_ddraw_override" winecfg
 ```
 This should take a moment and then open wine configuration. Once this opens, you need to head to the Libraries tab and write `ddraw` into the entrybox below "New Override for library", then click add, apply, and then ok.
-You then need to go into the Resources/Compatability/Unix folder of the game/mod, there should be a gamemd.sh script or something similar. Edit this with a text editor of your choosing so that it matches the text below.
+You then need to go into the Resources/Compatibility/Unix folder of the game/mod, there should be a gamemd.sh script or something similar. Edit this with a text editor of your choosing so that it matches the text below.
 ```
 #!/bin/sh
 
@@ -77,8 +77,7 @@ wineconsole Resources/Compatibility/Unix/gamemd.bat & <-- this line should pre-e
 BACK_PID=$!
 wait $BACK_PID
 ```
-Be warned, most mod updaters *Will Override This File* - Back it up to save you repeating this process later on.
+Be warned, most mod updaters **Will Override This File** - Back it up to save you repeating this process later on.
 
 
-Try launching the game again, and it should be a bit smoother. 
-You may still notice some major artefacts/glitches when using the esc menu and returning to the game. Go into the client options and try all of the renderers in there, and hopefully (as with windows) one runs like a charm. For me, most tend to work (Default/CnC-DDraw), but TS-DDraw GDI fixes the esc menu breaking and lets me enter/exit between my game and other applications as I please. Check the Game Compatability section.
+Try launching the game again, and it should be a bit smoother, meaning it is time to actually use [the renderers guide,](https://cc-resource-docs.readthedocs.io/rendererresources/)
