@@ -1,4 +1,4 @@
-## Final Alert 2 (and FS)
+## Final Alert 2 (and Final Sun)
 Linux provides several new opportunities for people using FA2(SP) and FS(SP)
 The map editor can be run straight out of wine / bottles without any dependencies.
 ### FA2SP with a Dark Theme
@@ -30,8 +30,24 @@ You then run the map editor from this wineprefix like as I recommended in the Wi
 
 ## World Altering editor
 
+It is possible to run the World Altering Editor on Linux. To set this up, the easier methods involve Lutris and Bottles, with the latter being used in this example.
+
+1. Install Bottles (ideally through flatpak)
+2. Create a new bottle
+3. Head to dependencies
+4. Search for dotnet
+5. Install DotnetCoreDesktop8
+6. Run the World Altering Editor
+
+
+![Project Phantom WAE on Linux](Assets/WAE_Bottles.png)
+
+
+### Old Advice (replaced by the dependency install above)
+
 It is possible to run the World Altering Editor on Linux. While a native Linux build could be a future goal, for now the editor can at least be run using a compatibility layer.
 I highly recommend using [Bottles](https://usebottles.com) for this as it allows possibly the easiest installation and customization of new runners.
+
 
 1. Preparing the bottle:
     1. Create a new bottle, as an application (not gaming or custom).
