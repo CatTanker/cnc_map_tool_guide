@@ -1,4 +1,4 @@
-## Final Alert 2 (and FS)
+## Final Alert 2 (and Final Sun)
 Linux provides several new opportunities for people using FA2(SP) and FS(SP)
 The map editor can be run straight out of wine / bottles without any dependencies.
 ### FA2SP with a Dark Theme
@@ -29,12 +29,48 @@ You then run the map editor from this wineprefix like as I recommended in the Wi
 ![Multiple-Monitors](Assets/multi_monitor_fa2.png)
 
 ## World Altering editor
-```
-Note: Section needs to be expanded and requires further testing
-```
 
-I noticed that inside Lutris there was a dotnet7 desktop runtime dependency option. I tried this and to my surprise i was able to run WAE. 
+It is possible to run the World Altering Editor on Linux. To set this up, the easier methods involve Lutris and Bottles, with the latter being used in this example.
 
-I then decided to try this in bottles, and i used [this PR](https://github.com/bottlesdevs/dependencies/pull/192) and followed the [advice for bottles maintainers](https://maintainers.usebottles.com/dependencies/Introduction) to install the dependency. As this allowed me to test with more runners, i found this to be a better method.
+1. Install Bottles (ideally through flatpak)
+2. Create a new bottle
+3. Head to dependencies
+4. Search for dotnet
+5. Install DotnetCoreDesktop8
+6. Run the World Altering Editor
 
-However, since WAE now requires Dotnet 8 (for V1.0.0), this no longer works until a dependency for dotnet 8 is made.
+
+![Project Phantom WAE on Linux](Assets/WAE_Bottles.png)
+
+
+### Old Advice (replaced by the dependency install above)
+
+It is possible to run the World Altering Editor on Linux. While a native Linux build could be a future goal, for now the editor can at least be run using a compatibility layer.
+I highly recommend using [Bottles](https://usebottles.com) for this as it allows possibly the easiest installation and customization of new runners.
+
+
+1. Preparing the bottle:
+    1. Create a new bottle, as an application (not gaming or custom).
+    2. Head to Settings and make sure the runner's version is above 9.0. If it is not:
+        1. Head to the main page where you select bottles
+        2. Click on the 3 dots or 3 lines (theme dependent) by the search icon at the top-right of your window.
+        3. Select Preferences
+        4. Head to the runners tab
+        5. Download a runner version that is =>9.0. I recommend Caffe-9.2, and kron4ek-wine-9.4-amb64
+        6. Go back to the bottle and select either of these as a runner.
+
+Note that the latest wine versions should also work if you select them as a runner. This would need to be installed onto your system from your distribution or building from source though, rather than through bottles.
+
+2. Installing Dotnet 8 Desktop Runtime
+    2. Head to [Microsoft's Dotnet page](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) and download the latest x64 installer for **.NET Desktop Runtime 8.x.x**, the one which only has an installer for Windows.
+    3. Go into your bottle, click `Run Executable` and select the exe you have just downloaded.
+    4. Head through the instillation page, agreeing and telling it to install it.
+
+3. Running the World Altering Editor
+    1. Find your World Altering Editor inside your bottle's `Run Executable`
+    2. Open `WorldAlteringEditor.exe`
+    3. Click on `Browse` and use Wine's clunky file browser to find your mod/game's folder
+    4. Select a map, either using browse again or using the built-in file browser to select the map
+    5. Open the map and enjoy!
+
+
