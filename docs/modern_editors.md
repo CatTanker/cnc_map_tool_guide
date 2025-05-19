@@ -5,13 +5,13 @@ Description: The World Altering Editor (WAE) is an open source replacement to th
 Formerly known as the DTA Scenario Editor, as it was built for [Dawn of the Tiberium Age](https://www.moddb.com/mods/the-dawn-of-the-tiberium-age), it has since been growing in compatability for TS/YR.
  A release for TSClient and Vanilla YR both available on the the releases page. As of v0.9.6 the editor now has a voxel renderer, meaning that the editor can effectively replace FA2 for all quality PCs using win7 or later, although it is arguably still behind in a few areas. As of version 1.0, the editor will require dotnet runtime 8, and is only built for Windows, although running it through modern wine solutions are an option for linux.
 
-I **highly** recommend trying this editor out, as it contains a lot of new features that would be out of scope for FA2/FS. Check the [releases page](https://github.com/Rampastring/WorldAlteringEditor/releases) for an up-to-date YR and TSClient build. 
+I **highly** recommend trying this editor out, as it contains a lot of new features that would be out of scope for FA2/FS. Check the [releases page](https://github.com/CnCNet/WorldAlteringEditor) for an up-to-date YR and TSClient build. 
 The releases page also includes a full changelog, which at the moment is the most comprehensive list of features. 
 
 | Topic | Source + Link |
 | ------------ | ------------- |
-| World Altering Editor | [Github - Main Page](https://github.com/Rampastring/TSMapEditor) |
-| World Altering Editor | [Github - Releases](https://github.com/Rampastring/TSMapEditor/releases) |
+| World Altering Editor | [Github - Main Page](https://github.com/CnCNet/WorldAlteringEditor) |
+| World Altering Editor | [Github - Releases](https://github.com/CnCNet/WorldAlteringEditor/releases) |
 | Mod Haven Channel | [Discord](https://discord.gg/k4SVuMm) |
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jIcr3nCqx7M?si=sHyZGT08GEpVWEnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
