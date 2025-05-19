@@ -1,6 +1,4 @@
-This section covers the core editors that have been an essential part of mapping for the past 20+ years. I highly recommend checking the 'Modern Options' page as well, as this will significantly improve the user experience of the following editors, and offer an alternative.
-
-The 'Assistive Tools' page is fairly self explanatory. These tools cannot replace a core editor, but may significantly help your workflow through the utilities they provide.
+This section covers the core editors that have been an essential part of mapping for the past 20+ years. 
 
 ### [FA2] Final Alert 2:
 
@@ -34,7 +32,7 @@ This section covers improving the core experience of mapping. This includes both
 #### DDraw Renderer
 
 Instead of using the system DDraw, FA2 and FS can instead use a local proxy DDraw.dll, improving the editor's speed considerably, which is especially useful for resource-heavy maps.
-Several of the *patched* map editors have this included but not in use, so check your map editor's folder as the files may already exist, such as in a "ForWindows10" folder, containing a pre-configured setup. if you want an un-configured setup for unknown reasons, or simply want to know more about the wrapper, check the unconfigured link below. I also included a direct download, although i have lost which thread this is on so i am unable to verify if it is the latest download.
+Several of the *patched* map editors have this included but it is often in a subfolder such as  "ForWindows10", containing a pre-configured setup. if you want an un-configured setup for unknown reasons, or simply want to know more about the wrapper, check the unconfigured link below. 
 
 | Topic | Source + Link |
 | ------------ | ------------- |

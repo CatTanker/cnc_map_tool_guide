@@ -3,16 +3,18 @@
 Author: Rampastring + Contributors  <br />
 Description: The World Altering Editor (WAE) is an open source replacement to the traditional editors. unlike the originals, it is built using a modern code base, and as a result of being open source it does not require the use of dll injection to improve. 
 Formerly known as the DTA Scenario Editor, as it was built for [Dawn of the Tiberium Age](https://www.moddb.com/mods/the-dawn-of-the-tiberium-age), it has since been growing in compatability for TS/YR.
- A release for TSClient and Vanilla YR both available on the the releases page. As of v0.9.6 the editor now has a voxel renderer, meaning that the editor can effectively replace FA2 for all quality PCs using win7 or later, although it is arguably still behind in a few areas. As of version 1.0, the editor will require dotnet runtime 8, and is only built for Windows, although running it through modern wine solutions are an option for linux.
+A release for [TS Client](https://www.moddb.com/mods/tiberian-sun-client) and  YR both available on the the releases page. 
+ 
+The editor requires the latest dotnet desktop runtime to operate, and has heightened requirements, but does have a lot of major benefits (listed below).
 
-I **highly** recommend trying this editor out, as it contains a lot of new features that would be out of scope for FA2/FS. Check the [releases page](https://github.com/CnCNet/WorldAlteringEditor) for an up-to-date YR and TSClient build. 
-The releases page also includes a full changelog, which at the moment is the most comprehensive list of features. 
 
 | Topic | Source + Link |
 | ------------ | ------------- |
 | World Altering Editor | [Github - Main Page](https://github.com/CnCNet/WorldAlteringEditor) |
 | World Altering Editor | [Github - Releases](https://github.com/CnCNet/WorldAlteringEditor/releases) |
 | Mod Haven Channel | [Discord](https://discord.gg/k4SVuMm) |
+
+Videos demonstating older versions of WAE:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jIcr3nCqx7M?si=sHyZGT08GEpVWEnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -36,13 +38,3 @@ A growing volume of interface features have been developed. One of the more evid
 There are also several automative tools available for WAE, including a configurable terrain generator to decorate natural environments, a WIP cliff drawer, and the possibilities of user-made scripts that can perform advanced tasks, such as smoothing out water tiles. The editor can also draw complex tunnels, which do not break unlike the unpatched FA2's tunnels, has a check distance tool that can follow pathfinding, and allows users to configure what is copied and deleted.
 
 [Example of the terrain generator + Cliff Drawer]
-
-
-
-# Incomplete / WIP
-Mostly remains here as an archive of github links that *once* existed. Might be a useful reference one day.
-Relert ++                                             : <https://github.com/secsome/relertplusplus> <br />
-Relert Sharp Private Thread                           : <https://github.com/FrozenFog/relertsharp> <br />
-https://github.com/FrozenFog/rs-dev-public-snapshot/blob/dev/pic/preview-migdal.png
-https://github.com/FrozenFog/rs-dev-public-snapshot
-
