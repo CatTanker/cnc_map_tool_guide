@@ -1,9 +1,9 @@
 <!---#| Github |[Link](https://github.com/FunkyFr3sh/cnc-ddraw)| -->
 # World Altering Editor <br />
 Author: Rampastring + Contributors  <br />
-Description: The World Altering Editor (WAE) is an open source replacement to the traditional editors. unlike the originals, it is built using a modern code base, and as a result of being open source it does not require the use of dll injection to improve. 
+Description: The World Altering Editor (WAE) is an open source replacementation to the traditional editors. Unlike the originals, it is built using a modern code base.
 Formerly known as the DTA Scenario Editor, as it was built for [Dawn of the Tiberium Age](https://www.moddb.com/mods/the-dawn-of-the-tiberium-age), it has since been growing in compatability for TS/YR.
-A release for [TS Client](https://www.moddb.com/mods/tiberian-sun-client) and  YR both available on the the releases page. 
+A release for [TS Client](https://www.moddb.com/mods/tiberian-sun-client) and YR both available on the the releases page. 
  
 The editor requires the latest dotnet desktop runtime to operate, and has heightened requirements, but does have a lot of major benefits (listed below).
 
@@ -20,11 +20,10 @@ Videos demonstating older versions of WAE:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RIgVMWZy80I" title="World Altering Editor - A new map editor coming to RotE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-While the editor does have the drawback of increasing load times and a much higher minimum spec requirement than the original core editors, it does present a growing wealth of new features.
 
 ## Highly Configurable
 
-The World Altering Editor has been build with mods and the cncnet client in mind, and operates on a highly configurable structure of ini config files. This allows for the editor to support a wide range of mod structures, including that of TSClient where MIX and INI files are split into several subfolders, and that of the put it all in the root structure of YR. MIX load orders can be configured easily, and there are rules/art override files available. Any theater can be defined, so mods which modify the theaters available no longer need to hex edit and ship multiple FA2/Fs instillations with their mod.
+The World Altering Editor has been built with mods and the cncnet client in mind, and operates on a highly configurable structure of ini config files. This allows for the editor to support a wide range of mod structures, including that of TSClient where MIX and INI files are split into several subfolders, and that of the "put it all in the root" structure of YR. MIX load orders can be configured easily, and there are rules/art override files available. Any theater can be defined, so mods which modify the theaters available no longer need to hex edit and ship multiple FA2/Fs installations with their mod.
 
 [ Example of the config folder + sample INI ]
 
