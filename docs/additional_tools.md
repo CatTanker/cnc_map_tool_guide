@@ -114,3 +114,11 @@ Description: "Mission Tester is designed primarily to help troubleshoot mission 
 | ------------ | ------------- |
 | Forum Thread | [PPM - Forum](https://www.ppmforums.com/topic-68090/) |
 
+### Relert js-browser
+Author: Heli
+Description: A JavaScript lib developed by Heli, it provides interfaces for js to write scripts to process the map. It's also much faster than FinalAlert2's ToolScript. Note that the README is in chinese, so you may require a translator and an understanding of the purpose.
+
+| Topic | Source + Link |
+| ------------ | ------------- |
+| Source Code| [Github](https://github.com/Heli-Lab/relert.js-browser) |
+
