@@ -1,107 +1,62 @@
-This section covers the core editors that have been an essential part of mapping for the past 20+ years, covering Final Sun and Final Alert as well as their various modifications. 
-
-### [FA2] Final Alert 2
-
-
-
-Final Alert 2 2 (FA2) is the original map editor for Red Alert 2 and Yuri's Revenge. Following it's release, it has since had a number of modifications (FA2Ext, FA2SP, FA2HDM), as well as a source code release contained within the Steam RA2/YR Download. Despite this release, there has been a lot of progress made by multiple members of the community, and so it is recommended that you use these patches.<br />
-
-
-| Topic | Source + Link |
-| ------------ | ------------- |
-| Original FA2 | [CnC Labs](https://www.cnclabs.com/maps/redalert2/finalalert2/) |
-
-
-
-#### FA2SP
-
-As of 2024, FA2SP was the recommended patch version, with the links contained below. This has numerous improvements, namely improved themed handling, basic live lighting rendering, improved voxel rendering, a tile drawer, plus support for Ares and Phobos engine extensions. The full changelog is available [here](https://github.com/secsome/FA2sp/blob/master/CHANGELOG.md), along with download links below.
-
----
-
-![FA2SP](Assets/fa2sp.png)
-
-| Topic | Source + Link |
-| ------------ | ------------- |
-| Patched FA2 [Vanilla] | [PPM - Forum](https://ppmforums.com/topic-47342/final-alert-2-yr-v102-patches/) |
-| FA2SP  | [Github - Main Page](https://github.com/secsome/FA2sp)|
-| FA2SP  | [Github - Download](https://github.com/secsome/FA2sp/releases)|
-
----
-
-#### FA2HDM
-
-As of 2025/6, a fork of FA2SP was released, called FA2HDM. This adds a large amount of new features, including those shown below as well as a large range of QoL features, including improved support for engine extensions, DirectX & OpenGL rendering rather than the original ddraw method, on top of actively receiving updates. Inside the GitHub releases there is both a generic build for YR (and mods) and one for Mental Omega. 
-
-![Second Example](Assets/fa2hdm_out_objects.png)
-
-Terrain generation:<br />
-![Terrain Generator](Assets/terraingen.gif)<br />
-
-Connected tile drawing:<br />
-![Cliff & Shore Generator](Assets/cliffdrawing.gif)<br />
-
-Zoom levels, dark theme & UI improvements: <br />
-![Zoom levels](Assets/fa2hdm.png)
-
-Map Annotations, lighting improvements and QoL features: <br />
-![^](Assets/fa2hdmtrigger_collablighting.png)
-
-Batch Delete, script paths, and scripting annotations: <br />
-![^](Assets/fa2hdmrectangledelete_scriptingpath_annotations.png)
-
-| Topic | Source + Link |
-| ------------ | ------------- |
-| FA2HDM [Main Page] | [Github - Main Page](https://github.com/handama/FA2sp)|
-| FA2HDM [Download] | [Github - Releases](https://github.com/handama/FA2sp/releases)|
-| FA2HDM [RA2DIY Announcement] | [RA2DIY](https://bbs.ra2diy.com/forum.php?mod=viewthread&tid=25203)|
-| FA2HDM [bilibili Announcement] | [bilibili](https://www.bilibili.com/opus/1026376675556851718)|
-
----
-
-### [FS] Final Sun
+<!---#| Github |[Link](https://github.com/FunkyFr3sh/cnc-ddraw)| -->
+# World Altering Editor <br />
+Author: Rampastring + Contributors  <br />
+Description: The World Altering Editor (WAE) is an open source replacementation to the traditional editors. Unlike the originals, it is built using a modern code base.
+Formerly known as the DTA Scenario Editor, as it was built for [Dawn of the Tiberium Age](https://www.moddb.com/mods/the-dawn-of-the-tiberium-age), it has since been growing in compatability for TS/YR.
+A release for [TS Client](https://www.moddb.com/mods/tiberian-sun-client) and YR both available on the the releases page. 
  
-![FA2SP](Assets/fs_sp.png)
- 
-The original Map Editor for Tiberian Sun & Firestorm. 
-The Patched FS option is directly compatible with TS. It contains some of fa2sp's features, so it is a massive improvement over the unmodded editor.
-The toolkit option attempts to provide a direct application using several of the tools listed below. The forum contains a link to an older fork of FS that may be useful to some.
-The Tiberian Sun Client [TSC] also includes a build.
+The editor requires the latest dotnet desktop runtime to operate, and has heightened requirements, but does have a lot of major benefits (listed below).
+
 
 | Topic | Source + Link |
 | ------------ | ------------- |
-| Patched FS [Vanilla] | [PPM - Forum](https://ppmforums.com/topic-47355/finalsun-101-patches/) |
-| "Toolkit" + Clutter | [CnCNet - Forum](https://forums.cncnet.org/topic/6720-final-sun-complete-fixed/) |
-| Tiberian Sun Client | [ModDB](https://www.moddb.com/mods/tiberian-sun-client) |
+| World Altering Editor | [Github - Main Page](https://github.com/CnCNet/WorldAlteringEditor) |
+| World Altering Editor | [Github - Releases](https://github.com/CnCNet/WorldAlteringEditor/releases) |
+| Mod Haven Channel | [Discord](https://discord.gg/k4SVuMm) |
 
----
+Videos demonstating older versions of WAE:
 
-### Editor Modifications:
-#### DDraw Renderer
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jIcr3nCqx7M?si=sHyZGT08GEpVWEnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Instead of using the system DDraw, FA2 and FS can instead use a local proxy DDraw.dll, improving the editor's speed considerably, which is especially useful for resource-heavy maps.
-Both fa2sp and certain FS distributions have this included but it is often in a subfolder such as  "ForWindows10", containing a pre-configured setup. if you want an un-configured setup for unknown reasons, or simply want to know more about the wrapper, check the unconfigured link below. Users of FA2HDM will not require this. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RIgVMWZy80I" title="World Altering Editor - A new map editor coming to RotE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+## Highly Configurable
+
+The World Altering Editor has been built with mods and the cncnet client in mind, and operates on a highly configurable structure of ini config files. This allows for the editor to support a wide range of mod structures, including that of TSClient where MIX and INI files are split into several subfolders, and that of the "put it all in the root" structure of YR. MIX load orders can be configured easily, and there are rules/art override files available. Any theater can be defined, so mods which modify the theaters available no longer need to hex edit and ship multiple FA2/Fs installations with their mod.
+
+[ Example of the config folder + sample INI ]
+
+## Interface Features
+
+A growing volume of interface features have been developed. One of the more evident examples is a zoom in/out function, which is greatly missed in the WW2.5D series of map editors. The editor also includes a search tool so you can find a specific item much easier, better catagorized lists, and a configurable LAT panel. Furthermore, there is also a map-wide overlay option, which can display a selected image file stretched across the entire map, which is extremely useful when combined with the zoom tools as map designs can easily be traced.
+
+[Video of zooming in/out + searching + overlay]
+
+## New Tools
+There are also several automative tools available for WAE, including a configurable terrain generator to decorate natural environments, a WIP cliff drawer, and the possibilities of user-made scripts that can perform advanced tasks, such as smoothing out water tiles. The editor can also draw complex tunnels, which do not break unlike the unpatched FA2's tunnels, has a check distance tool that can follow pathfinding, and allows users to configure what is copied and deleted.
+
+[Example of the terrain generator + Cliff Drawer]
+
+
+# Relert Sharp (Incomplete)
+
+Before the World Altering Editor, a presently closed source editor was made. Written primarily in C#, the editor was one of the earliest to show enhanced cliff generation, but suffers from performance issues. A public snapshot was released in 2023, which can be bult in Visual Studio if you wish to try it out. 
+
+![RelertSharp1](Assets/relert_sharp_1.webp)
+![RelertSharp2](https://github.com/FrozenFog/rs-dev-public-snapshot/raw/dev/pic/preview-migdal.png)
+![RelertCliffs](Assets/cliff_relert.gif)
+
 
 | Topic | Source + Link |
 | ------------ | ------------- |
-| Unconfigured  |[BitPatch](http://bitpatch.com/ddwrapper.html)|
-| Pre-Configured|[PPM](https://ppmforums.com/download.php?id=72031&sid=5b50cb3c1696d792adb195e4360b46fd)|
+| Public Snapshot | [Github - Main Page](https://github.com/FrozenFog/rs-dev-public-snapshot) |
 
-#### Dark and Custom themes
 
-Assuming you use the SP version of the editor, it is certainly possible to modify the theme. This comes with a risk however, as on windows you have to modify your entire system's theme in order to achieve this, and if you install the wrong theme for your windows version, your windows updates and therefore becomes incompatible with the theme you are using, or of course simply mess something up you could easily break your system and be left to the mercy of restore points or a fresh boot. There are a number of windows 'ricing' tutorials and lists online, but a lot of recommendations from major publishers seem to only use what windows 10+ already allows you to do, which doesn't really help you. I found and recommend [this reddit post](https://www.reddit.com/r/Windows10/comments/168y7dn/ultimate_simplified_guide_how_to_make_windows_10/) for the basics as it describes most options available for modernising theming 10, with a lot being applicable to Windows 11 as well. While you are of course free to read the entire section, you should focus on the `Before Starting` and the themes section.  If you decide to further rice your system, i [recommend this, as although it focuses on Windows 11 a lot of the tools work with 10.](https://github.com/twonth/winning-at-windows)
+# # Relert++ (Incomplete)
 
-If you are using FA2HDM, then you can ignore this section as you already have a dark theme depending on systems settings.
+An incomplete open source re-implemetation of FA2 in C++ by Secsome, the developor of FA2SP. 
 
-I have included below an example of what FA2SP looks like using dark theme from [rectify11](https://rectify11.net) on Windows 11, which is available for free. Sadly the Windows 11 elements carry over, including spacings in dropdowns, and the extremely dark colour scheme doesn't sit too well.
-![Rectify11 FA2](Assets/win11_themed.png)
-
----
-Another example is After Dark CC Blue, provided by SCIPCION on Windows 10. I believe this is no longer available for free.
-![AfterDarkCC](Assets/after_dark_cc.png)
-
----
-This example uses [fluent from niivu's Windows 10 Themes](https://github.com/niivu/Windows-10-themes). The creator also has a large collection of other windows 10 & 11 [themes](https://www.deviantart.com/niivu/gallery) that you can experiment with as well.
-![Win10_Fluent](Assets/fluent.png)
-
-Ultimately it is your decision if you wish to risk modifying windows in such a way, especially with WAE as a modern alternative. I have also written advice on applying a dark theme in [linux](linuxtools.md). While this is much safer the options are more limited.
+| Topic | Source + Link |
+| ------------ | ------------- |
+| Relert++ | [Github - Main Page](https://github.com/secsome/relert-plus-plus) |
