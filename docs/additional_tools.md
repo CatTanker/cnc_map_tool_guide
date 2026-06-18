@@ -143,11 +143,56 @@ Description: A JavaScript lib developed by Heli, it provides interfaces for jaav
 TBC
 
 
-Vini method:
+### Using Vinifera [TS]
+![ViniLogo](https://media.discordapp.net/attachments/826473168847896619/826519425993801759/Vinifera_Logo.png?ex=6a34ddf3&is=6a338c73&hm=613df132c0c7113fbd35866f236271c58e23dba3d10b3f25bf2c1f440f5b85cd&=&format=webp&quality=lossless&width=1872&height=415)
 
+Vinifera is an open source project providing features and bugfixes to Tiberian Sun. One of the features it restores is the option to save the loaded-in map as a .map file inside your game's directory, meaning you can use the game's random map generation and keep the map.
+
+Firstly you need to install Vinifera, which has instructions located on their [own documentation](https://vinifera.readthedocs.io/en/develop/#with-freeware-ts). Make sure you also install a renderer, particularly [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw) and [DDrawCompat](https://github.com/narzoul/DDrawCompat). Check the [renderers page on this website](/docs/rendererresources.md) for more details. Once you have set it up, open command prompt to the location of your install, and run the command:
+``` LaunchVinifera.exe -DEVELOPER ``` to launch the game. This will allow you to use developer commands. You can select No to the debug console popup.
+
+Once inside, head to Options --> Keyboard --> Developer --> Scroll down to Scenario Snapshot and assign it a hotkey. In this example, I chose / .
+
+![assigning hotkeys](Assets/AssignHotkey.png)
+
+Open up Skirmish, then select Multiplay Map, Create Random Map and then you can configure the map how you wish. 
+
+![Random map generator example](Assets/ViniRMGConfig.png)
+
+I advise setting the game to have No AI Players and a minimal unit count. 
+
+![settings to launch skirmish in](Assets/AiSettingsForVini.png)
+
+Once ingame, hit the hotkey you chose, and then a new file should be made in the root of your Vinifera folder. ![alt text](image-4.png)
+Load this up in an editor of your choice (in this case [WAE](/docs/modern_editors.md)), or use the map renderer to get a better preview.
+
+![map render](Assets/RMGViniRender.png)
+
+I am of course assuming you then intend on playing through a distribution such as Tiberian Sun Client [[TSC]](https://www.moddb.com/mods/tiberian-sun-client) , or a mod's cncnet client such as [Fading Dusk](https://www.moddb.com/mods/fading-dusk) which is used in the screenshot below. To make the map ready, you need to make sure you delete the basenode that is under any placed construction yards, and i'd also delete the entire ```[Basic]``` section of each map through a text editor, so when you open it in the editor no ingame settings are carried over. You may need to add ```GameMode=Custom Map``` so that it appears inside your client. 
+
+![map inside FD](Assets/ingamescreenieViniRMG.png)
+
+## Handama's Random Map Generator [RA2]
+
+This is a largely customisable map generator, capable of making highly detailed random maps, as well as automating a render of these maps to be produced. To run, please check the instructions and download from [GitHub](https://github.com/handama/RandomMapGenerator_RA2). A couple of map renders are linked below:
+
+https://github.com/handama/RandomMapGenerator_RA2
+
+https://gitlab.com/tsmapgenerator/tsmapgenerator
+
+![Preview](Assets/tsmapgen.png)
+
+todo
+
+
+[DDrawCompat](https://github.com/narzoul/DDrawCompat)
+[CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw)
 - Download vini (Non TSC)
 - Add a renderer (cnc-ddraw / ddrawcompat)
 - launch with dev command
 ``` LaunchVinifera.exe -DEVELOPER ```
 go to hotkeys --> Development --> [Map Snapshot](https://vinifera.readthedocs.io/en/latest/Miscellaneous.html#map-snapshot)
 Run the Random Map Generator --> remove player objects / houses --> sorted
+
+
+[renderer_docs](/docs/rendererresources.md)
