@@ -174,25 +174,19 @@ I am of course assuming you then intend on playing through a distribution such a
 
 ## Handama's Random Map Generator [RA2]
 
-This is a largely customisable map generator, capable of making highly detailed random maps, as well as automating a render of these maps to be produced. To run, please check the instructions and download from [GitHub](https://github.com/handama/RandomMapGenerator_RA2). A couple of map renders are linked below:
+This is a largely customisable map generator, capable of making highly detailed random maps, as well as automating a render of these maps to be produced. To run, please check the [instructions](https://github.com/handama/RandomMapGenerator_RA2) and download a build from [GitHub](https://github.com/handama/RandomMapGenerator_RA2/releases). As of writing this page, four environments have been configured. I have included a HD Render of each map, as well as a download if you wish to check it yourself.
 
-https://github.com/handama/RandomMapGenerator_RA2
+[Temperate [Map Download]](Assets/TEMMAP9.map)
+![TemperateMapRender](Assets/TEMMAP9.jpg)
+[Desert [Map Download]](Assets/DESMAP6.map)
+![DesertMapRender](Assets/DESMAP6.jpg)
+[Urban [Map Download]](Assets/RMGMAP6.map)
+![UrbanMapRender](Assets/URBMAP6.jpg)
+[Temperate Islands [Map Download]](Assets/ISLMAP2.map)
+![IslandsMapRender](Assets/ISLMAP2.jpg)
 
-https://gitlab.com/tsmapgenerator/tsmapgenerator
+## PTapioK's TS Map Generator (Incomplete)
+
+A Work-In-Progress map generator for Tiberian Sun. Can be downloaded on [GitLab](https://gitlab.com/tsmapgenerator/tsmapgenerator)
 
 ![Preview](Assets/tsmapgen.png)
-
-todo
-
-
-[DDrawCompat](https://github.com/narzoul/DDrawCompat)
-[CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw)
-- Download vini (Non TSC)
-- Add a renderer (cnc-ddraw / ddrawcompat)
-- launch with dev command
-``` LaunchVinifera.exe -DEVELOPER ```
-go to hotkeys --> Development --> [Map Snapshot](https://vinifera.readthedocs.io/en/latest/Miscellaneous.html#map-snapshot)
-Run the Random Map Generator --> remove player objects / houses --> sorted
-
-
-[renderer_docs](/docs/rendererresources.md)
