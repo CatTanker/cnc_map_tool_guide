@@ -34,7 +34,7 @@ I also need to provide a special thanks to: <br>
 - The developers of tools and resources linked, who without this project would be pointless. <br>
 - SCIPCION for occasional input.
 - APRA2 Team for support
-- Mental Omega, Project Phantom, Fading Dusk, RA20XX, which were all used in screenshots
+- Mental Omega, Project Phantom, Fading Dusk, Red Ressurection, RA20XX, which were all used in screenshots at some point
 
 ## PDF Download
 A downloadable PDF should be available [here](builds.pdf)
