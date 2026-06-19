@@ -4,8 +4,9 @@ This section covers the core editors that have been an essential part of mapping
 
 
 
-Final Alert 2 2 (FA2) is the original map editor for Red Alert 2 and Yuri's Revenge. Following it's release, it has since had a number of modifications (FA2Ext, FA2SP, FA2HDM), as well as a source code release contained within the Steam RA2/YR Download. Despite this release, there has been a lot of progress made by multiple members of the community, and so it is recommended that you use these patches.<br />
+Final Alert 2 (FA2) is the original map editor for Red Alert 2 and Yuri's Revenge. Following it's release, it has since had a number of modifications (FA2Ext, FA2SP, FA2HDM), as well as a source code release contained within the Steam RA2/YR Download. Despite this release, there has been a lot of progress made by multiple members of the community, and so it is recommended that you use these patches.<br />
 
+![FA2Original](Assets/FA2MO.png)
 
 | Topic | Source + Link |
 | ------------ | ------------- |
@@ -15,9 +16,8 @@ Final Alert 2 2 (FA2) is the original map editor for Red Alert 2 and Yuri's Reve
 
 #### FA2SP
 
-As of 2024, FA2SP was the recommended patch version, with the links contained below. This has numerous improvements, namely improved themed handling, basic live lighting rendering, improved voxel rendering, a tile drawer, plus support for Ares and Phobos engine extensions. The full changelog is available [here](https://github.com/secsome/FA2sp/blob/master/CHANGELOG.md), along with download links below.
+In 2025, FA2SP was the recommended patch version, with the links contained below. This has numerous improvements, namely improved themed handling, basic live lighting rendering, improved voxel rendering, a tile drawer, plus support for Ares and Phobos engine extensions. The full changelog is available [here](https://github.com/secsome/FA2sp/blob/master/CHANGELOG.md), along with download links below.
 
----
 
 ![FA2SP](Assets/fa2sp.png)
 
@@ -86,6 +86,8 @@ Both fa2sp and certain FS distributions have this included but it is often in a 
 | ------------ | ------------- |
 | Unconfigured  |[BitPatch](http://bitpatch.com/ddwrapper.html)|
 | Pre-Configured|[PPM](https://ppmforums.com/download.php?id=72031&sid=5b50cb3c1696d792adb195e4360b46fd)|
+
+---
 
 #### Dark and Custom themes
 

@@ -1,6 +1,3 @@
-This page covers peripheral tools that can significantly boost your workflow. 
-Some are ideal for the release stage, such as the map renderer to generate a map preview and compress the map, while others are better for the in-development stage, such as the Trigger Analyser.
-
 # Common Tools
 
 ### Map Renderer <br />
@@ -9,6 +6,7 @@ The map renderer is one of the most used tools bar the editor themselves. Writte
 ![General image showing the files outputted and the mod config](Assets/maprenderer_1.png)
 ![Batch Process](Assets/maprend2_batch.png)
 ![Misc Settings](Assets/maprend_misc.png)
+
 | Topic | Source + Link |
 | ------------ | ------------- |
 | Forum Thread | [PPM - Forum & Download](https://ppmforums.com/topic-29554-page-5/cnc-maps-renderer-rewritten-works-for-tiberian-sun-and-ra2/?postorder=asc) |
@@ -22,6 +20,7 @@ A tool written injavascript (by Whensons) to analyse and map out triggers in a g
 Although it is hosted on GitHub you can download the page and use it offline. Simply open the webpage and open the map in the window to use.
 
 ![WhensonsEditor](Assets/whensons_trigger.png)
+
 | Topic | Source + Link |
 | ------------ | ------------- |
 | Self-documentation | [Github - Main Page](https://github.com/whensonZWS/Trigger-Analyzer) |
@@ -30,7 +29,7 @@ Although it is hosted on GitHub you can download the page and use it offline. Si
 Since the source code is available and the tool was built for MO 3.3.5, it is missing the latest scripting options available through the ares and phobos engine extensions. Resar forked the project and has updated the tool to include these, as well as varius UI improvements.
 
 ![ResarsEditor](Assets/resar_trigger.png)
-![ResarsEditor](Assets/resar-trigger2.png)
+![ResarsEditor2](Assets/resar-trigger2.png)
 
 | Topic | Source + Link |
 | ------------ | ------------- |
@@ -95,8 +94,7 @@ A tool by E1 Elite to resize maps. Unlike the standard unmodified map editor, th
 | Source Code| [Github - Main Page](https://github.com/E1Elite/MapResize) |
 
 ### MISTEST Map Checker <br />
-Author: GE <br />
-Description: "Mission Tester is designed primarily to help troubleshoot mission maps, but is useful for quickly resolving trigger or object placement errors on mutiplayer maps as well. It will warn of errors like objects outside of the map bounds, often caused by resizing maps, it will find errors like missing waypoints for actions, or even nonexistent sounds being played." <br />
+GE's Mission tester is a series of TLC Runtime scripts to check for errors and possible warnings within a map. 
 
 | Topic | Source + Link |
 | ------------ | ------------- |
@@ -107,11 +105,12 @@ Description: "Mission Tester is designed primarily to help troubleshoot mission 
 
 ###  Trigger Analyser - Python <br />
 
-A script by FrozenFrog to generate a trigger map graphically on the TS/RA2 Engine. Runs locally on your PC using python, check the GitHub for instructions. Listed as a less common tool due to the ease of access that the web analyzer provides <br />
+A script by FrozenFrog to generate a trigger map graphically on the TS/RA2 Engine. Runs locally on your PC using python, check the GitHub for instructions. Listed as a special due to the ease of access that the web analyzer provides over this tool, as well as the [reason for the tool](https://tieba.baidu.com/p/6514199866?pn=1&svcp_stk=1_9r4FOR-PrSxSv03VNLvjUF3xQZAjAwwzFKZT9b4WvKoSc3tvSi1UEvZvDHgjwCjx4-xKAwzC9_--w12C6nwHpfkAfEWSzzWK9GCcWDY4z8lfJZ2IFhc4m9kSQ9NW1E7dii2Zf6v8W2-YC1ShlMEClnQ44r3_4qgxgHeo2Fh3C8gwHa1cLOGZijDCtYTo5bLZ). 
 
-https://tieba.baidu.com/p/6514199866?pn=1&svcp_stk=1_9r4FOR-PrSxSv03VNLvjUF3xQZAjAwwzFKZT9b4WvKoSc3tvSi1UEvZvDHgjwCjx4-xKAwzC9_--w12C6nwHpfkAfEWSzzWK9GCcWDY4z8lfJZ2IFhc4m9kSQ9NW1E7dii2Zf6v8W2-YC1ShlMEClnQ44r3_4qgxgHeo2Fh3C8gwHa1cLOGZijDCtYTo5bLZ
+
 
 ![FrozenFrogPic](https://github.com/FrozenFog/Ra2-Map-TriggerNetwork/raw/master/imgs/eg-result.png)
+
 | Topic | Source + Link |
 | ------------ | ------------- |
 | Self-documentation | [Github - Main Page](https://github.com/FrozenFog/Ra2-Map-TriggerNetwork) |
@@ -140,10 +139,9 @@ Description: A JavaScript lib developed by Heli, it provides interfaces for jaav
 
 
 # Random Map Generation
-TBC
 
 
-### Using Vinifera [TS]
+## Using Vinifera [TS]
 ![ViniLogo](https://media.discordapp.net/attachments/826473168847896619/826519425993801759/Vinifera_Logo.png?ex=6a34ddf3&is=6a338c73&hm=613df132c0c7113fbd35866f236271c58e23dba3d10b3f25bf2c1f440f5b85cd&=&format=webp&quality=lossless&width=1872&height=415)
 
 Vinifera is an open source project providing features and bugfixes to Tiberian Sun. One of the features it restores is the option to save the loaded-in map as a .map file inside your game's directory, meaning you can use the game's random map generation and keep the map.
