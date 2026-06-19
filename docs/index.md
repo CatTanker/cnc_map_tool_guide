@@ -33,6 +33,8 @@ I also need to provide a special thanks to: <br>
 - Lylak and AlliedG for suggesting that i improve the guide when it was only in my discord server. <br>
 - The developers of tools and resources linked, who without this project would be pointless. <br>
 - SCIPCION for occasional input.
+- APRA2 Team for support
+- Mental Omega, Project Phantom, Fading Dusk, RA20XX, which were all used in screenshots
 
 ## PDF Download
 A downloadable PDF should be available [here](builds.pdf)
