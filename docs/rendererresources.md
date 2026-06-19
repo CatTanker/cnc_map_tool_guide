@@ -3,12 +3,18 @@
 
 Typically bundled with the CnCNet Client, there are several renderers you have that you can choose from. These improve compatibility with modern operating systems and if you pick right could make the game playable as well as drastically impact performance.
 
+
+### CnC-DDraw
 For most users, you should start with [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw), which is currently the most developed and maintained renderer. Most mods ship this simply as a `CnC-DDraw` option inside the client's options menu. If the game seems to run slowly or you face issues such as being unable to return to the game itself after clicking the pause menu (or have an invisible mouse), head into `ddraw.ini` and change `renderer=auto` to `ogl`, then `dx`, then `gdi` and see which provides you with the best experience. 
 
+If you are
+## TS-DDRaw
 Assuming this does not solve your issue, you should try the [TS-DDraw](https://github.com/CnCNet/ts-ddraw/releases) renderer and all of the choices available (OpenGL, GDI, etc,through the same method as you would for CnC-DDraw).
 
+# DDrawCompat
 Another popular renderer assuming the above two struggle is [DDrawCompat](https://github.com/narzoul/DDrawCompat) which is another DLL wrapper which works using the native DirectDraw libraries, rather than converting it to a later format such as cnc/ts-ddraw do. This is not compatible with DXVK however (see below), and is included in the unmodded Steam edition of YR by default.
 
+# Other
 There are also a number of edge case renderers such as DxWnd, DDWrapper and IE-DDraw which are much smaller, often an older development and have relatively little support, configuration and documentation available. These may help a small minority of people but other alternatives should be preferred and tested first.
 
 
