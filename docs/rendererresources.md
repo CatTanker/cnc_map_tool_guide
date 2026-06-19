@@ -3,20 +3,19 @@
 
 Typically bundled with the CnCNet Client, there are several renderers you have that you can choose from. These improve compatibility with modern operating systems and if you pick right could make the game playable as well as drastically impact performance.
 
-
 ### CnC-DDraw
-For most users, you should start with [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw), which is currently the most developed and maintained renderer. Most mods ship this simply as a `CnC-DDraw` option inside the client's options menu. If the game seems to run slowly or you face issues such as being unable to return to the game itself after clicking the pause menu (or have an invisible mouse), head into `ddraw.ini` and change `renderer=auto` to `ogl`, then `dx`, then `gdi` and see which provides you with the best experience. 
+For most users, you should start with [CnC-DDraw](https://github.com/FunkyFr3sh/cnc-ddraw), which is currently the most developed and maintained renderer. Most mods ship this simply as a `CnC-DDraw` option inside the client's options menu. If the game seems to run slowly or you face issues such as being unable to return to the game itself after clicking the pause menu (or have an invisible mouse), head into `ddraw.ini` and change `renderer=auto` to `ogl`, then `dx`, then `gdi` and see which provides you with the best experience. ideally this would be a client option or through the exe listed below. 
 
-If you are
+If you are not using the CnCNet Client, or are using a mod that has an updated client as of 2026, then you can use the `cnc-ddraw config.exe` application to configure settings rather than doing it through `ddraw.ini` manually
+
 ## TS-DDRaw
-Assuming this does not solve your issue, you should try the [TS-DDraw](https://github.com/CnCNet/ts-ddraw/releases) renderer and all of the choices available (OpenGL, GDI, etc,through the same method as you would for CnC-DDraw).
+Assuming this does not solve your issue, you should try the [TS-DDraw](https://github.com/CnCNet/ts-ddraw/releases) renderer and all of the choices available (through the same method as you would with Cnc-DDraw above). Ultimately TS-DDraw is a much older, unmaintained renderer compared to CnC-DDraw, so typically fixing settings on CnC-DDraw is a more effective method. Several mods include the backend renderer options above, so in cases this can quickly fix an issue if you have issues such as not being able to return to the game after pausing, which GDI often seems to fix.
 
 # DDrawCompat
-Another popular renderer assuming the above two struggle is [DDrawCompat](https://github.com/narzoul/DDrawCompat) which is another DLL wrapper which works using the native DirectDraw libraries, rather than converting it to a later format such as cnc/ts-ddraw do. This is not compatible with DXVK however (see below), and is included in the unmodded Steam edition of YR by default.
+Another popular renderer is [DDrawCompat](https://github.com/narzoul/DDrawCompat) which is another DLL wrapper which works using the native DirectDraw libraries, rather than converting it to a later format such as CnC-DDraw. This is not compatible with DXVK however (see below), but is nonetheless a popular choice and is still maintained. 
 
 # Other
-There are also a number of edge case renderers such as DxWnd, DDWrapper and IE-DDraw which are much smaller, often an older development and have relatively little support, configuration and documentation available. These may help a small minority of people but other alternatives should be preferred and tested first.
-
+There are also a number of edge case renderers such as DxWnd, DDWrapper and IE-DDraw which are much older, relatively unmaintained and often not included in CnCNet. These often have a highly specific purpose that has relatively no use for most users. There have been discussions regarding dropping thse from mod clients altogether, and in cases this has already happened, so it is not recommended to use these unless you know what you are doing, and even then the purpose of these renderers may exist elsewhere, such as in CnC-DDraw.
 
 ## Using DXVK
 ### Summary
@@ -48,7 +47,7 @@ DXVK has also received light testing on YR and MO. I am aware that several peopl
 
 Give it a go!
 
-### Installation for Windows [Extended]
+### Installation for Windows [Extended WITH TESTING]
 
 Following in from the Short Version:
 
