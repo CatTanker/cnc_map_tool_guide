@@ -59,17 +59,16 @@ Batch Delete, script paths, and scripting annotations: <br />
 ### TIberian Sun
 #### [FS] Final Sun
  
-![FA2SP](Assets/fs_sp.png)
+![FS_SP](Assets/fs_sp.png)
  
 The original Map Editor for Tiberian Sun & Firestorm. 
 The Patched FS option is directly compatible with TS. It contains some of fa2sp's features, so it is a massive improvement over the unmodded editor.
-The toolkit option attempts to provide a direct application using several of the tools listed below. The forum contains a link to an older fork of FS that may be useful to some.
-The Tiberian Sun Client [TSC] also includes a build.
+The Tiberian Sun Client [TSC] also includes a build, and will work out of the box with the client.
 
 | Topic | Source + Link |
 | ------------ | ------------- |
 | Patched FS | [PPM - Forum](https://ppmforums.com/topic-47355/finalsun-101-patches/) |
-| Tiberian Sun Client (Includes FS) | [ModDB](https://www.moddb.com/mods/tiberian-sun-client) |
+| Tiberian Sun Client  | [ModDB](https://www.moddb.com/mods/tiberian-sun-client) |
 
 ---
 
