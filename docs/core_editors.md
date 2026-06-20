@@ -1,5 +1,3 @@
-This section covers the core editors that have been an essential part of mapping for the past 20+ years, covering Final Sun and Final Alert as well as their various modifications. 
-
 ### Red Alert 2
 
 
