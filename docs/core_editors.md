@@ -68,9 +68,8 @@ The Tiberian Sun Client [TSC] also includes a build.
 
 | Topic | Source + Link |
 | ------------ | ------------- |
-| Patched FS [Vanilla] | [PPM - Forum](https://ppmforums.com/topic-47355/finalsun-101-patches/) |
-| "Toolkit" + Clutter | [CnCNet - Forum](https://forums.cncnet.org/topic/6720-final-sun-complete-fixed/) |
-| Tiberian Sun Client | [ModDB](https://www.moddb.com/mods/tiberian-sun-client) |
+| Patched FS | [PPM - Forum](https://ppmforums.com/topic-47355/finalsun-101-patches/) |
+| Tiberian Sun Client (Includes FS) | [ModDB](https://www.moddb.com/mods/tiberian-sun-client) |
 
 ---
 
