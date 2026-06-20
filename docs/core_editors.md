@@ -1,9 +1,9 @@
 This section covers the core editors that have been an essential part of mapping for the past 20+ years, covering Final Sun and Final Alert as well as their various modifications. 
 
-### [FA2] Final Alert 2
+### Red Alert 2
 
 
-
+#### FA2
 Final Alert 2 (FA2) is the original map editor for Red Alert 2 and Yuri's Revenge. Following it's release, it has since had a number of modifications (FA2Ext, FA2SP, FA2HDM), as well as a source code release contained within the Steam RA2/YR Download. Despite this release, there has been a lot of progress made by multiple members of the community, and so it is recommended that you use these patches.<br />
 
 ![FA2Original](Assets/FA2MO.png)
@@ -58,8 +58,8 @@ Batch Delete, script paths, and scripting annotations: <br />
 | FA2HDM [bilibili Announcement] | [bilibili](https://www.bilibili.com/opus/1026376675556851718)|
 
 ---
-
-### [FS] Final Sun
+### TIberian Sun
+#### [FS] Final Sun
  
 ![FA2SP](Assets/fs_sp.png)
  
