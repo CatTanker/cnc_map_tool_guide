@@ -1,4 +1,4 @@
-# Common Tools
+## Common Tools
 
 ### Map Renderer <br />
 The map renderer is one of the most used tools bar the editor themselves. Written originally by zzattack, Starkku, Metadorius, E1 Elite and numerous other contributors, the tool can render individual and batch-scale maps to genered high quality previews and thumbnails for the CnCNet Client. Also contains other features such as height maps, position markers, debug features, and options to configure it to read from mods, which makes it ideal for most users.
@@ -57,10 +57,7 @@ The tool can also be used for simpler functions such as swapping ore and gems, p
 | Preset Download | [Github - Releases](https://github.com/Starkku/MapTool/releases/) |
 | Forum Thread | [PPM - Forum](https://ppmforums.com/topic-43411/) |
 
-# Less Common Tools
-
-
-
+## Less Common Tools
 
 ### Tunnel Drawer <br />
 ![wavemaker](Assets/tunnel_drawer.png)
@@ -82,7 +79,6 @@ A brilliant tool by PTapioK which streamlines the production of mission and surv
 | Forum Thread | [PPM - Forum](https://ppmforums.com/viewtopic.php?t=40202&start=0&postdays=0&postorder=asc&highlight=&sid=4e24b30fb8ab401c146e831491db9400) |
 | Source Code| [Github - Main Page](https://github.com/PTapioK/TSWaveMaker) |
 
-
 ### Map Resize Tool <br />
 A tool by E1 Elite to resize maps. Unlike the standard unmodified map editor, this moves everything, including tunnels and smudges. This tool is increasing redundant as most editors do this by default now.
 
@@ -100,8 +96,7 @@ GE's Mission tester is a series of TLC Runtime scripts to check for errors and p
 | ------------ | ------------- |
 | Forum Thread | [PPM - Forum](https://www.ppmforums.com/topic-68090/) |
 
-
-# Special Tools
+## Special Tools
 
 ###  Trigger Analyser - Python <br />
 
@@ -138,10 +133,9 @@ Description: A JavaScript lib developed by Heli, it provides interfaces for jaav
 | Source Code| [Github](https://github.com/Heli-Lab/relert.js-browser) |
 
 
-# Random Map Generation
+## Random Map Generation
 
-
-## Using Vinifera [TS]
+### Using Vinifera [TS]
 ![ViniLogo](https://media.discordapp.net/attachments/826473168847896619/826519425993801759/Vinifera_Logo.png?ex=6a34ddf3&is=6a338c73&hm=613df132c0c7113fbd35866f236271c58e23dba3d10b3f25bf2c1f440f5b85cd&=&format=webp&quality=lossless&width=1872&height=415)
 
 Vinifera is an open source project providing features and bugfixes to Tiberian Sun. One of the features it restores is the option to save the loaded-in map as a .map file inside your game's directory, meaning you can use the game's random map generation and keep the map.
@@ -170,7 +164,7 @@ I am of course assuming you then intend on playing through a distribution such a
 
 ![map inside FD](Assets/ingamescreenieViniRMG.png)
 
-## Handama's Random Map Generator [RA2]
+### Handama's Random Map Generator [RA2]
 
 This is a largely customisable map generator, capable of making highly detailed random maps, as well as automating a render of these maps to be produced. To run, please check the [instructions](https://github.com/handama/RandomMapGenerator_RA2) and download a build from [GitHub](https://github.com/handama/RandomMapGenerator_RA2/releases). As of writing this page, four environments have been configured. I have included a HD Render of each map, as well as a download if you wish to check it yourself.
 
@@ -183,7 +177,7 @@ This is a largely customisable map generator, capable of making highly detailed 
 [Temperate Islands [Map Download]](Assets/ISLMAP2.map)
 ![IslandsMapRender](Assets/ISLMAP2.jpg)
 
-## PTapioK's TS Map Generator (Incomplete)
+### PTapioK's TS Map Generator (Incomplete)
 
 A Work-In-Progress map generator for Tiberian Sun. Can be downloaded on [GitLab](https://gitlab.com/tsmapgenerator/tsmapgenerator)
 
