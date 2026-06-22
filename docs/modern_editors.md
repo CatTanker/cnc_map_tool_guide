@@ -11,7 +11,7 @@ For requirements and further details on the project, check their [GitHub](https:
 
 The World Altering Editor has been built with mods and the CnCNet Client in mind, and operates on a highly configurable structure of INI config files. This allows for the editor to support a wide range of mod structures, including that of TSClient where MIX and INI files are split into several subfolders, and that of the "put it all in the root" structure of YR. MIX load orders can be configured easily, and there are rules/art override files available. Any theater can be defined, so mods which change the theaters available no longer need to hex edit and ship multiple FA2/FS installations with their mod.
 
-![INI Config](/Assets/INIWAEConfig.png)
+![INI Config](Assets/INIWAEConfig.png)
 
 
 
