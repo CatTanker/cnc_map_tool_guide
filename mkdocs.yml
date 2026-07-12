@@ -80,6 +80,7 @@ nav:
   - 'Resources':
     - 'Map Resources': 'mapresources.md'
     - 'Renderer Resources': 'rendererresources.md'
+    - 'DXVK Guide': 'dxvk.md'
     - 'Support Resources' : 'generalsupport.md'
   - 'Linux Resources':
     - 'Introduction': 'linuxintro.md'
