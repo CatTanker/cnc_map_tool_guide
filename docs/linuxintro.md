@@ -7,7 +7,7 @@ Linux compatability with the game has only increased over the years, and now tak
 
 --- 
 
-For users of other Mods, this is very dependent on the mod itself. Mods such as Mental Omega 3.3.6, Red Resurrection, Twisted Insurrection, and many that haven't been updated since 2024 **do not** have the native client build, so you need to run it entirely through wine. 
+There are two main reasons to not use the native launcher. Firstly, there are a lot of mods older than the introduction of this to the client and therefore have no linux build. Mods such as Mental Omega 3.3.6, Red Resurrection, Twisted Insurrection, and many that haven't been updated since 2024 **do not** have the native client build, so you need to run it entirely through wine. You may also wish to run the client through wine as well if the mod fails to lave an easy launcher script despite being on a recent client (in which case please mention it to the devs), or if you are facing issues with the native method. 
 
 On this website there are three main documented ways. 
 One is using wine & winetricks traditionally, which is the most space effecient method but easily the hardest, as well as providing no other benefits other than with very recently updated cncnet clients, although this may be useful information if you run into issues with the native build's ability to run the game smoothly. 
