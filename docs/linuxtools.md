@@ -1,4 +1,4 @@
-## Final Alert 2 (and Final Sun)
+## Final Alert 2 and Final Sun
 Linux provides several new opportunities for people using FA2(SP) and FS(SP)
 The map editor can be run straight out of wine / bottles without any dependencies.
 ### FA2SP with a Dark Theme
@@ -18,7 +18,7 @@ I seem to recall [this](https://www.reddit.com/r/linux_gaming/comments/n8hf6v/ma
 Wine supports the theme engine of **XP**, so a lot of your choices are limited, although any modifications you make only apply to your wineprefix, so unlike windows you cannot brick your system with it. There are also a surprising amount of decent Xp themes lying around on places such as DevianArt, so i recommend looking for some free ones and trying them out.
 
 ### Multi-Monitor Support
-While i am unsure if this is simply an original bug in FA2, or as a result of patches, but the application simply cannot be stretched between two screens.
+While i am unsure if this is simply an original bug in FA2, or as a result of patches, both on Windows and Linux the application simply cannot be stretched between two screens (or off the believed primary monitor).
 
 ```
 WINEPREFIX="/home/YOUR_USERNAME_GOES_HERE/.local/share/wineprefixes/map_editor" winecfg
@@ -30,47 +30,13 @@ You then run the map editor from this wineprefix like as I recommended in the Wi
 
 ## World Altering editor
 
-It is possible to run the World Altering Editor on Linux. To set this up, the easier methods involve Lutris and Bottles, with the latter being used in this example.
+It is simple to run the World Altering Editor on Linux. Using a GUI program such as bottles, you simply click once install the dependency required for WAE, which in this case is Dotnet Desktop 8. Just make a new bottle, open dependencies, install, and run the exe. 
 
-1. Install Bottles (ideally through flatpak)
-2. Create a new bottle
-3. Head to dependencies
-4. Search for dotnet
-5. Install DotnetCoreDesktop8
-6. Run the World Altering Editor
-
+![WAEInstallDependency](Assets/BottlesWAEDependencyScreenie.png)
 
 ![Project Phantom WAE on Linux](Assets/WAE_Bottles.png)
+![DTA WAE on Linux](Assets/BottlesWAEDTA.png)
 
-
-### Old Advice (replaced by the dependency install above)
-
-It is possible to run the World Altering Editor on Linux. While a native Linux build could be a future goal, for now the editor can at least be run using a compatibility layer.
-I highly recommend using [Bottles](https://usebottles.com) for this as it allows possibly the easiest installation and customization of new runners.
-
-
-1. Preparing the bottle:
-    1. Create a new bottle, as an application (not gaming or custom).
-    2. Head to Settings and make sure the runner's version is above 9.0. If it is not:
-        1. Head to the main page where you select bottles
-        2. Click on the 3 dots or 3 lines (theme dependent) by the search icon at the top-right of your window.
-        3. Select Preferences
-        4. Head to the runners tab
-        5. Download a runner version that is =>9.0. I recommend Caffe-9.2, and kron4ek-wine-9.4-amb64
-        6. Go back to the bottle and select either of these as a runner.
-
-Note that the latest wine versions should also work if you select them as a runner. This would need to be installed onto your system from your distribution or building from source though, rather than through bottles.
-
-2. Installing Dotnet 8 Desktop Runtime
-    2. Head to [Microsoft's Dotnet page](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) and download the latest x64 installer for **.NET Desktop Runtime 8.x.x**, the one which only has an installer for Windows.
-    3. Go into your bottle, click `Run Executable` and select the exe you have just downloaded.
-    4. Head through the instillation page, agreeing and telling it to install it.
-
-3. Running the World Altering Editor
-    1. Find your World Altering Editor inside your bottle's `Run Executable`
-    2. Open `WorldAlteringEditor.exe`
-    3. Click on `Browse` and use Wine's clunky file browser to find your mod/game's folder
-    4. Select a map, either using browse again or using the built-in file browser to select the map
-    5. Open the map and enjoy!
-
+## Other Tools
+For the most part, tools such as the Map Renderer, Map Tool, Open Source Voxel Section Editor, SHP Builder, ImageShaper, and others run directly out of the box of a new bottle. 
 
