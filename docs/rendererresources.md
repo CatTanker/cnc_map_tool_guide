@@ -21,16 +21,18 @@ There are also a number of edge case renderers such as DxWnd, DDWrapper and IE-D
 
 ## Scaling with CnC-DDraw
 
-[Example Image Requested (see the footer)]
+![Image1](Assets/Upscales/opengl_xbrz_freescale_multipass.png)![Image2](Assets/Upscales/directx_lanczos.png)
 
 For a game without any zoom functions such as TS and YR, and given the games were intended for 800x600 screens 20+ years ago, visibility can become an issue. This is especially apparent in TS due to the game having smaller cells, parts such as infantry and minimaps may become extremely difficult to distinguish.
 
 Before starting, I highly recommend that you head to CnC-DDraw's [releases page](https://github.com/FunkyFr3sh/cnc-ddraw/releases) to overwrite your existing ddraw components and ensure you have the latest.
 
-Follow [this tutorial](https://www.moddb.com/members/rampastring/blogs/tutorial-sharp-scaling-dta-and-other-client-based-games-with-cnc-ddraw) on setting up scaling for DTA. This also applies to every mod using cnc-ddraw and the cncnet client. If the resolution you need to scale from, such as 960x540 for 1080p scaling, does not exist as an option inside the client, then you can add this to your game's original ini file, such as SUN.ini for TS.
+Follow [this tutorial](https://www.moddb.com/members/rampastring/blogs/tutorial-sharp-scaling-dta-and-other-client-based-games-with-cnc-ddraw) on setting up scaling for DTA. This also applies to every mod or game using CnC-DDraw and the CnCNet Client. If the resolution you need to scale from, such as 960x540 for 1080p scaling, does not exist as an option inside the client, then you can add this to your game's original ini file, such as SUN.ini for TS.
 
+If you wish to configure the upscaling process further, such as changing the shader used, follow the steps below to do it manually inside `ddraw.ini`. 
+Note this is also configurable from `cnc-ddraw config.exe` that is provided from CnC-DDraw's [latest release](https://github.com/FunkyFr3sh/cnc-ddraw/releases).
 
-If you wish to configure the upscaling process further, follow the steps below.
+For a comparison between certain shaders, head to the selection inside this [repository](https://github.com/CatTanker/cnc_map_tool_guide/tree/main/docs/Assets/Upscales) and check the Readme.
 
 For OpenGL:
 
@@ -42,7 +44,7 @@ According to the latest `ddraw.ini`:
 ; Possible values: Nearest neighbor, Bilinear, Bicubic, Lanczos, xBR-lv2
 shader=...
 ```
-Note this is also configurable from `cnc-ddraw config.exe` that is provided from CnC-DDraw's [releases page](https://github.com/FunkyFr3sh/cnc-ddraw/releases).
+
 
 For the Direct3D9 renderer, enter ddraw.ini and test out the following options ingame to see which you prefer.
 According to the latest `ddraw.ini`:
@@ -52,8 +54,4 @@ According to the latest `ddraw.ini`:
 d3d9_filter=...
 ```
 
-GDI as a renderer does not scale well there is no scaling option other than linear scaling.
-
-
-Image Request:
-Rather than using Rampastring's example image in his moddb post, I would appreciate any donation examples of such scaling in use in a non-DTA environment, to show how it performs in a non-total-conversion mod. The screenshots can be in a game or mod of your choice, as long as you provide a before (same resolution but without scaling) and after (with scaling) plus a config (which renderer settings were being used). Message me on discord or file an issue if you are willing to lend a hand. Thanks! Native resolution should be QHD or higher.
+GDI as a renderer does not scale so there is no scaling option other than linear scaling.
