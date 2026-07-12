@@ -7,21 +7,21 @@ hide:
 
 The project started as a list of all the relevant mapping resources i have discovered, placed inside my mapping discord server in a dedicated channel. Due to discord's limitations, and a few other factors, I decided it was not wise to lock my first draft of information up in a discord server, and so I added it to github. While gists was also an option, it did not have the complexity and collaboration element that i wanted this project to achieve.
 
-Over time i have worked on the list, adding new entries and improving it's relevance by mentioning areas such as the [World Altering Editor](https://github.com/Rampastring/WorldAlteringEditor).
+Over time i have worked on the list, adding new entries and improving it's relevance by mentioning areas such as the World Altering Editor, FA2HDM, a full listing of map tools along with other resources.
 
-Since i frequently use linux as a daily driver, and have been since mid 2020, i realised there was relatively little formalised information about running WW 2.5D games on linux, and what there was tended to be un-coordinated. As with most linux users, I broke my build several times, and as a result got tired of having to dig out the same information each time in order to make a game somewhat run through trial and error. In 2023 I started my writeup, and as of October I pushed the first edition of my linux guide. I have since worked on expanding and simplifying the guide into the product that it is today.
+Since i frequently use linux as a daily driver, and have been since mid 2020, i realised there was relatively little formalised information about running WW 2.5D games on linux, and what there was tended to be un-coordinated. Whenever I had an issue running the game i ended up doing a load of research to remember how to set it back up, and i got tired of this. In 2023 I started my writeup, and as of October I pushed the first edition of my linux guide. I have since worked on expanding and simplifying the guide into the product that it is today, as well as keeping it as relevant as i can.
 
-After suggestions to move to ReadTheDocs i finally took on this task in December 2023, and a month on I have finished the transition, meaning all materials are now re-formated and are on this web page.
+After suggestions to move to ReadTheDocs i finally took on this task in December 2023, and a month on I have finished the transition, meaning all materials are now re-formated and are on this web page, as well as everything being build in markdown and with a pdf download available, all triggered by github commits. 
+
+I have also written some basic listings of simple compatability fixes related to issues i frequently saw in mods, did research on various rendering options and how to configure this, looked into adding DXVK to look for a performance change, and 
 
 I hope you find the spectrum of information available to be useful.
 
-
 ## Contributions
-While this is currently a solo project, i am always up for collaboration if anyone wishes to expand and contribute to this guide. <br>
-If you wish to have any input, you can reach me in most major CnC discords.
+While this is currently a solo written project, i am always up for collaboration if anyone wishes to expand and contribute to this guide. <br>
+If you wish to have any input, you can reach me in most major CnC discords and are of course encouraged to raise any issues on GitHub
 
 This project's raw documentation is hosted in [this project's github page](https://github.com/CatTanker/cnc_map_tool_guide) <br>
-if you spot any bugs, have a request or simply want to contribute, please open an issue and I can address it from there.
 
 
 ## Credits
@@ -34,7 +34,7 @@ I also need to provide a special thanks to: <br>
 - The developers of tools and resources linked, who without this project would be pointless. <br>
 - SCIPCION for occasional input.
 - APRA2 Team for support
-- Mental Omega, Project Phantom, Fading Dusk, Red Ressurection, RA20XX, which were all used in screenshots at some point
+- Mental Omega, Project Phantom, Fading Dusk, Red Ressurection, RA20XX, Dawn of the Tiberian Age, and a few various public map contributors, whose contant is all shown in this page.
 
 ## PDF Download
-A downloadable PDF should be available [here](builds.pdf)
+A downloadable PDF should be available [here](builds.pdf), linked to absolute latest. 
