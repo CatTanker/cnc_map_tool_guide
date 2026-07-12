@@ -82,7 +82,7 @@ A brilliant tool by PTapioK which streamlines the production of mission and surv
 ### Map Resize Tool <br />
 A tool by E1 Elite to resize maps. Unlike the standard unmodified map editor, this moves everything, including tunnels and smudges. This tool is increasing redundant as most editors do this by default now.
 
-![Map Resize Tool](<Assets/Map Resize Tool.png>)
+![Map Resize Tool](Assets/Map Resize Tool.png)
 
 | Topic | Source + Link |
 | ------------ | ------------- |
@@ -90,6 +90,8 @@ A tool by E1 Elite to resize maps. Unlike the standard unmodified map editor, th
 | Source Code| [Github - Main Page](https://github.com/E1Elite/MapResize) |
 
 ### MISTEST Map Checker <br />
+
+![MISTEST_Image](https://www.ppmforums.com/files/mist_131.jpg)
 GE's Mission tester is a series of TLC Runtime scripts to check for errors and possible warnings within a map. 
 
 | Topic | Source + Link |
@@ -136,7 +138,8 @@ Description: A JavaScript lib developed by Heli, it provides interfaces for jaav
 ## Random Map Generation
 
 ### Using Vinifera [TS]
-![ViniLogo](https://media.discordapp.net/attachments/826473168847896619/826519425993801759/Vinifera_Logo.png?ex=6a34ddf3&is=6a338c73&hm=613df132c0c7113fbd35866f236271c58e23dba3d10b3f25bf2c1f440f5b85cd&=&format=webp&quality=lossless&width=1872&height=415)
+![ViniLogo](https://camo.githubusercontent.com/49380bb1b4222c9a4aac077cf2c1d801450f4877d3c7a9091aa4b658413b3cf0/68747470733a2f2f692e696d6775722e636f6d2f7768585a5a4f702e706e67)
+
 
 Vinifera is an open source project providing features and bugfixes to Tiberian Sun. One of the features it restores is the option to save the loaded-in map as a .map file inside your game's directory, meaning you can use the game's random map generation and keep the map.
 
@@ -166,7 +169,7 @@ I am of course assuming you then intend on playing through a distribution such a
 
 ### Handama's Random Map Generator [RA2]
 
-This is a largely customisable map generator, capable of making highly detailed random maps, as well as automating a render of these maps to be produced. To run, please check the [instructions](https://github.com/handama/RandomMapGenerator_RA2) and download a build from [GitHub](https://github.com/handama/RandomMapGenerator_RA2/releases). As of writing this page, four environments have been configured. I have included a HD Render of each map, as well as a download if you wish to check it yourself.
+This is a largely customisable map generator, capable of making highly detailed random maps, as well as automating a render of these maps to be produced in batch. To run, please check the [instructions](https://github.com/handama/RandomMapGenerator_RA2) and download a build from [GitHub](https://github.com/handama/RandomMapGenerator_RA2/releases). As of writing this page, four environments have been configured. I have included a HD Render of each map, as well as a download if you wish to check it yourself. More examples exist on the GitHub. 
 
 [Temperate [Map Download]](Assets/TEMMAP9.map)
 ![TemperateMapRender](Assets/TEMMAP9.jpg)
