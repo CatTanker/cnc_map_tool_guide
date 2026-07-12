@@ -2,8 +2,7 @@
 
 Linux compatability with the game has only increased over the years, and now takes very little effort to set up. For most mods and official releases, the client now comes with built-in linux support, with the client automatically running the game in wine for you. The client is now also built using the latest dotnet, meaning it runs natively on Linux. This should be run in the form of a`.sh` inside the top of the game folder, such as `YRLauncher.sh`. 
 
-**Both** of the current Tiberian Sun & Yuri's Revenge clients off [cncnet](cncnet.org) have this script, and so upon running it you should be good to go. Certain mods such as [Dawn of the Tiberian Age]
-(https://cncnet.org/dawn-of-the-tiberium-age) also work extremely well through this native client. You will need to install the required dotnet version to run the client natviely, which as of writing is typically dotnet 8, but this should be offered in a pop-up upon running the client. 
+**Both** of the current Tiberian Sun & Yuri's Revenge clients off [cncnet](cncnet.org) have this script, and so upon running it you should be good to go. Certain mods such as [Dawn of the Tiberian Age](https://cncnet.org/dawn-of-the-tiberium-age) also work extremely well through this native client. You will need to install the required dotnet version to run the client natviely, which as of writing is typically dotnet 8, but this should be offered in a pop-up upon running the client. 
 
 
 --- 
