@@ -16,8 +16,6 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
-  analytics:
-    gtag: G-Y88LQ85YZ1
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -66,7 +64,7 @@ plugins:
       output_path: builds.pdf
 
 site_name: CnC Tools and Resources
-site_description: A series of resources WestWood 2.5D games, with a focus on Support, Mapping and Linux.
+site_description: A series of resources WestWood 2.5D games, with a focus on Mapping, Support and Linux. Includes several other guides such as using DXVK with Yuri's Revenge and Tiberian Sun.
 #site_url: https://cattanker.github.io/CnC-Resource-Docs/
 repo_url: https://github.com/CatTanker/cnc_map_tool_guide
 repo_name: Documentation Github Page
