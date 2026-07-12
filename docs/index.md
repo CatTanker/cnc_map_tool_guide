@@ -32,8 +32,9 @@ I also need to provide a special thanks to: <br>
 - Doomguy, moral support. <br>
 - Lylak and AlliedG for suggesting that i improve the guide when it was only in my discord server. <br>
 - The developers of tools and resources linked, who without this project would be pointless. <br>
+- Fridging, Rhosalth & loose sources for help with DXVK 
 - SCIPCION for occasional input.
-- APRA2 Team for support
+- APRA2 Team for support all-round, and helping me find quite a few things.
 - Mental Omega, Project Phantom, Fading Dusk, Red Resurection, RA20XX, Dawn of the Tiberium Age, and a few various public map contributors, whose content is all shown in this page.
 
 ## PDF Download
