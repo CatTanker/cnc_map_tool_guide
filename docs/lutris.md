@@ -1,7 +1,8 @@
- 
 ![Lutris](https://upload.wikimedia.org/wikipedia/commons/9/99/Lutris_Game_Platform_%28Logo%29.svg)
 
 Lutris is a fairly popular game launcher for Linux. Note you **need** to do the custom runner to restore multiplayer functionality to cncnet, as well as probably fix some misc errors or bugs.
+
+**This method is not personally recommended and has not been updated in a while.**
 
 ### Setting up your bottle (For flexibility and mod usage)
 
