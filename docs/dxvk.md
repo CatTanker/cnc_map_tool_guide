@@ -18,7 +18,7 @@ Note DXVK has also received light testing on YR and MO. I am aware that several 
 To Install:
 1. Head to DXVK's [releases page](https://github.com/doitsujin/dxvk/releases)
 2. Download the latest `dxvk.x.x.tar.gz` file and open it. You may need a [file archiver such as 7-zip](https://www.7-zip.org/) to open it.
-3. Head into the x32 folder and copy only the ``d3d9.dll` file.
+3. Head into the `x32` folder and copy only the `d3d9.dll` file.
 4. Paste this into your game's top folder, where `gamemd.exe` or `TiberianSun.exe` are located.
 
 If you decide that your game is less stable, you run into difficulties or simply have fps drops then to uninstall you simply delete `d3d9.dll` from your folder.
