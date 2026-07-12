@@ -23,8 +23,11 @@ If the client won't open, such as running 'MentalOmegaClient.exe' for Mental Ome
 
 If you get an error complaining that bottles failed to create a graphical device, you have likely updated your system. Flatpak is not automatically updated, and needs to have the same graphical drivers as your current system. Updating flatpak will fix the problem. 
 
+If you are attempting to run the latest client, you may need to mess around further with runners, although through the instructions above i can smoothly run DTA even though it is on the newer client, so it is not a dependency issue. 
+
 ### Game won't open
 This is a fairly broad issue. Contact your game's support team for direct advice if possible. Some error messages or being sent back to the client appear on Windows too, so often the windows solution fixes this. Since you cannot run things as admin as a fix, try setting up a new bottle using another runner. Clean installing a bottle with this runner is preferred to switching it, as like wine prefixes a bottle can become bugged or corrupted. I also recommend scrolling down the Settings page and finding Steam Runtime, which can provide a fix at times but may cause randomly timed desyncs ingame so i don't recommend it by default. Toggling DXVK may also help. 
+
 
 ### Issues Ingame
 if you have no sound, and can confirm the game **should** give sound, especially if it is music, check you have installed the music pack for your game, and it appears in the ingame juxebox. If this doesn't appear after installing it, try turning on the Steam Runtime in settings. For any graphical issues, check the [renderers page](rendererresources.md). 
