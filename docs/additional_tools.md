@@ -16,8 +16,7 @@ The map renderer is one of the most used tools bar the editor themselves. Writte
 
 ### Trigger Analyser - Web Version <br />
 
-A tool written injavascript (by Whensons) to analyse and map out triggers in a graph. This shows the connections, links and flow of mission scripts, making it very useful in spotting issues within your triggers. 
-Although it is hosted on GitHub you can download the page and use it offline. Simply open the webpage and open the map in the window to use.
+A tool written in javascript (by Whensons) to analyse and map out triggers in a graph. This shows the connections, links and flow of mission scripts, making it very useful in spotting issues within your triggers. Although it is hosted on GitHub you can download the page and use it offline. Simply open the webpage and open the map in the window to use. Works for both Yuri's Revenge and Tiberian Sun maps, but was built for the former. 
 
 ![WhensonsEditor](Assets/whensons_trigger.png)
 
