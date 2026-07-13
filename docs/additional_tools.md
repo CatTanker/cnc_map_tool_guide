@@ -45,7 +45,7 @@ Before:
 ![Before](Assets/arabian_gulf.webp)
 To Snow:
 ![ToSnow](Assets/arab_gulf_snow.jpg)
-To TS Temperate (without any edits):
+To TS Temperate (without any edits, will require a quick ore conversion to fix gems --> blue tib, and a few manual touchups where transitions simply cannot match):
 ![|ToTS](Assets/barebones_conversion_to_ts.png)
 
 The tool can also be used for simpler functions such as swapping ore and gems, properly swapping overlays from gems to blue tiberium and compressing the map down to reduce file size. Users can also write custom scripts to add support for terrain expansions, such swapping entirely custom terain between mods, or including custom buildings in a script if required. 
@@ -82,7 +82,7 @@ A brilliant tool by PTapioK which streamlines the production of mission and surv
 ### Map Resize Tool <br />
 A tool by E1 Elite to resize maps. Unlike the standard unmodified map editor, this moves everything, including tunnels and smudges. This tool is increasing redundant as most editors do this by default now.
 
-![Map Resize Tool](Assets/Map Resize Tool.png)
+![Map Resize Tool](<Assets/Map Resize Tool.png>)
 
 | Topic | Source + Link |
 | ------------ | ------------- |
