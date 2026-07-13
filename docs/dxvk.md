@@ -15,10 +15,10 @@ Before and after, make sure you record your game's fps in the same scenario. To 
 
 Note DXVK has also received light testing on YR and MO. I am aware that several people have extensively used this method, and both in an online environment and in singleplayer. There have been no reports of this leading to a desync, so this should be safe to use, and i recommend it especially if you are using `renderer=dx`. Be aware that this may not work on mods that use ReShade, such as Rise of the East, Tiberian Sun - Warzone, and Tiberium Crisis 1 & 2. 
 
-To Install:
-1. Head to DXVK's [releases page](https://github.com/doitsujin/dxvk/releases)
-2. Download the latest `dxvk.x.x.tar.gz` file and open it. You may need a [file archiver such as 7-zip](https://www.7-zip.org/) to open it.
-3. Head into the `x32` folder and copy only the `d3d9.dll` file.
-4. Paste this into your game's top folder, where `gamemd.exe` or `TiberianSun.exe` are located.
+To Install:<br>
+1. Head to DXVK's [releases page](https://github.com/doitsujin/dxvk/releases)<br>
+2. Download the latest `dxvk.x.x.tar.gz` file and open it. You may need a [file archiver such as 7-zip](https://www.7-zip.org/) to open it.<br>
+3. Head into the `x32` folder and copy only the `d3d9.dll` file.<br>
+4. Paste this into your game's top folder, where `gamemd.exe` or `TiberianSun.exe` are located.<br>
 
 If you decide that your game is less stable, you run into difficulties or simply have fps drops then to uninstall you simply delete `d3d9.dll` from your folder.
