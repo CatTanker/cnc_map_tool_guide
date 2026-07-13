@@ -14,7 +14,7 @@ Final Alert 2 (FA2) is the original map editor for Red Alert 2 and Yuri's Reveng
 
 #### FA2SP
 
-In 2025, FA2SP was the recommended patch version, with the links contained below. This has numerous improvements, namely improved themed handling, basic live lighting rendering, improved voxel rendering, a tile drawer, plus support for Ares and Phobos engine extensions. The full changelog is available [here](https://github.com/secsome/FA2sp/blob/master/CHANGELOG.md), along with download links below.
+In 2025, FA2SP was the recommended patch version. This contains numerous improvements, namely improved theme handling, basic live lighting rendering, improved voxel rendering, a tile manager, plus support for the Ares and Phobos engine extensions. The full changelog is available [here](https://github.com/secsome/FA2sp/blob/master/CHANGELOG.md), along with download links below.
 
 
 ![FA2SP](Assets/fa2sp.png)
