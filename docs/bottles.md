@@ -1,48 +1,46 @@
-![Bottles](https://usebottles.com/uploads/bottle-creation-dark.png)
+![BottlesImage](Assets/BottlesFirstImage.png)
 
-I find bottles seems to give me the most reliable result on my many re-installs, find information about it [here](https://usebottles.com) and download it to your OS.<br>
-Most guides seem to recommend using Flatpack for the download, which is the only supported and official build so I highly recommend using it.
+[Bottles](https://usebottles.com) is a popular GUI Manager to run Windows software on Linux through wine. Follow their website for install instructions and further details on the software itself. Setting up Bottles is possibly the quickest and easiest way to run Tiberian Sun, Yuri's Revenge and mods, and is my method of choice. 
 
-Below I have included the configuration that I use for Bottles so that you can produce the bottle in steps following the GUI. You should complete the main initial steps and then follow either Config 1 or Config 2 (Recommended).  There are also runner options included in a table a little further down.<br>
-If you would prefer, I now include a bottles configuration .yml that you can [download](Assets/CnCNet_Bottles_Config.yml) and then import back into bottlesas a configuration.
+## Setting up the bottle
+![New Bottle Creation](Assets/BottlesUseLatestRunnerNormal.png)
 
-### Setting up your bottle
+To make a new bottle, click the `+` symbol in the top-left corner. Name it appropriately, selecting a new runner if you downloaded one. If not then you can proceed with Soda. Using either the Application or Gaming preset both work fine, I tend to use Application as i don't require all the runtimes that the Gaming profile downloads for 3D rendering. 
 
-Create new --> *Application* <br>
-In Settings: <br>
-- Runner: Check Runner Compatability Table <br>
-- DXVK/VKD3D : Enabled <br>
-- LatencyFleX : Disabled (Unless you want it)<br>
-- Windows Version: Windows 10 <br>
+![CncDDraw](Assets/BottlesAddingCnCDDraw.png)
+
+Not always required, but i do recommend installing the `CnC-DDraw dependency`, which guarantees your game will run at a decent speed as well as fixing artifacts as it would on Windows,
 
 
-*Installed Dependencies:*<br>
-- arial32/times32/courie32 [By Default]<br>
-- Mono (Wine Mono) [Install Yourself if it is not there by default]<br>
-- CnC-DDraw as a dependency [Install Yourself]<br>
+## Running the game
+
+To start a CnCNet Client, simply select Launch Executable, then guide your distro's file manager window (KDE's Dolphin, GNOME Files, etc) to find the game's client executable and launch the game. Once you know this is the right exe, I recommend adding it as a shortcut to save time. 
+
+## Optional Enhancements
+Most optimisation comes down to using the right renderer. One major change I encourage you to do is the Settings page and turn on `DXVK` if it is not already on. This improves the performance of the game slightly, and if you choose to use a DX renderer inside CnC-DDraw or TS-DDraw then it greatly increases performance compared to without.  
+
+![BottlesDXVK](Assets/BottlesDXVK.png)
+
+
+## Custom Runners
+![BottlesRunnersImage1](Assets/BottlesLatestRunner.png)
+
+Rather than being limited to the mainstream wine distribution that your package manager provides, Bottles gives you easy access to most popular runners, including cutting edge builds and enhanced versions such as Valve's Proton that is used in steam. While the initial install only ships with `Soda` (at the time of writing), I personally find the latest version of `Kron4ek` works best, as well as being frequently updated with Wine's improvements, such as improved running under Wayland. At the time of writing the latest version of [Soda](https://usebottles.com/runners) is 9.0.1, which is a fair bit behind `Kron4ek's` version of 11.12. I have also had good experiences with `Caffe` working on all fronts, and so i recommend giving that a try. If you are not sure, you can skip this step and use `Soda` for now, which may work fine for you. To access this page, click the `three lines` at the top-right hand corner, `preferences`, and then `Runners`. You can also use the hotkey 'Ctrl + ,'.
 
 
 
-After following all of the steps above, enter your bottle, click "Run Excutable", and guide it to your client folder and select the main client (e.g. `YRLauncher.exe` or `MentalOmegaClient,exe`), and your client should load. In caseswhere this does not work, go into the Resources foler and then try "clientogl.exe", and the client should run fine, as well as the game. In some cases the xna client also seems to work, but try the ogl and dx builds first.
+## Troubleshooting
+### Client won't open
+If the client doesn't open, such as running `MentalOmegaClient.exe` for Mental Omega, enter the 'Resources' page of the game and try the `client___.exe` files (__ is either ogl, dx, xna). One of these should open. 
 
-### Runner Compatability
-| Recommended | Runner | Client Compatability | Offline Compatability | Online Compatability | Notes |
-| ------------ | ------------ | ------------- | ------------- | ------------- | ------------- |
-| &#x2611; | Soda-7.0.9 | Fully Functional | Functional | Functional | Pressing esc --> Game Controls instantly closes gamemd |
-| &#x2612; | Soda-8.0.2 | Fully Functional | Launches Incorrectly  | Unaccessible - launch Issue|  |
-| &#x2612; | Vanigilla-8.6 | Not Functional | Unnaccesible  | Unaccessible | Error upon launching the client |
-| &#x2611; | Lutris-7.2 | Fully Functional | Functional | Fails to connect to gamesurge - Error Denied | Port/ICMP Issue? |
-| &#x2611; | wine-ge-proton8-25 | Fully Functional | Launches Incorrectly | Unaccessible - Launch Issue | Pressing esc --> Game Controls instantly closes gamemd |
-| &#x2611; | Sys-Wine-9.1 (From package Manager) | Fully Functional | Syringe Issue | Unaccessible - Syringe Issue | Pressing esc --> Game Controls instantly closes gamemd |
-| &#x2611; | Caffe-8.21 | Fully Functional | Fully Functional | Fully Functional | |
-| &#x2611; | kron4ek-wine-8.20-amd64 | Fully Functional | Fully Functional | Fully Functional | |
+If you get an error complaining that bottles failed to create a graphical device, you have likely updated your system. Flatpak is not automatically updated, and needs to have the same graphical drivers as your current system. Updating [flatpak](https://docs.flatpak.org/en/latest/using-flatpak.html) will fix the problem. 
 
-This table has been tested using the Bottles Config 2 specifically on MO 3.3.6, with fully functional runners also tested on other mods. This was only tested with DXVK/VKD3D disabled due to physical limitations at the time.
-You will need to install most of these runners from inside bottles, through the 'Main Menu' button in the top-right corner, 'Preferences', and then from the 'Runners' tab.
+If you are attempting to run the latest client, you may need to mess around further with runners, although through the instructions above i can smoothly run DTA even though it is on the newer client, so it is not a dependency issue. 
 
-Note the above runners were tested on the arch-specific [aur](https://wiki.archlinux.org/title/Bottles). I recently changed from this version due to minor bugs/limitations compared to the Flatpak version, and so runners on the next table may give a more reliable list. DXVK/DXD3D/DXVK NVAPI are in use. The ogl support seems to be better on flatpak, so i can now launch the main client esxe (e.g. `MentalOmegaClient.exe` rather than having to go into resources), and i have moved to using the ogl renderer instead of the dx/gdi one.
+### Game won't open
+This is a fairly broad issue. Contact your game's support team for direct advice if possible. Some error messages or being sent back to the client appear on Windows too, so often the windows' solution fixes this. Since you cannot run things as admin as a fix, try setting up a new bottle using another runner. Clean installing a bottle with this runner is preferred to switching it, as like wine prefixes, a bottle can become bugged or corrupted. I also recommend scrolling down the Settings page and finding `Steam Runtime`, which can provide a fix at times but may cause randomly timed desyncs in game so I don't recommend it by default. Toggling `DXVK` may also help. 
 
-| Recommended | Runner | Client Compatability | Offline Compatability | Online Compatability | Notes |
-| ------------ | ------------ | ------------- | ------------- | ------------- | ------------- |
-| &#x2611; | Caffe-9-7 | Fully Functional | Fully Functional | Fully Functional | |
-| &#x2611; | kron4ek-wine-9.11-amd64 | Fully Functional | Fully Functional | Fully Functional | Up to date renderer |
+
+### Issues In game
+if you have no sound, and can confirm the game **should** give sound, especially if it is music, check you have installed the music pack for your game, and it appears in the in game jukebox. If this doesn't appear after installing it, try turning on the Steam Runtime in settings. For any graphical issues, check the [renderers page](rendererresources.md). 
+

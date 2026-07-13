@@ -16,8 +16,6 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
-  analytics:
-    gtag: G-Y88LQ85YZ1
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -66,7 +64,7 @@ plugins:
       output_path: builds.pdf
 
 site_name: CnC Tools and Resources
-site_description: A series of resources WestWood 2.5D games, with a focus on Support, Mapping and Linux.
+site_description: A series of resources WestWood 2.5D games, with a focus on Mapping, Support and Linux. Includes several other guides such as using DXVK with Yuri's Revenge and Tiberian Sun.
 #site_url: https://cattanker.github.io/CnC-Resource-Docs/
 repo_url: https://github.com/CatTanker/cnc_map_tool_guide
 repo_name: Documentation Github Page
@@ -74,46 +72,22 @@ nav:
 #  - Home: home.md redundant, since index.md seems to be hardcoded
   - Landing Page: index.md
   - 'Mapping Tools':
-    - 'Core Tools': 'core_editors.md'
-    - 'Modern Options': 'modern_editors.md'
+    - 'Modern Editor': 'modern_editors.md'
+    - 'Original Editor': 'core_editors.md'
     - 'Assistive Tools': 'additional_tools.md'
   - 'Resources':
-    - 'Mapping': 'mapresources.md'
-    - 'Renderers': 'rendererresources.md'
-    - 'Support' : 'generalsupport.md'
+    - 'Map Resources': 'mapresources.md'
+    - 'Renderer Resources': 'rendererresources.md'
+    - 'DXVK Guide': 'dxvk.md'
+    - 'Support Resources' : 'generalsupport.md'
   - 'Linux Resources':
     - 'Introduction': 'linuxintro.md'
     - 'Bottles': 'bottles.md'
     - 'Lutris' : 'lutris.md'
     - 'WineTricks' : 'winetricks.md'
-    - 'Support and Compatibility' : 'linuxsupport.md'
-    - 'Editor Tool Compatibility' : 'linuxtools.md'
-extra:
-  analytics:
-    provider: google
-    property: G-Y88LQ85YZ1
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/emoticon-happy-outline
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
-          name: This page could be improved
-          data: 0
-          note: >-
-            Thanks for your feedback! Help us improve this page by commenting any issues onto GitHub.
-  consent:
-    title: Cookie consent
-    description: >-
+    - 'Support and Compatability' : 'linuxsupport.md'
+    - 'Editor Tool Compatability' : 'linuxtools.md'
 
-
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true

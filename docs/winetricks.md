@@ -1,6 +1,8 @@
 
 ![Winetricks](https://upload.wikimedia.org/wikipedia/commons/a/a9/WINE-logo.svg)
 
+**This method is not personally recommended and has not been updated in a while. Use this only if you have a fair reason.**
+
 ## Winetricks Instructions
 
 [Winetricks](https://wiki.archlinux.org/title/wine#WINEPREFIX) is another method we can use to run TS and YR through cncnet. While it is possible to perform all of this using wine only, it is not recommended and will require a few extra steps and alterations. It is mostly run from the command line with a very limited GUI, so i recommend Bottles instead, although winetricks should be fully functional.<br>

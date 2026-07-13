@@ -1,58 +1,69 @@
-This section covers improving the core experience of mapping. This includes both modifications to the original editors, and the alternatives that the community has made since, specifically the World Altering Editor.
+## World Altering Editor <br />
 
-### Editor Modifications:
-#### DDraw Renderer
+![WAEScreenie](Assets/WAEScreen.png)
 
-Instead of using the system DDraw, FA2 and FS can instead use a local proxy DDraw.dll, improving the editor's speed considerably, which is especially useful for resource-heavy maps.
-Several of the *patched* map editors have this included but not in use, so check your map editor's folder as the files may already exist, such as in a "ForWindows10" folder, containing a pre-configured setup. if you want an un-configured setup for unknown reasons, or simply want to know more about the wrapper, check the unconfigured link below. I also included a direct download, although i have lost which thread this is on so i am unable to verify if it is the latest download.
+Originally built by Rampastring for [DTA](https://www.moddb.com/mods/the-dawn-of-the-tiberium-age), the World Altering Editor is an open source map editor designed to replace the original editors and utilize modern hardware. The project currently offers a build for both Tiberian Sun and Red Alert 2, including support for mods. 
 
-| Topic | Source + Link |
-| ------------ | ------------- |
-| Unconfigured  |[BitPatch](http://bitpatch.com/ddwrapper.html)|
-| Pre-Configured|[PPM](https://ppmforums.com/download.php?id=72031&sid=5b50cb3c1696d792adb195e4360b46fd)|
+For requirements and further details on the project, check their [GitHub](https://github.com/CnCNet/WorldAlteringEditor). To download it, head to their [GitHub releases page](https://github.com/CnCNet/WorldAlteringEditor/releases). If you have any issues or simply wish to discuss the editor, head to their section in the [Mod Haven Discord](https://discord.gg/k4SVuMm). Below is a summary of some of the editor's main features.
 
-#### Dark and Custom themes
+### Highly Configurable
 
-Assuming you use the Sp version of the editor, it is certainly possible to modify the theme. This comes with a risk however, as on windows you have to modify your entire system's theme in order to achieve this, and if you install the wrong theme for your windows version, your windows updates and therefore becomes incompatible with the theme you are using, or of course simply mess something up you could easily break your system and be left to the mercy of restore points or a fresh boot. There are a number of windows 'ricing' tutorials and lists online, but a lot of recommendations from major publishers seem to only use what windows 10+ already allows you to do, which doesn't really help you. I found and recommend [this reddit post](https://www.reddit.com/r/Windows10/comments/168y7dn/ultimate_simplified_guide_how_to_make_windows_10/) for the basics as it describes most options available for modernising theming 10, with a lot being applicable to Windows 11 as well. While you are of course free to read the entire section, you should focus on the `Before Starting` and the themes section.  If you decide to further rice your system, i [recommend this, as although it focuses on Windows 11 a lot of the tools work with 10.](https://github.com/twonth/winning-at-windows)
+The World Altering Editor has been built with mods and the CnCNet Client in mind, and operates on a highly configurable structure of INI config files. This allows for the editor to support a wide range of mod structures, including that of TSClient where MIX and INI files are split into several subfolders, and that of the "put it all in the root" structure of YR. MIX load orders can be configured easily, and there are rules/art override files available. Any theater can be defined, so mods which change the theaters available no longer need to hex edit and ship multiple FA2/FS installations with their mod.
 
-I have included below an example of what FA2 looks like using dark theme from [rectify11](https://rectify11.net) on Windows 11, which is available for free. Sadly the Windows 11 elements carry over, including spacings in dropdowns, and the extremely dark colour scheme doesn't sit too well.
-![Rectify11 FA2](Assets/win11_themed.png)
----
-Another example is After Dark CC Blue, provided by SCIPCION on Windows 10. I believe this is no longer available for free however.
-![AfterDarkCC](Assets/after_dark_cc.png)
----
-This example uses [fluent from niivu's Windows 10 Themes](https://github.com/niivu/Windows-10-themes). The creator also has a large collection of other windows 10 & 11 [themes](https://www.deviantart.com/niivu/gallery) that you can experiment with as well.
-![Win10_Fluent](Assets/fluent.png)
+![INI Config](Assets/INIWAEConfig.png)
 
-Ultimately it is your decision if you wish to risk modifying windows in such a way, especially with WAE as a modern alternative. I have also written advice on applying a dark theme in [linux](linuxtools.md), however the options are more limited.
+### QoL Features
+
+A growing volume of interface features have been developed. One of the more evident examples is a zoom in/out function, which is greatly missed in the WW2.5D series of map editors. The editor also includes a search tool so you can find a specific item much easier, better categorized lists, and a configurable LAT panel. There is also a map-wide overlay option, active lighting and hotkeys to speed up your workflow, such as rotating units to quickly face a selected direction.
+
+![ZoomGif](Assets/WAEZooooom.gif)
+![TIbCount, rotating a vehicle and custom copy](Assets/WAEQoL.gif)
 
 
-<!---#| Github |[Link](https://github.com/FunkyFr3sh/cnc-ddraw)| -->
+### New Tools
+There are also several new tools available for WAE, including a configurable terrain generator to decorate natural environments with trees, terrain, overlays and smudges, a connected tile drawer that works on cliffs, shores, roads, and any user-made tiles in mods. The engine also allows for user-made scripts that can perform advanced tasks, such as smoothing out water tiles. The editor can also draw complex tunnels, which do not break unlike the unpatched FA2's tunnels, has a check distance tool that can follow pathfinding, and allows users to configure what is copied and deleted, both in what types are copied and allowing for custom patterns to by copied. 
 
-### World Altering Editor : <br />
-Author: Rampastring + Contributors  <br />
-Description: The World Altering Editor (WAE) is an open source replacement to the traditional editors. unlike the originals, it is built using a modern code base, and as a result of being open source it does not require the use of dll injection to improve. 
-Formerly known as the DTA Scenario Editor, as it was built for [Dawn of the Tiberium Age](https://www.moddb.com/mods/the-dawn-of-the-tiberium-age), it has since been growing in compatability for TS/YR.
- A release for TSClient and Vanilla YR both available on the the releases page. As of v0.9.6 the editor now has a voxel renderer, meaning that the editor can effectively replace FA2 for all quality PCs using win7 or later, 
- although it is arguably still behind in a few areas. As of version 1.0, the editor will require dotnet runtime 8, and is only built for Windows, although running it through modern wine solutions are an option for linux.
+![Connected Tiles Gif](Assets/WAEConnected.gif)
+![Terrain Generator Gif](Assets/WAETerrainGen.gif)
+![Measurement Tool](Assets/WAEMeasurementTool.gif)
 
-I **highly** recommend trying this editor out, as it contains a lot of new features that would be out of scope for FA2/FS. Check the [releases page](https://github.com/Rampastring/WorldAlteringEditor/releases) for an up-to-date YR and TSClient build. 
-The releases page also includes a full changelog, which at the moment is the most comprehensive list of features. 
+### Scripting
 
-| Topic | Source + Link |
-| ------------ | ------------- |
-| World Altering Editor | [Github - Main Page](https://github.com/Rampastring/TSMapEditor) |
-| World Altering Editor | [Github - Releases](https://github.com/Rampastring/TSMapEditor/releases) |
-| Mod Haven Channel | [Discord](https://discord.gg/k4SVuMm) |
+WAE presents several benefits over FS/FA2 in the scripting department. This includes simple quality of life features such as adding colours to triggers and scripts, advanced operations such as the batch creation of random triggers, trigger copy and pasting, a simple statistics page on houses, and improvements for online map creators such as an Author tag for the CnCNet Client. 
+
+![scripting menu and basenodes](Assets/WAEScript1.png)
+![scripting QoL features and random trigger](Assets/WAEScript2.png)
+
+
+### Old Videos
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jIcr3nCqx7M?si=sHyZGT08GEpVWEnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RIgVMWZy80I" title="World Altering Editor - A new map editor coming to RotE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-### Incomplete / WIP:
-Mostly remains here as an archive of github links that *once* existed. Might be a useful reference one day.
-Relert ++                                             : <https://github.com/secsome/relertplusplus> <br />
-Relert Sharp Private Thread                           : <https://github.com/FrozenFog/relertsharp> <br />
-https://github.com/FrozenFog/rs-dev-public-snapshot/blob/dev/pic/preview-migdal.png
-https://github.com/FrozenFog/rs-dev-public-snapshot
+## Incomplete Editors
+### Relert Sharp
 
+Before the World Altering Editor, a presently closed source editor was made. Written primarily in C#, the editor was one of the earliest to show enhanced cliff generation, but suffers from severe performance issues as well as being incomplete. A public snapshot was released in 2023, which can be built in Visual Studio if you wish to try it out. 
+
+![RelertSharp1](Assets/relert_sharp_1.webp)
+![RelertSharp2](https://github.com/FrozenFog/rs-dev-public-snapshot/raw/dev/pic/preview-migdal.png)
+![RelertCliffs](Assets/cliff_relert.gif)
+
+
+| Topic | Source + Link |
+| ------------ | ------------- |
+| Public Snapshot | [Github - Main Page](https://github.com/FrozenFog/rs-dev-public-snapshot) |
+
+
+### Relert++
+
+An incomplete open source reimplementation of FA2 in C++ by Secsome, the developer of FA2SP. 
+
+| Topic | Source + Link |
+| ------------ | ------------- |
+| Relert++ | [Github - Main Page](https://github.com/secsome/relert-plus-plus) |
+
+### RP's Map Editor
+
+An incomplete and unreleased map editor developed by [RP](https://ppmforums.com/topic-43156/8/)

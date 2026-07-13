@@ -42,3 +42,7 @@ Dawn of the Tiberium Age has been working on recreating the [original TD Campaig
 
 
 Flipped Missions is a mod for YR which reverses the roles of original YR missions so you play as the other side, of course with some methods to make this playable and not an instant win against an Ai conyard. You can find out more on their [ModDB](https://www.moddb.com/mods/ra2fm) and [discord](https://discord.gg/tYuP82S) <br />
+
+## Other Resources - RA2map.com
+
+For chinese epeaking individuals and for anyone wishing to look into the chinese mapping resources and tutorials, i recommend looking at https://ra2map.com/ , which contains tools and tutorials for producing maps in Yuri's Revenge, as well as links to tools on ra2diy that can be used for map encryption. This website and links it uses are typically in chinese, so you may require a translator. 
