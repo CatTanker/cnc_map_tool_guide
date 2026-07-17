@@ -184,3 +184,9 @@ This is a largely customisable map generator, capable of making highly detailed 
 A Work-In-Progress map generator for Tiberian Sun. Can be downloaded on [GitLab](https://gitlab.com/tsmapgenerator/tsmapgenerator)
 
 ![Preview](Assets/tsmapgen.png)
+
+### SoftAllan's YR Symmetrical Map Generator
+
+An Alpha build capable of making symmetrical maps. Runs from within the map renderer program, and downloadable [here](https://1drv.ms/u/s!Ag5pfVZdgRXjhr5n2_TtHwYfXKGjEw). Limited functionality but mainly does slopes. Map with added cliffs, roads, and buildings by WavePy shown below.
+
+![DestinyMapPreview](Assets/destiny.png)
