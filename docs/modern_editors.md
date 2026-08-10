@@ -4,6 +4,8 @@
 
 Originally built by Rampastring for [DTA](https://www.moddb.com/mods/the-dawn-of-the-tiberium-age), the World Altering Editor is an open source map editor designed to replace the original editors and utilize modern hardware. The project currently offers a build for both Tiberian Sun and Red Alert 2, including support for mods. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UwTch_orETE?si=Y8Wztevo5vpyHN3q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 For requirements and further details on the project, check their [GitHub](https://github.com/CnCNet/WorldAlteringEditor). To download it, head to their [GitHub releases page](https://github.com/CnCNet/WorldAlteringEditor/releases). If you have any issues or simply wish to discuss the editor, head to their section in the [Mod Haven Discord](https://discord.gg/k4SVuMm). Below is a summary of some of the editor's main features.
 
 ### Highly Configurable
